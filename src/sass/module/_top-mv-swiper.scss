@@ -1,0 +1,30 @@
+@use 'global' as *;
+
+.mv__slider,
+.swiper-slide picture,
+.swiper-slide img {
+  aspect-ratio: 375 / 667;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  min-height: rem(350);
+  height: 100vh;
+  @include mq('md') {
+    aspect-ratio: 1440/ 768;
+    min-height: rem(400);
+  }
+}
+
+.swiper-slide.top-campaign-swiper__img,
+.top-campaign-swiper__item img {
+  aspect-ratio: 280 / 188;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  min-height: initial;
+
+  @include mq('md') {
+    aspect-ratio: 333 / 223;
+    min-height: initial;
+  }
+}

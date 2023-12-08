@@ -1,0 +1,266 @@
+@use 'global' as *;
+
+.header {
+  height: rem(80);
+  background-color: rgba(13, 41, 54, 0.68);
+  @include mq('md') {
+    height: rem(90);
+  }
+}
+
+.header__inner {
+  padding-left: rem(15);
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  @include mq('md') {
+    padding-left: rem(40);
+    padding-right: rem(20);
+  }
+}
+
+.header__logo {
+  max-width: rem(103);
+  width: 100%;
+  height: inherit;
+  z-index: 1000;
+  @include mq('md') {
+    max-width: rem(133);
+  }
+}
+
+.header__logo a {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  max-width: 6.375rem;
+  width: 100%;
+  max-width: rem(133);
+}
+
+.header__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  width: rem(102);
+  @include mq('md') {
+    width: rem(133);
+  }
+}
+
+.header__nav {
+  display: none;
+  height: inherit;
+  @include mq('md') {
+    display: block;
+  }
+}
+
+.header__nav-items {
+  display: flex;
+  height: inherit;
+}
+
+.header__nav-item {
+  height: inherit;
+}
+
+.header__nav-item a {
+  padding-right: rem(20);
+  padding-left: rem(20);
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $base-font-family;
+  flex-direction: column;
+  font-size: rem(18);
+  font-weight: 500;
+  line-height: 1;
+  color: $white;
+  text-transform: capitalize;
+  transition: opacity 0.3s;
+  position: relative;
+}
+
+.header__nav-item a:hover {
+  color: $white;
+}
+.header__nav-item a::after {
+  content: '';
+  /*絶対配置で線の位置を決める*/
+  position: absolute;
+  bottom: rem(16);
+  left: 10%;
+  /*線の形状*/
+  width: 80%;
+  height: rem(2);
+  background: $white;
+  /*アニメーションの指定*/
+  transition: all 0.3s;
+  transform: scale(0, 1); /*X方向0、Y方向1*/
+  transform-origin: center top; /*上部中央基点*/
+}
+
+.header__nav-item a:hover::after {
+  transform: scale(1, 1); /*X方向にスケール拡大*/
+}
+
+.header__nav-item span {
+  margin-top: rem(4);
+  display: block;
+  font-size: rem(10);
+  font-weight: $regular;
+  font-family: $third-font-family;
+  line-height: 1.5;
+  color: $white;
+}
+
+// ハンバーガー
+.header__hamburger {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  position: relative;
+  z-index: 999;
+  width: rem(61);
+  height: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+  @include mq('md') {
+    display: none;
+  }
+}
+
+.header__hamburger.is-open {
+  background-color: transparent;
+}
+
+.header__hamburger span {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: rem(33);
+  height: rem(1);
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+.header__hamburger span:nth-of-type(1) {
+  top: rem(-11);
+}
+
+.header__hamburger span:nth-of-type(2) {
+  top: 0;
+}
+
+.header__hamburger span:nth-of-type(3) {
+  top: rem(11);
+}
+
+.header__hamburger.is-open span:nth-of-type(1) {
+  top: 0;
+  transform: translateX(-50%) rotate(37deg);
+}
+
+.header__hamburger.is-open span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.header__hamburger.is-open span:nth-of-type(3) {
+  top: rem(-2);
+  transform: translateX(-50%) rotate(-36deg);
+}
+
+// ドロワー
+
+.header__drawer {
+  padding-top: rem(80);
+  display: none;
+  position: absolute;
+  z-index: 900;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: $lightGreen;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.header__drawer::-webkit-scrollbar {
+  display: none;
+}
+
+.header__drawer-nav {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  padding-right: rem(15);
+  padding-left: rem(15);
+  gap: rem(30);
+
+  @include mq('md') {
+  }
+}
+
+.header__drawer-item a {
+  display: flex;
+  padding: rem(12) 0;
+  font-family: $third-font-family;
+  width: 100%;
+  font-size: rem(16);
+  font-weight: $regular;
+  line-height: 1.125;
+  color: $white;
+  text-align: center;
+  white-space: nowrap;
+}
+.header__drawer-item.header__drawer-title a {
+  font-weight: $bold;
+  padding-top: rem(27);
+  text-align: left;
+  position: relative;
+  text-indent: -0.2em;
+  @include mq('md') {
+  }
+}
+.header__drawer-item.header__drawer-title a::before {
+  position: absolute;
+  content: '';
+  background-image: url('../images/common/hitode.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  top: rem(24);
+  left: rem(-25);
+  width: rem(18);
+  height: rem(18);
+  z-index: 1100;
+}
+
+.header__drawer-left {
+  height: inherit;
+  padding-left: rem(4);
+  @include mq('md') {
+  }
+}
+
+.header__drawer-right {
+  @include mq('md') {
+  }
+}
+body.active {
+  height: 100%;
+  overflow: hidden;
+}
+
+// html, body.active {
+//   height: 100%;
+//   overflow: hidden;
+// }

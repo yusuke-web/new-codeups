@@ -1,0 +1,7 @@
+@use 'global' as *;
+
+.layout-top-price {
+  @include mq('md') {
+    margin-top: 140px;
+  }
+}

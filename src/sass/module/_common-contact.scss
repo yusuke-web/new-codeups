@@ -1,0 +1,165 @@
+@use 'global' as *;
+
+.common-contact__inner {
+  position: relative;
+}
+
+.common-contact__inner::after {
+  position: absolute;
+  content: '';
+  background-image: url(../images/common/fish-left.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: rem(109);
+  height: rem(50);
+  top: -4%;
+  right: 4%;
+  @include mq('md') {
+    width: rem(301);
+    top: -9%;
+    height: rem(138);
+    right: calc(50% - min(48vw, 41.875rem));
+  }
+}
+
+.common-contact__container {
+  @include mq('md') {
+    display: flex;
+    gap: rem(80);
+    padding: rem(80) rem(50);
+    padding-bottom: rem(73);
+    justify-content: space-between;
+
+    box-shadow: rem(4) rem(4) rem(10) 0px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.common-contact__info {
+  width: 85.50724638%;
+  margin-right: auto;
+  margin-left: auto;
+  @include mq('md') {
+    width: 45%;
+  }
+}
+.common-contact__logo {
+  text-align: center;
+  border-bottom: rem(1) solid $lightGreen;
+  @include mq('md') {
+  }
+}
+.common-contact__logo img {
+  width: rem(174);
+  display: inline-block;
+  padding-bottom: rem(0);
+  @include mq('md') {
+    width: rem(200);
+  }
+}
+
+.common-contact__access {
+  text-align: center;
+  margin-top: rem(16);
+
+  @include mq('md') {
+    display: flex;
+    justify-content: space-between;
+    margin-top: rem(24);
+  }
+}
+
+.common-contact__address {
+  @include mq('md') {
+    text-align: left;
+    margin-top: rem(2);
+    width: 33.18181818%;
+  }
+}
+
+.common-contact__text {
+  font-family: $third-font-family;
+  font-size: rem(16);
+  font-weight: $regular;
+  line-height: 1.5;
+  color: $darkGreen;
+}
+.common-contact__text:not(:first-of-type) {
+  margin-top: rem(3);
+}
+
+.common-contact__map {
+  text-align: center;
+  margin-top: rem(16);
+  @include mq('md') {
+    width: 62.04545455%;
+    margin-top: 0;
+  }
+}
+.common-contact__map iframe {
+  aspect-ratio: 295/160;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  @include mq('md') {
+    aspect-ratio: 273 / 148;
+  }
+}
+
+.common-contact__here {
+  @include mq('md') {
+    width: 47%;
+    text-align: center;
+    border-left: solid rem(1) $lightGreen;
+  }
+}
+.common-contact__title {
+  font-family: $base-font-family;
+  font-size: rem(80);
+  font-weight: $regular;
+  line-height: 0.91;
+  color: $darkGreen;
+  text-align: center;
+
+  margin-top: rem(35);
+  @include mq('md') {
+    text-indent: 0.3em;
+    margin-top: rem(27);
+  }
+}
+
+.common-contact__title-color {
+  color: $lightGreen;
+}
+.common-contact__sub-title {
+  text-align: center;
+  font-family: $third-font-family;
+  font-size: rem(12);
+  font-weight: $regular;
+  line-height: 1.5;
+  color: $lightGreen;
+  @include mq('md') {
+  }
+}
+
+.common-contact__booking {
+  text-align: center;
+  font-family: $third-font-family;
+  line-height: 1.2857;
+  color: $lightGreen;
+  font-size: rem(14);
+  margin-top: rem(8);
+  font-weight: $regular;
+  @include mq('md') {
+    text-indent: 1.7em;
+  }
+}
+
+.common-contact__button {
+  text-align: center;
+  margin-top: rem(40);
+  @include mq('md') {
+    margin-top: rem(38);
+    margin-left: rem(20);
+  }
+}

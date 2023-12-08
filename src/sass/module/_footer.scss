@@ -1,0 +1,145 @@
+@use 'global' as *;
+
+.footer {
+  background-color: $lightGreen;
+  padding-bottom: rem(56);
+  padding-top: rem(48);
+
+  @include mq('md') {
+    padding-bottom: rem(80);
+  }
+}
+.footer__logos {
+  @include mq('md') {
+    padding-top: rem(76);
+    display: flex;
+    align-items: flex-end;
+  }
+}
+.footer__logo {
+  width: rem(120);
+  @include mq('md') {
+    width: rem(200);
+  }
+}
+
+.footer__icons {
+  display: flex;
+  gap: rem(16);
+  margin-top: rem(17);
+  @include mq('md') {
+    margin-left: rem(40);
+  }
+}
+
+.footer__facebook {
+  width: rem(24);
+  height: rem(24);
+  @include mq('md') {
+    width: rem(32);
+    height: rem(32);
+  }
+}
+
+.footer__instagram {
+  width: rem(24);
+  height: rem(24);
+  @include mq('md') {
+    width: rem(32);
+    height: rem(32);
+  }
+}
+.footer__nav {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  padding-right: rem(15);
+  padding-left: rem(23);
+  gap: rem(39);
+  margin-top: rem(12);
+
+  @include mq('md') {
+    column-gap: rem(143);
+    margin-top: 0;
+  }
+}
+
+.footer__items {
+  margin-top: rem(28);
+}
+
+.footer__item a {
+  display: flex;
+  padding: rem(12) 0;
+  font-family: $third-font-family;
+  width: 100%;
+  font-size: rem(16);
+  font-weight: $regular;
+  line-height: 1.125;
+  color: $white;
+  text-align: center;
+  white-space: nowrap;
+  transition: opacity 0.3s;
+}
+
+.footer__item a:hover {
+  opacity: 0.7;
+}
+
+
+
+
+.footer__item.footer__item--title a {
+  font-weight: $bold;
+  // padding-top: rem(28);
+  position: relative;
+  text-align: left;
+  padding-top: 0;
+  @include mq('md') {
+  }
+}
+.footer__item.footer__item--title a::before {
+  position: absolute;
+  content: '';
+  background-image: url('../images/common/hitode.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  top: rem(28);
+  left: rem(-20);
+  width: rem(18);
+  height: rem(18);
+  z-index: 10;
+}
+
+.footer__left {
+  height: inherit;
+  @include mq('md') {
+    display: flex;
+    column-gap: rem(141);
+  }
+}
+
+.footer__right {
+  @include mq('md') {
+    display: flex;
+    column-gap: rem(141);
+  }
+}
+
+.footer__copyright {
+  font-family: $base-font-family;
+  font-size: rem(12);
+  line-height: 1.5;
+  font-weight: $regular;
+  color: $white;
+  display: inline-block;
+  margin-top: rem(27);
+  @include mq('md') {
+    margin-top: rem(69);
+    display: block;
+    text-align: center;
+    line-height: 1.2857;
+    font-size: rem(14);
+  }
+}
