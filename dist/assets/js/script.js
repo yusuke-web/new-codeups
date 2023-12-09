@@ -32,6 +32,7 @@ jQuery(function ($) {
 $(function () {
   $('.js-hamburger').on('click', function () {
     $(this).toggleClass('is-open');
+    $('.js-header').addClass('header--green'); // 新しいクラスをトグルする
     $('body').addClass('active');
     //追加
     if ($(this).hasClass('is-open')) {
@@ -47,6 +48,7 @@ $(function () {
   });
   function closeDrawer() {
     $('body').removeClass('active');
+    $('.js-header').removeClass('header--green');
     $('.js-hamburger').removeClass('is-open');
     $('.js-drawer').fadeOut();
   }
@@ -65,6 +67,7 @@ function openDrawer() {
 function closeDrawer() {
   $('.js-drawer').fadeOut();
   $('.js-hamburger').removeClass('is-open');
+  $('.js-header').removeClass('header--green');
   $('body').removeClass('active');
 }
 // MV スライダー

@@ -445,7 +445,6 @@ a {
 	height: 1.125rem;
 	left: -1.25rem;
 	position: absolute;
-	top: 1.75rem;
 	width: 1.125rem;
 	z-index: 10;
 }
@@ -469,11 +468,16 @@ a {
 	height: 5rem;
 }
 
+.header--green {
+	background-color: #408f95; /* 希望の緑色を指定 */
+}
+
 .header__inner {
 	display: flex;
 	height: inherit;
 	justify-content: space-between;
 	padding-left: 0.9375rem;
+	position: relative;
 }
 
 .header__logo {
@@ -620,16 +624,14 @@ a {
 
 .header__drawer {
 	background-color: #408f95;
-	bottom: 0;
 	display: none;
-	height: 100vh;
+	height: calc(100vh - 80px);
 	left: 0;
 	overflow-y: scroll;
-	padding-top: 5rem;
 	position: absolute;
 	right: 0;
 	scrollbar-width: none;
-	top: 0;
+	top: 5rem;
 	width: 100%;
 	z-index: 900;
 }
@@ -662,7 +664,7 @@ a {
 
 .header__drawer-item.header__drawer-title a {
 	font-weight: 700;
-	padding-top: 1.6875rem;
+	margin-top: 1.6875rem;
 	position: relative;
 	text-align: left;
 	text-indent: -0.2em;
@@ -677,13 +679,11 @@ a {
 	height: 1.125rem;
 	left: -1.5625rem;
 	position: absolute;
-	top: 1.5rem;
 	width: 1.125rem;
 	z-index: 1100;
 }
 
 .header__drawer-left {
-	height: inherit;
 	padding-left: 0.25rem;
 }
 
@@ -966,7 +966,7 @@ body.active {
 .top-campaign-swiper__swiper-slide {
 	display: flex;
 	flex-direction: column;
-	height: 100%;
+	height: auto;
 	width: 100%;
 }
 
@@ -991,7 +991,6 @@ body.active {
 }
 
 .top-campaign-swiper__body {
-	height: 100%;
 	padding: 1.25rem 1rem 1.5rem;
 }
 
@@ -1980,7 +1979,7 @@ html {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
-	bottom: 0;
+	bottom: -4.375rem;
 	content: "";
 	height: 10.125rem;
 	position: absolute;
