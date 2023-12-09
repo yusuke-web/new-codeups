@@ -1,0 +1,79 @@
+@use 'global' as *;
+
+.breadcrumbs {
+  margin-top: rem(8);
+  @include mq('md') {
+  }
+}
+
+.breadcrumbs span a::after {
+  position: relative;
+  border-right: 1px solid $darkGreen;
+  border-top: 1px solid $darkGreen;
+  content: '';
+  display: inline-block;
+  height: rem(7);
+  width: rem(7);
+  top: rem(-2);
+  transform: rotate(45deg);
+}
+
+.sub-campaign__categories {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: rem(52);
+  column-gap: rem(20);
+  row-gap: rem(16);
+  @include mq('md') {
+    margin-top: rem(150);
+    column-gap: rem(32);
+    row-gap: 0;
+  }
+}
+
+.sub-campaign__categories::after {
+  position: absolute;
+  content: '';
+  background-image: url(../images/common/fish-right.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: rem(120);
+  height: rem(55);
+  left: calc(50% - min(48vw, 38.75rem));
+  top: -30%;
+  z-index: -1;
+  @include mq('md') {
+    width: rem(301);
+    height: rem(138);
+    top: -185%;
+  }
+}
+
+.sub-campaign__category-item {
+  padding: rem(6);
+
+  font-family: $third-font-family;
+  font-weight: $regular;
+  line-height: 1.5714285714;
+  width: 100%;
+  max-width: rem(162);
+  color: $lightGreen;
+  text-align: center;
+  border: 1px solid $lightGreen;
+
+  @include mq('md') {
+  }
+}
+.sub-campaign__category-item.sub-campaign__category-item--current {
+  font-family: $third-font-family;
+  font-weight: $regular;
+  line-height: 1.5714285714;
+  background-color: $lightGreen;
+  text-transform: uppercase;
+  color: $white;
+
+  @include mq('md') {
+  }
+}
