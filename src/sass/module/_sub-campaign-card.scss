@@ -1,41 +1,31 @@
 @use 'global' as *;
 
-
 .sub-campaign-card {
   height: auto;
   display: flex;
   width: 100%;
   flex-direction: column;
+  // height: 100%;
+  width: 100%;
+
+  box-shadow: 0px rem(4) rem(4) rgba(0, 0, 0, 0.25);
   @include mq('md') {
-    // width: 333px;
-    max-width: rem(333);
+    padding-bottom: rem(44);
   }
 }
 
 .sub-campaign-card a {
-  height: 100%;
-  width: 100%;
-  display: block;
-
-  box-shadow: 0px rem(4) rem(4) rgba(0, 0, 0, 0.25);
-  @include mq('md') {
-  }
 }
 
-.sub-campaign-card img{
+.sub-campaign-card img {
   aspect-ratio: 280 / 188;
   object-fit: cover;
   width: 100%;
 
   @include mq('md') {
-  aspect-ratio:520 / 347 ;
+    aspect-ratio: 520 / 347;
   }
 }
-// .top-campaign-swiper__item {
-//   height: 100%;
-//   @include mq('md') {
-//   }
-// }
 
 .sub-campaign-card__body {
   padding: rem(20) rem(16) rem(24);
@@ -76,11 +66,8 @@
 }
 
 .sub-campaign-card__container {
-  overflow-x: hidden;
   background-color: transparent;
   margin-top: rem(3);
-  margin-right: calc(50% - 50vw);
-  width: 100vw;
   height: auto;
   @include mq('md') {
     margin-top: rem(39);
@@ -142,13 +129,50 @@
   }
 }
 
+.sub-campaign-card__content-wrap {
+  @include mq('md') {
+    margin-top: rem(24);
+    padding: 0 rem(24);
+  }
+}
 
+.sub-campaign-card__main-text {
+  @include mq('md') {
+    font-family: $third-font-family;
+    font-size: rem(16);
+    line-height: 1.5;
+    color: $darkGreen;
+    font-weight: $regular;
+  }
+}
+
+.sub-campaign-card__date {
+  @include mq('md') {
+    text-align: center;
+    font-family: $second-font-family;
+    font-size: rem(16);
+    line-height: 1.125;
+    font-weight: $bold;
+    color: $lightGreen;
+    margin-top: rem(32);
+  }
+}
+
+.sub-campaign-card__reservation {
+  @include mq('md') {
+    font-family: $third-font-family;
+    font-size: rem(14);
+    color: $lightGreen;
+    font-weight: $regular;
+    line-height: 1.2857;
+    text-align: center;
+    margin-top: rem(7);
+  }
+}
 
 .sub-campaign-card__button {
-  text-align: center;
-  margin-top: rem(26);
-  padding-bottom: rem(3);
   @include mq('md') {
-    margin-top: rem(67);
+    text-align: center;
+    margin-top: rem(16);
   }
 }

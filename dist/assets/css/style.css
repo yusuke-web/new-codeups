@@ -436,6 +436,13 @@ a {
 	text-align: center;
 }
 
+.common-fv img {
+	-o-object-fit: cover;
+	aspect-ratio: 375/460;
+	object-fit: cover;
+	width: 100%;
+}
+
 .footer {
 	background-color: #408f95;
 	padding-bottom: 3.5rem;
@@ -869,16 +876,11 @@ body.active {
 }
 
 .sub-campaign-card {
+	box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
 	display: flex;
 	flex-direction: column;
 	height: auto;
 	width: 100%;
-}
-
-.sub-campaign-card a {
-	box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
-	display: block;
-	height: 100%;
 	width: 100%;
 }
 
@@ -919,10 +921,7 @@ body.active {
 .sub-campaign-card__container {
 	background-color: transparent;
 	height: auto;
-	margin-right: calc(50% - 50vw);
 	margin-top: 0.1875rem;
-	overflow-x: hidden;
-	width: 100vw;
 }
 
 .sub-campaign-card__text {
@@ -965,21 +964,16 @@ body.active {
 	line-height: 1;
 }
 
-.sub-campaign-card__button {
-	margin-top: 1.625rem;
-	padding-bottom: 0.1875rem;
-	text-align: center;
-}
-
 .sub-campaign-list {
 	grid-row-gap: 2.5rem;
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
+	margin: auto;
 	row-gap: 2.5rem;
+	width: 81.16%;
 }
 
 .sub-campaign {
-	height: 28.75rem;
 	position: relative;
 }
 
@@ -991,7 +985,7 @@ body.active {
 	left: 50%;
 	position: absolute;
 	text-transform: capitalize;
-	top: 39%;
+	top: 50%;
 	transform: translate(-50%, -50%);
 }
 
@@ -1179,10 +1173,30 @@ body.active {
 }
 
 .top-campaign-swiper__item {
+	display: flex;
+	flex-direction: column;
 	height: 100%;
 }
 
+.top-campaign-swiper__img .swiper-slide img,
+.top-campaign-swiper__img .swiper-slide picture {
+	-o-object-fit: cover;
+	aspect-ratio: 280/188;
+	min-height: 0;
+	min-height: initial;
+	object-fit: cover;
+}
+
+.top-campaign-swiper__img img {
+	-o-object-fit: cover;
+	aspect-ratio: 280/188;
+	object-fit: cover;
+}
+
 .top-campaign-swiper__body {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
 	padding: 1.25rem 1rem 1.5rem;
 }
 
@@ -1193,14 +1207,16 @@ body.active {
 	font-size: 0.75rem;
 	font-weight: 400;
 	line-height: 1.8333;
-	max-width: 6.75rem;
 	padding: 0.4375rem 0.6875rem;
 	width: 100%;
+	width: -moz-fit-content;
+	width: fit-content;
 }
 
 .top-campaign-swiper__title {
 	border-bottom: 0.0625rem solid #408f95;
 	color: #0d2936;
+	flex-grow: 1;
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	font-weight: 500;
@@ -1320,25 +1336,13 @@ body.active {
 	text-align: center;
 }
 
-.mv__slider,
-.swiper-slide picture,
-.swiper-slide img {
+.mv__slider .swiper-slide picture,
+.mv__slider .swiper-slide img {
 	-o-object-fit: cover;
 	aspect-ratio: 375/667;
 	height: auto;
 	height: 100vh;
 	min-height: 21.875rem;
-	object-fit: cover;
-	width: 100%;
-}
-
-.swiper-slide.top-campaign-swiper__img,
-.top-campaign-swiper__item img {
-	-o-object-fit: cover;
-	aspect-ratio: 280/188;
-	height: auto;
-	min-height: 0;
-	min-height: initial;
 	object-fit: cover;
 	width: 100%;
 }
@@ -1519,6 +1523,71 @@ body.active {
 	text-align: center;
 }
 
+.sub-campaign-card__pagination {
+	margin-top: 5rem;
+}
+
+.wp-pagenavi {
+	align-items: center;
+	display: flex;
+	gap: 0.75rem;
+	justify-content: center;
+}
+
+.wp-pagenavi a.sub-campaign-card__pagination-prev,
+.wp-pagenavi a.sub-campaign-card__pagination-next {
+	padding: 0.5625rem 0.75rem;
+}
+
+.wp-pagenavi a.sub-campaign-card__pagination-prev::before {
+	border-right: 1px solid #408f95;
+	border-top: 1px solid #408f95;
+	content: "";
+	display: inline-block;
+	height: 0.75rem;
+	left: 0.1875rem;
+	position: relative;
+	top: 0.0625rem;
+	transform: rotate(220deg);
+	transition: 0.3s;
+	width: 0.75rem;
+}
+
+.wp-pagenavi a.sub-campaign-card__pagination-next::after {
+	border-right: 1px solid #408f95;
+	border-top: 1px solid #408f95;
+	content: "";
+	display: inline-block;
+	height: 0.75rem;
+	position: relative;
+	right: 0.1875rem;
+	top: 0.0625rem;
+	transform: rotate(45deg);
+	transition: 0.3s;
+	width: 0.75rem;
+}
+
+.wp-pagenavi a.sub-campaign-card__pagination-next {
+	margin-left: 1.75rem;
+}
+
+.wp-pagenavi a,
+.wp-pagenavi span {
+	background-color: #fff;
+	border: 1px solid #408f95;
+	color: #408f95;
+	font-family: "Lato", sans-serif;
+	font-size: 12px;
+	padding: 0.5625rem 0.908125rem;
+}
+
+.wp-pagenavi span.current {
+	background-color: #408f95;
+	color: #fff;
+	margin-left: 1.75rem;
+	padding: 0.5625rem 0.908125rem;
+}
+
 @media screen and (min-width: 768px) {
 
 .u-desktop {
@@ -1654,6 +1723,10 @@ html {
 .common-contact__button {
 	margin-left: 1.25rem;
 	margin-top: 2.375rem;
+}
+
+.common-fv img {
+	aspect-ratio: 1440/548;
 }
 
 .footer {
@@ -1806,7 +1879,7 @@ html {
 }
 
 .sub-campaign-card {
-	max-width: 20.8125rem;
+	padding-bottom: 2.75rem;
 }
 
 .sub-campaign-card img {
@@ -1848,8 +1921,42 @@ html {
 	font-size: clamp(0.75rem, 0.1338rem + 2.6291vw, 2.5rem);
 }
 
+.sub-campaign-card__content-wrap {
+	margin-top: 1.5rem;
+	padding: 0 1.5rem;
+}
+
+.sub-campaign-card__main-text {
+	color: #0d2936;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+.sub-campaign-card__date {
+	color: #408f95;
+	font-family: "Lato", sans-serif;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1.125;
+	margin-top: 2rem;
+	text-align: center;
+}
+
+.sub-campaign-card__reservation {
+	color: #408f95;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 0.875rem;
+	font-weight: 400;
+	line-height: 1.2857;
+	margin-top: 0.4375rem;
+	text-align: center;
+}
+
 .sub-campaign-card__button {
-	margin-top: 4.1875rem;
+	margin-top: 1rem;
+	text-align: center;
 }
 
 .sub-campaign-list {
@@ -1857,10 +1964,7 @@ html {
 	column-gap: 2.5rem;
 	grid-template-columns: repeat(2, 1fr);
 	row-gap: 5rem;
-}
-
-.sub-campaign {
-	height: 34.25rem;
+	width: 100%;
 }
 
 .sub-campaign__title {
@@ -1992,6 +2096,19 @@ html {
 	margin-top: 2.4375rem;
 }
 
+.top-campaign-swiper__img .swiper-slide img,
+.top-campaign-swiper__img .swiper-slide picture {
+	aspect-ratio: 333/223;
+	min-height: 0;
+	min-height: initial;
+}
+
+.top-campaign-swiper__img img {
+	aspect-ratio: 333/223;
+	min-height: 0;
+	min-height: initial;
+}
+
 .top-campaign-swiper__body {
 	padding: 1.8125rem 1rem 2.5rem;
 }
@@ -2112,18 +2229,10 @@ html {
 	padding-bottom: 0.5rem;
 }
 
-.mv__slider,
-.swiper-slide picture,
-.swiper-slide img {
+.mv__slider .swiper-slide picture,
+.mv__slider .swiper-slide img {
 	aspect-ratio: 1440/768;
 	min-height: 25rem;
-}
-
-.swiper-slide.top-campaign-swiper__img,
-.top-campaign-swiper__item img {
-	aspect-ratio: 333/223;
-	min-height: 0;
-	min-height: initial;
 }
 
 .top-price {

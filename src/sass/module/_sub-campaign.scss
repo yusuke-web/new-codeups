@@ -1,10 +1,8 @@
 @use 'global' as *;
 
 .sub-campaign {
-  height: rem(460);
   position: relative;
   @include mq('md') {
-    height: rem(548);
   }
 }
 
@@ -19,7 +17,7 @@
 
 .sub-campaign__title {
   position: absolute;
-  top: 39%;
+  top: 50%;
   left: 50%;
 
   transform: translate(-50%, -50%);

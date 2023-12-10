@@ -1,8 +1,8 @@
 @use 'global' as *;
 
-.mv__slider,
-.swiper-slide picture,
-.swiper-slide img {
+
+.mv__slider .swiper-slide picture,
+.mv__slider .swiper-slide img {
   aspect-ratio: 375 / 667;
   width: 100%;
   height: auto;
@@ -15,16 +15,4 @@
   }
 }
 
-.swiper-slide.top-campaign-swiper__img,
-.top-campaign-swiper__item img {
-  aspect-ratio: 280 / 188;
-  object-fit: cover;
-  width: 100%;
-  height: auto;
-  min-height: initial;
 
-  @include mq('md') {
-    aspect-ratio: 333 / 223;
-    min-height: initial;
-  }
-}
