@@ -1,9 +1,7 @@
 @use "global" as *;
 
-
-.layout-about-us{
-
-  
+.layout-information {
+  margin-top: rem(120);
   @include mq('md') {
   margin-top: rem(150);
   }

@@ -159,3 +159,36 @@ jQuery(function ($) {
     });
   });
 });
+
+// モーダル
+
+// 画像を取得
+var images = document.querySelectorAll('.gallery__item img');
+var modal = document.querySelector('.gallery-modal');
+var modalImg = document.querySelector('.modal__image'); // モーダル内の画像要素
+var captionText = document.querySelector('.caption'); // キャプション要素
+
+
+// 画像をクリックしたときのイベント
+images.forEach(image => {
+  image.onclick = function() {
+    modal.classList.add('show');
+    modalImg.src = this.src; // クリックされた画像のsrcを設定
+
+    // if (this.classList.contains('js-tall')) {
+    //   modalImg.classList.add('tall');
+    // } else {
+    //   modalImg.classList.remove('tall');
+    // }
+    if (this.parentElement.matches('.gallery__item:nth-of-type(6n + 1), .gallery__item:nth-of-type(6n + 6)')) {
+      modalImg.classList.add('special-size');
+    } else {
+      modalImg.classList.remove('special-size');
+    }
+  }
+});
+
+// モーダルをクリックしたときに閉じる
+modal.onclick = function() {
+  modal.classList.remove('show');
+}

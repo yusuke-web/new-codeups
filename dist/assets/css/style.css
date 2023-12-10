@@ -150,12 +150,20 @@ a {
 	margin-top: 4.75rem;
 }
 
+.layout-gallery {
+	margin-top: 2.5rem;
+}
+
 .layout-header {
 	left: 0;
 	position: fixed;
 	right: 0;
 	top: 0;
 	z-index: 900;
+}
+
+.layout-information {
+	margin-top: 7.5rem;
 }
 
 .layout-page-top {
@@ -192,8 +200,99 @@ a {
 	margin-top: 5.25rem;
 }
 
+.about-us__inner {
+	position: relative;
+}
+
+.about-us__inner::after {
+	background-image: url(../images/common/fish-right.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	bottom: -12%;
+	content: "";
+	height: 3.4375rem;
+	left: calc(50% - min(48vw, 40rem));
+	position: absolute;
+	width: 7.5rem;
+}
+
+.about-us__container {
+	position: relative;
+}
+
+.about-us__image {
+	display: flex;
+	justify-content: center;
+	margin-top: 1.8125rem;
+	position: relative;
+}
+
+.about-us-image__left {
+	display: none;
+}
+
+.about-us-image__left img {
+	-o-object-fit: cover;
+	aspect-ratio: 128/194;
+	object-fit: cover;
+}
+
+.about-us-image__right {
+	position: relative;
+}
+
+.about-us-image__right img {
+	-o-object-fit: cover;
+	aspect-ratio: 281/186;
+	object-fit: cover;
+	width: 100%;
+}
+
+.about-us__body {
+	margin-top: 2.5rem;
+}
+
+.about-us__title {
+	color: #fff;
+	font-family: "Gotu", sans-serif;
+	font-size: 2.5rem;
+	font-weight: 400;
+	left: 6.956521739%;
+	line-height: 1;
+	position: absolute;
+	text-align: left;
+	top: 10.52631579%;
+}
+
+.about-us__text {
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	text-align: left;
+}
+
+.about-us__box {
+	margin-top: 1.0625rem;
+	text-align: center;
+}
+
+.about-us__button {
+	margin-top: 1.625rem;
+}
+
 .breadcrumbs {
 	margin-top: 0.5rem;
+}
+
+.breadcrumbs__inner {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 70.625rem;
+	padding-left: 0.9375rem;
+	padding-right: 0.9375rem;
+	width: 100%;
 }
 
 .breadcrumbs span a::after {
@@ -436,6 +535,22 @@ a {
 	text-align: center;
 }
 
+.common-fv {
+	position: relative;
+}
+
+.common-fv__title {
+	color: #fff;
+	font-family: "Lato", sans-serif;
+	font-size: 2.5rem;
+	font-weight: 400;
+	left: 50%;
+	position: absolute;
+	text-transform: capitalize;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
 .common-fv img {
 	-o-object-fit: cover;
 	aspect-ratio: 375/460;
@@ -533,6 +648,74 @@ a {
 	font-weight: 400;
 	line-height: 1.5;
 	margin-top: 1.6875rem;
+}
+
+.gallery-modal {
+	align-items: center;
+	background-color: rgba(32, 32, 32, 0.8);
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	left: 0;
+	opacity: 0;
+	pointer-events: none;
+	position: fixed;
+	top: 0;
+	transition: opacity 0.5s;
+	width: 100%;
+	z-index: 1;
+}
+
+.gallery-modal.show {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.modal__content {
+	display: block;
+	margin: auto;
+	max-width: 57.5rem;
+	opacity: 0;
+	transform: scale(0);
+	transition: opacity 0.5s, transform 0.5s;
+	width: 80%;
+}
+
+.modal__content.special-size {
+	width: min(100%, 25rem); /* 幅を特定の値に設定 */
+}
+
+.modal__content.tall {
+	width: min(100%, 25rem);
+}
+
+.gallery-modal.show .modal__content {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.gallery-list {
+	grid-gap: 0.5rem;
+	cursor: pointer;
+	display: grid;
+	gap: 0.5rem;
+}
+
+.gallery__list {
+	margin-top: 2.5rem;
+}
+
+.gallery__item img {
+	-o-object-fit: cover;
+	aspect-ratio: 345/219;
+	height: 100%;
+	object-fit: cover;
+	width: 100%;
+}
+
+.gallery__item:nth-of-type(6n + 1) img,
+.gallery__item:nth-of-type(6n + 6) img {
+	aspect-ratio: 345/523;
 }
 
 .header {
@@ -764,6 +947,72 @@ body.active {
 	overflow: hidden;
 }
 
+.information-tab__list {
+	grid-column-gap: 1.25rem;
+	-moz-column-gap: 1.25rem;
+	column-gap: 1.25rem;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr;
+}
+
+.information-tab__item {
+	background-color: #ddf0f1;
+	box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+	color: #408f95;
+	cursor: pointer;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 0.875rem;
+	font-weight: 400;
+	padding: 0.625rem 1rem;
+	text-align: center;
+	transition: 0.3s;
+}
+
+.information-tab__item.is-active {
+	background-color: #408f95;
+	color: #fff;
+}
+
+.information-tab__contents {
+	margin-top: 1rem;
+}
+
+.information-tab__content {
+	border: 1px solid #408f95;
+	padding: 1.5rem;
+}
+
+.information-tab__content-title {
+	border-bottom: 1px solid #408f95;
+	color: #0d2936;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: 1;
+	padding-bottom: 0.5rem;
+}
+
+.information-tab__content-text {
+	color: #111;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	margin-top: 0.5rem;
+}
+
+.information-tab__content-img {
+	margin-top: 1rem;
+}
+
+.information-tab__content-img img {
+	-o-object-fit: cover;
+	aspect-ratio: 297/189;
+	object-fit: cover;
+	width: 100%;
+}
+
 .inner {
 	margin-left: auto;
 	margin-right: auto;
@@ -973,22 +1222,6 @@ body.active {
 	width: 81.16%;
 }
 
-.sub-campaign {
-	position: relative;
-}
-
-.sub-campaign__title {
-	color: #fff;
-	font-family: "Lato", sans-serif;
-	font-size: 2.5rem;
-	font-weight: 400;
-	left: 50%;
-	position: absolute;
-	text-transform: capitalize;
-	top: 50%;
-	transform: translate(-50%, -50%);
-}
-
 .swiper-wrapper {
 	padding-bottom: 0.625rem;
 }
@@ -1008,26 +1241,26 @@ body.active {
 	position: relative;
 }
 
-.top-about-image__left {
+.top-about-us-image__left {
 	left: 0;
 	top: 0;
 	width: 37.1%;
 	z-index: 2;
 }
 
-.top-about-image__left img {
+.top-about-us-image__left img {
 	-o-object-fit: cover;
 	aspect-ratio: 128/194;
 	object-fit: cover;
 }
 
-.top-about-image__right {
+.top-about-us-image__right {
 	margin-left: -18.5%;
 	margin-top: 7.25%;
 	width: 81.45%;
 }
 
-.top-about-image__right img {
+.top-about-us-image__right img {
 	-o-object-fit: cover;
 	aspect-ratio: 281/186;
 	object-fit: cover;
@@ -1602,12 +1835,24 @@ html {
 	font-size: 1.4814814815vw;
 }
 
+.layout-about-us {
+	margin-top: 9.375rem;
+}
+
 .layout-common-contact {
 	margin-top: 7.3125rem;
 }
 
 .layout-footer {
 	margin-top: 11.25rem;
+}
+
+.layout-gallery {
+	margin-top: 7.5rem;
+}
+
+.layout-information {
+	margin-top: 9.375rem;
 }
 
 .layout-page-top {
@@ -1645,6 +1890,75 @@ html {
 
 .layout-top-voice {
 	margin-top: 8.75rem;
+}
+
+.about-us__inner::after {
+	background-image: url(../images/common/fish-right.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+	height: 8.625rem;
+	left: calc(50% - min(48vw, 40rem));
+	position: absolute;
+	top: -12%;
+	width: 18.8125rem;
+}
+
+.about-us__image {
+	margin-top: 2.5rem;
+	position: relative;
+}
+
+.about-us-image__left {
+	display: block;
+	width: 37.1%;
+	z-index: 2;
+}
+
+.about-us-image__left img {
+	aspect-ratio: 400/606;
+}
+
+.about-us-image__right {
+	margin-left: -18.5%;
+	margin-top: 7.25%;
+	position: relative;
+	width: 81.45%;
+}
+
+.about-us-image__right img {
+	aspect-ratio: 880/581;
+}
+
+.about-us__body {
+	align-items: center;
+	display: flex;
+	gap: 2.5rem;
+	left: 17%;
+	margin-top: 0;
+	padding: 0 0.9375rem;
+	position: absolute;
+	top: 35%;
+}
+
+.about-us__title {
+	color: #fff;
+	font-size: 5rem;
+	left: 0;
+	line-height: 1.25;
+	position: static;
+	top: 0;
+	z-index: 50;
+}
+
+.about-us__text {
+	color: #fff;
+	max-width: 25rem;
+}
+
+.about-us__button {
+	margin-top: 2.5rem;
 }
 
 .sub-campaign__categories {
@@ -1725,6 +2039,13 @@ html {
 	margin-top: 2.375rem;
 }
 
+.common-fv__title {
+	font-size: 5rem;
+	letter-spacing: 0.05em;
+	line-height: 1.25;
+	top: 39.3%;
+}
+
 .common-fv img {
 	aspect-ratio: 1440/548;
 }
@@ -1783,6 +2104,36 @@ html {
 	text-align: center;
 }
 
+.gallery-list {
+	grid-auto-flow: dense;
+	grid-template-columns: repeat(11, 1fr);
+}
+
+.gallery__list {
+	margin-top: 7.5rem;
+}
+
+.gallery__item {
+	grid-column: span 6;
+	grid-row: span 1;
+	overflow: hidden;
+}
+
+.gallery__item:nth-of-type(6n + 1),
+.gallery__item:nth-of-type(6n + 6) {
+	grid-column: span 5;
+	grid-row: span 2;
+}
+
+.gallery__item img {
+	aspect-ratio: 580/369;
+}
+
+.gallery__item:nth-of-type(6n + 1) img,
+.gallery__item:nth-of-type(6n + 6) img {
+	aspect-ratio: 492/746;
+}
+
 .header {
 	height: 5.625rem;
 }
@@ -1806,6 +2157,32 @@ html {
 
 .header__hamburger {
 	display: none;
+}
+
+.information-tab__item {
+	align-items: center;
+	display: flex;
+	font-size: 1.5rem;
+	margin-left: 0.5rem;
+}
+
+.information-tab__item-name::before {
+	background-image: url(../images/information/whale-green.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+	display: inline-block;
+	height: 4rem;
+	width: 4rem;
+}
+
+.information-tab__contents {
+	margin-top: 1.5rem;
+}
+
+.information-tab__content-img {
+	margin-top: 0;
 }
 
 .inner {
@@ -1967,13 +2344,6 @@ html {
 	width: 100%;
 }
 
-.sub-campaign__title {
-	font-size: 5rem;
-	letter-spacing: 0.05em;
-	line-height: 1.25;
-	top: 39.3%;
-}
-
 .swiper-wrapper {
 	height: 100%;
 	padding-bottom: 0.625rem;
@@ -1997,15 +2367,15 @@ html {
 	position: relative;
 }
 
-.top-about-image__left img {
+.top-about-us-image__left img {
 	aspect-ratio: 400/606;
 }
 
-.top-about-image__right {
+.top-about-us-image__right {
 	position: relative;
 }
 
-.top-about-image__right img {
+.top-about-us-image__right img {
 	aspect-ratio: 880/581;
 }
 

@@ -1,3 +1,148 @@
 @use "global" as *;
 
 
+
+
+.about-us__inner {
+  position: relative;
+}
+.about-us__inner::after {
+  position: absolute;
+    content: '';
+    background-image: url(../images/common/fish-right.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: rem(120);
+    height: rem(55);
+    left: calc(50% - min(48vw, 40rem));
+    bottom: -12%;
+  @include mq('md') {
+    position: absolute;
+    content: '';
+    background-image: url(../images/common/fish-right.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: rem(301);
+    height: rem(138);
+    left: calc(50% - min(48vw, 40rem));
+    top: -12%;
+  }
+
+}
+
+.about-us__container {
+  position: relative;
+}
+.about-us__image {
+  margin-top: rem(29);
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  @include mq('md') {
+    margin-top: rem(40);
+    position: relative;
+  }
+}
+
+.about-us-image__left{
+  display: none;
+  @include mq('md') {
+    width: 37.1%;
+    z-index: 2;
+    display: block;
+  }
+}
+
+
+.about-us-image__left img {
+  aspect-ratio: 128 / 194;
+  object-fit: cover;
+  @include mq('md') {
+    aspect-ratio: 400 / 606;
+  }
+}
+.about-us-image__right {
+position: relative;
+
+  @include mq('md') {
+    position: relative;
+    margin-left: -18.5%;
+    margin-top: 7.25%;
+    width: 81.45%;
+  }
+}
+.about-us-image__right img {
+  aspect-ratio: 281 / 186;
+  object-fit: cover;
+  width: 100%;
+  @include mq('md') {
+    aspect-ratio: 880 / 581;
+  }
+}
+
+.about-us__body {
+  margin-top: rem(40);
+  @include mq('md') {
+    position: absolute;
+    margin-top: 0;
+    display: flex;
+    gap: rem(40);
+    align-items: center;
+
+    padding: 0 rem(15);
+    top: 35%;
+    left: 17%;
+  }
+}
+
+.about-us__title {
+  position: absolute;
+  top: 10.52631579%;
+  left: 6.956521739%;
+  font-family: $base-font-family;
+  font-size: rem(40);
+  line-height: 1;
+  font-weight: $regular;
+  color: $white;
+  text-align: left;
+  @include mq('md') {
+    top: 0;
+    left: 0;
+    position: static;
+    color: $white;
+    font-size: rem(80);
+    line-height: 1.25;
+    z-index: 50;
+  }
+}
+
+.about-us__text {
+  font-family: $third-font-family;
+  font-size: rem(16);
+  font-weight: $regular;
+  line-height: 1.5;
+  text-align: left;
+  @include mq('md') {
+    max-width: rem(400);
+    color: $white;
+  }
+}
+
+.about-us__box {
+  text-align: center;
+  margin-top: rem(17);
+  @include mq('md') {
+    // margin-top: rem(40);
+  }
+}
+.about-us__button {
+  margin-top: rem(26);
+  @include mq('md') {
+    margin-top: rem(40);
+  }
+}
+
+

@@ -59,10 +59,10 @@
               <a href="/campaign.html">campaign<span>キャンペーン</span></a>
             </li>
             <li class="header__nav-item">
-              <a href="#top-about-us">About us<span>私たちについて</span></a>
+              <a href="#about-us">About us<span>私たちについて</span></a>
             </li>
             <li class="header__nav-item">
-              <a href="#top-info">information<span>ダイビング情報</span></a>
+              <a href="/information.html">information<span>ダイビング情報</span></a>
             </li>
             <li class="header__nav-item">
               <a href="#top-blog">blog<span>ブログ</span></a>
@@ -114,14 +114,14 @@
               <div class="header__drawer-container">
                 <ul class="header__drawer-items">
                   <li class="header__drawer-item header__drawer-title">
-                    <a href="#top-about-us">私たちについて</a>
+                    <a href="#about-us">私たちについて</a>
                   </li>
                 </ul>
               </div>
               <div class="header__drawer-container">
                 <ul class="header__drawer-items">
                   <li class="header__drawer-item header__drawer-title">
-                    <a href="#top-info">ダイビング情報</a>
+                    <a href="/information.html">ダイビング情報</a>
                   </li>
                   <li class="header__drawer-item">
                     <a href="#top-info">ライセンス講習</a>
@@ -203,22 +203,22 @@
 
     <main>
       <!-- common FV -->
-      <div class="about-us layout-about-us">
-        <div class="about-us__inner">
-          <picture class="about-us__img common-fv">
+      <div class="common-fv common-fv layout-common-fv">
+        <div class="common-fv__inner">
+          <picture class="common-fv__img common-fv">
             <source
-              srcset="./assets/images/about-us/about-us-SP.jpg"
+              srcset="./assets/images/about-us/about-us-PC.jpg"
               media="(min-width: 768px)" />
             <img
               src="./assets/images/about-us/about-us-SP.jpg"
               alt="黄色い海水魚" />
           </picture>
         </div>
-        <h1 class="about-us__title">Campaign</h1>
+        <h1 class="common-fv__title">About us</h1>
       </div>
       <!-- キャンペーン画像 -->
       <div class="about-us-images layout-about-us-images">
-        <div class="about-us__inner inner">
+        <div class="about-us__breadcrumbs-inner breadcrumbs__inner">
           <!-- パンくずリスト -->
           <div class="about-us__breadcrumbs breadcrumbs layout-breadcrumbs">
             <span>
@@ -230,9 +230,117 @@
               <span>私たちについて</span>
             </span>
           </div>
-
         </div>
       </div>
+
+      <!-- about　us img -->
+      <section id="about-us" class="about-us layout-about-us">
+        <div class="about-us__inner inner">
+          <div class="about-us__container">
+            <!-- <div class="top-campaign__section-title section-title">
+              <p class="section-title__main">
+                <span class="section-title__color">A</span>bout us
+              </p>
+              <h3 class="section-title__sub">私たちについて</h3>
+            </div> -->
+
+            <div class="about-us__image">
+              <picture class="about-us-image__left">
+                <source
+                  srcset="./assets/images/common/aboutUs-leftPC.jpg"
+                  media="(min-width: 768px)" />
+                <img
+                  src="./assets/images/common/aboutUs-leftSP.jpg"
+                  alt="シーサーの画像" />
+              </picture>
+              <picture class="about-us-image__right">
+                <source
+                  srcset="./assets/images/common/aboutUs-rightPC.jpg"
+                  media="(min-width: 768px)" />
+                <img
+                  src="./assets/images/common/aboutUs-rightSP.jpg"
+                  alt="ヤッコの画像" />
+              </picture>
+            </div>
+            <div class="about-us__body">
+              <h4 class="about-us__title">
+                Dive&nbsp;into<br />
+                the&nbsp;Ocean
+              </h4>
+              <div class="about-us__box">
+                <p class="about-us__text">
+                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ギャラリー -->
+      <section class="gallery layhout-gallery">
+        <div class="gallery__inner inner">
+          <div class="gallery-container">
+            <div class="gallery__section-title section-title">
+              <p class="section-title__main section-title__main--gallery">
+                <span class="section-title__color section-title__color--gallery"
+                  >G</span
+                >ellery
+              </p>
+              <h3 class="section-title__sub section-title__sub--gallery">
+                フォト
+              </h3>
+            </div>
+            <ul class="gallery__list gallery-list">
+              <li class="gallery__item">
+                <img
+                  src="./assets/images/about-us/about-us-gallery-SP1.jpg"
+                  alt="珊瑚礁に群がるハナダイ"
+                  class="js-tall"/>
+              </li>
+              <li class="gallery__item">
+                <img
+                  src="./assets/images/about-us/about-us-gallery-SP2.jpg"
+                  alt="珊瑚礁に群がるハナダイ" />
+              </li>
+              <li class="gallery__item">
+                <img
+                  src="./assets/images/about-us/about-us-gallery-SP3.jpg"
+                  alt="珊瑚礁に群がるハナダイ" />
+              </li>
+              <li class="gallery__item">
+                <img
+                  src="./assets/images/about-us/about-us-gallery-SP4.jpg"
+                  alt="珊瑚礁に群がるハナダイ" />
+              </li>
+              <li class="gallery__item">
+                <img
+                  src="./assets/images/about-us/about-us-gallery-SP5.jpg"
+                  alt="珊瑚礁に群がるハナダイ" />
+              </li>
+              <li class="gallery__item">
+                <img
+                  src="./assets/images/about-us/about-us-gallery-SP6.jpg"
+                  alt="珊瑚礁に群がるハナダイ" 
+                  class="js-tall"/>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- モーダル -->
+        <div class="gallery__modal gallery-modal js-gallery-modal">
+          <img
+            class="modal__content modal__image"
+            src="./assets/images/about-us/about-us-gallery-SP1.jpg"
+            alt="" />
+            <div class="caption"></div>
+        </div>
+        <!-- <div class="gallery-modal">
+          <img class="modal__content modal__image" src="./assets/images/about-us/about-us-gallery-SP1.jpg" alt="">
+          <div class="caption"></div>
+        </div> -->
+      </section>
 
       <!-- common-contact -->
       <section id="common-contact" class="common-contact layout-common-contact">
@@ -327,7 +435,7 @@
               <div class="footer__container">
                 <ul class="footer__items">
                   <li class="footer__item footer__item--title">
-                    <a href="#top-about-us">私たちについて</a>
+                    <a href="#about-us">私たちについて</a>
                   </li>
                 </ul>
               </div>
@@ -336,7 +444,7 @@
               <div class="footer__container">
                 <ul class="footer__items">
                   <li class="footer__item footer__item--title">
-                    <a href="#top-info">ダイビング情報</a>
+                    <a href="/information.html">ダイビング情報</a>
                   </li>
                   <li class="footer__item">
                     <a href="#top-info">ライセンス講習</a>

@@ -1,0 +1,103 @@
+@use 'global' as *;
+
+.information-tab__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  column-gap: rem(20);
+  @include mq('md') {
+  }
+}
+
+.information-tab__item {
+  padding: rem(10) rem(16);
+
+  font-family: $third-font-family;
+  font-size: rem(14);
+  font-weight: $regular;
+  transition: 0.3s;
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+
+  background-color: $lightBlue;
+  color: $lightGreen;
+  text-align: center;
+  cursor: pointer;
+  @include mq('md') {
+    font-size: rem(24);
+    display: flex;
+    align-items: center;
+    margin-left: rem(8);
+  }
+}
+
+.information-tab__item.is-active {
+  background-color: $lightGreen;
+  color: $white;
+}
+
+// .information-tab__item-name {
+
+// }
+// .information-tab__item-name.is-active {
+//   color: $white;
+// }
+
+.information-tab__item-name::before {
+  @include mq('md') {
+    background-image: url(../images/information/whale-green.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    content: '';
+    width: rem(64);
+    height: rem(64);
+    display: inline-block;
+  }
+}
+
+.information-tab__contents {
+  margin-top: rem(16);
+
+  @include mq('md') {
+    margin-top: rem(24);
+  }
+}
+
+.information-tab__content {
+  padding: rem(24);
+  border: 1px solid $lightGreen;
+
+  @include mq('md') {
+  }
+}
+.information-tab__content-title {
+  font-family: $third-font-family;
+  font-weight: $bold;
+  font-size: rem(24);
+  color: $darkGreen;
+  line-height: 1;
+  border-bottom: 1px solid $lightGreen;
+  padding-bottom: rem(8);
+  @include mq('md') {
+  }
+}
+
+.information-tab__content-text {
+  margin-top: rem(8);
+  font-family: $third-font-family;
+  font-weight: $regular;
+  font-size: rem(16);
+  line-height: 1.5;
+  color: $black;
+}
+.information-tab__content-img {
+  margin-top: rem(16);
+  @include mq('md') {
+    margin-top: 0;
+  }
+}
+.information-tab__content-img img {
+  aspect-ratio: 297 / 189;
+  object-fit: cover;
+  width: 100%;
+}

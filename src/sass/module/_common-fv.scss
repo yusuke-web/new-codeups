@@ -1,5 +1,40 @@
 @use 'global' as *;
 
+.common-fv {
+  position: relative;
+  @include mq('md') {
+  }
+}
+
+.common-fv__img img {
+  // width: 100%;
+  // object-fit: cover;
+  // height: rem(445);
+  // @include mq('md') {
+  //   height: rem(543);
+  // }
+}
+
+.common-fv__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  font-family: $second-font-family;
+  font-weight: $regular;
+  font-size: rem(40);
+  text-transform: capitalize;
+  color: $white;
+  @include mq('md') {
+    font-size: rem(80);
+    top: 39.3%;
+    letter-spacing: 0.05em;
+    line-height: 1.25;
+  }
+}
+
 .common-fv img {
   aspect-ratio: 375 / 460;
   object-fit: cover;

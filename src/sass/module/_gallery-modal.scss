@@ -1,0 +1,50 @@
+@use 'global' as *;
+
+.gallery-modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(32, 32, 32, 0.8);
+  opacity: 0;
+  transition: opacity 0.5s;
+  pointer-events: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-modal.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal__content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: rem(920);
+  // max-height: rem(746);
+
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.5s, transform 0.5s;
+  @include mq('md') {
+    // width: min(100%, 25rem);
+  }
+}
+
+.modal__content.special-size {
+  width: min(100%, 25rem); /* 幅を特定の値に設定 */
+}
+.modal__content.tall {
+  width: min(100%, 25rem);
+}
+
+.gallery-modal.show .modal__content {
+  opacity: 1;
+  transform: scale(1);
+}

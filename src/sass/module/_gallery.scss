@@ -1,0 +1,50 @@
+@use 'global' as *;
+
+.gallery-list {
+  display: grid;
+  gap: rem(8);
+  cursor: pointer;
+  @include mq('md') {
+    grid-template-columns: repeat(11, 1fr);
+    grid-auto-flow: dense;
+  }
+}
+
+.gallery__list {
+  margin-top: rem(40);
+  @include mq('md') {
+    margin-top: rem(120);
+  }
+}
+
+.gallery__item {
+  @include mq('md') {
+    grid-column: span 6;
+    grid-row:  span 1;
+    overflow: hidden;
+  }
+}
+.gallery__item:nth-of-type(6n + 1),
+.gallery__item:nth-of-type(6n + 6) {
+  @include mq('md') {
+    grid-column: span 5;
+    grid-row: span 2;
+  }
+}
+.gallery__item img {
+  aspect-ratio: 345 / 219;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  @include mq('md') {
+    aspect-ratio: 580 / 369;
+  }
+}
+
+.gallery__item:nth-of-type(6n + 1) img,
+.gallery__item:nth-of-type(6n + 6) img {
+  aspect-ratio: 345/523;
+  @include mq('md') {
+    aspect-ratio: 492 / 746;
+  }
+}

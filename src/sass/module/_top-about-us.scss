@@ -34,7 +34,7 @@
   }
 }
 
-.top-about-image__left {
+.top-about-us-image__left {
   left: 0;
   top: 0;
   width: 37.1%;
@@ -43,14 +43,14 @@
   }
 }
 
-.top-about-image__left img {
+.top-about-us-image__left img {
   aspect-ratio: 128 / 194;
   object-fit: cover;
   @include mq('md') {
     aspect-ratio: 400 / 606;
   }
 }
-.top-about-image__right {
+.top-about-us-image__right {
   margin-left: -18.5%;
   margin-top: 7.25%;
   width: 81.45%;
@@ -58,7 +58,7 @@
     position: relative;
   }
 }
-.top-about-image__right img {
+.top-about-us-image__right img {
   aspect-ratio: 281 / 186;
   object-fit: cover;
   width: 100%;
