@@ -9,7 +9,7 @@
 }
 
 .header--green {
-  background-color: #408f95; /* 希望の緑色を指定 */
+  background-color: #408f95; 
 }
 .header__inner {
   padding-left: rem(15);
@@ -189,7 +189,7 @@
   right: 0;
   left: 0;
   width: 100%;
-  height: calc(100vh - 80px);
+  height: calc(100vh - rem(80));
   background-color: $lightGreen;
   overflow-y: scroll;
   scrollbar-width: none;

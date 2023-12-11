@@ -2,6 +2,6 @@
 
 .layout-top-price {
   @include mq('md') {
-    margin-top: 140px;
+    margin-top: rem(140);
   }
 }

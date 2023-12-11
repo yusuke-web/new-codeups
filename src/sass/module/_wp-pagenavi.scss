@@ -23,8 +23,8 @@
   position: relative;
   top: rem(1);
   left: rem(3);
-  border-right: 1px solid $lightGreen;
-  border-top: 1px solid $lightGreen;
+  border-right: rem(1) solid $lightGreen;
+  border-top: rem(1) solid $lightGreen;
   content: '';
   display: inline-block;
   transition: 0.3s;
@@ -39,8 +39,8 @@
   position: relative;
   top: rem(1);
   right: rem(3);
-  border-right: 1px solid $lightGreen;
-  border-top: 1px solid $lightGreen;
+  border-right: rem(1) solid $lightGreen;
+  border-top: rem(1) solid $lightGreen;
   content: '';
   display: inline-block;
   transition: 0.3s;
@@ -60,7 +60,7 @@
   font-size: rem(16);
   color: $lightGreen;
   font-weight: $bold;
-  border: 1px solid $lightGreen;
+  border: rem(1) solid $lightGreen;
   background-color: $white;
   font-family: $second-font-family;
   padding: rem(6) rem(13.36);

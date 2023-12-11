@@ -31,8 +31,8 @@
 .breadcrumbs span a::after {
   position: relative;
   margin-left: rem(2);
-  border-right: 1px solid $darkGreen;
-  border-top: 1px solid $darkGreen;
+  border-right: rem(1) solid $darkGreen;
+  border-top: rem(1) solid $darkGreen;
   content: '';
   display: inline-block;
   height: rem(7);

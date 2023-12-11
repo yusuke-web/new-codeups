@@ -1,8 +1,6 @@
 "use strict";
 
 jQuery(function ($) {
-  console.log('クリックされました');
-
   // この中であればWordpressでも「$」が使用可能になる
   // ヘッダーの高さ分だけコンテンツを下げる
 
@@ -196,7 +194,6 @@ jQuery(function ($) {
 
 // information タブ切り替え
 
-console.log('テスト');
 $(function () {
   var tabButton = $('.js-tab-button'),
     tabContent = $('.js-tab-content');
