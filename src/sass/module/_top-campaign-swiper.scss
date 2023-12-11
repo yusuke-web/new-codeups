@@ -9,7 +9,6 @@
   width: 100%;
   flex-direction: column;
   @include mq('md') {
-    // width: 333px;
     max-width: rem(333);
   }
 }
@@ -42,23 +41,6 @@
   }
 }
 
-// ぺぺさんに教えてもらったやつ
-
-// .top-campaign-swiper__item .swiper-slide img,
-// .top-campaign-swiper__item .swiper-slide picture {
-//   aspect-ratio: 280 / 188;
-//   object-fit: cover;
-//   min-height: initial;
-//   @include mq('md') {
-//     aspect-ratio: 333/223;
-//     min-height: initial;
-//   }
-// }
-
-// ぺぺさん👆
-
-// .top-campaign-swiper__slider,
-// .top-campaign-swiper__img,
 .top-campaign-swiper__img .swiper-slide img,
 .top-campaign-swiper__img .swiper-slide picture {
   aspect-ratio: 280 / 188;
@@ -77,35 +59,9 @@
     min-height: initial;
   }
 }
-// .swiper-slide.top-campaign-swiper__img,
-// .top-campaign-swiper__item img {
-//   aspect-ratio: 280 / 188;
-//   object-fit: cover;
-//   width: 100%;
-//   height: auto;
-//   min-height: initial;
-
-//   @include mq('md') {
-//     aspect-ratio: 333 / 223;
-//     min-height: initial;
-//   }
-
-// .top-campaign-swiper__slider,
-// .top-campaign-swiper__img,
-// .swiper-slide img,
-// .swiper-slide picture {
-//   aspect-ratio: 280 / 188;
-//   object-fit: cover;
-//   min-height: initial;
-//   @include mq('md') {
-//     aspect-ratio: 333/223;
-//     min-height: initial;
-//   }
-// }
 
 .top-campaign-swiper__body {
   padding: rem(20) rem(16) rem(24);
-  // height: 100%;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -118,7 +74,6 @@
   border: rem(1) solid $lightGreen;
   padding: rem(7) rem(11);
   width: 100%;
-  // max-width: rem(108);
   width: fit-content;
 
   font-family: $third-font-family;

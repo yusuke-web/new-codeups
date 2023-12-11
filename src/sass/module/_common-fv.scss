@@ -6,15 +6,6 @@
   }
 }
 
-.common-fv__img img {
-  // width: 100%;
-  // object-fit: cover;
-  // height: rem(445);
-  // @include mq('md') {
-  //   height: rem(543);
-  // }
-}
-
 .common-fv__title {
   position: absolute;
   top: 50%;
@@ -29,8 +20,7 @@
   color: $white;
   @include mq('md') {
     font-size: rem(80);
-    top: 39.3%;
-    letter-spacing: 0.05em;
+    top: 59.3%;
     line-height: 1.25;
   }
 }

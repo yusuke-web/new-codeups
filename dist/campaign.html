@@ -62,7 +62,9 @@
               <a href="/about-us.html">About us<span>私たちについて</span></a>
             </li>
             <li class="header__nav-item">
-              <a href="/information.html">information<span>ダイビング情報</span></a>
+              <a href="/information.html"
+                >information<span>ダイビング情報</span></a
+              >
             </li>
             <li class="header__nav-item">
               <a href="/blog.html">blog<span>ブログ</span></a>
@@ -204,16 +206,16 @@
     <main>
       <!-- common FV -->
       <div class="common-fv common-fv layout-common-fv">
-        <div class="common-fv__inner">
-          <picture class="common-fv__img common-fv">
-            <source
-              srcset="./assets/images/campaign/campaign-fv-PC.jpg"
-              media="(min-width: 768px)" />
-            <img
-              src="./assets/images/campaign/campaign-fv-SP.jpg"
-              alt="黄色い海水魚" />
-          </picture>
-        </div>
+        <!-- <div class="common-fv__inner"> -->
+        <picture class="common-fv__img common-fv">
+          <source
+            srcset="./assets/images/campaign/campaign-fv-PC.jpg"
+            media="(min-width: 768px)" />
+          <img
+            src="./assets/images/campaign/campaign-fv-SP.jpg"
+            alt="黄色い海水魚" />
+        </picture>
+        <!-- </div> -->
         <h1 class="common-fv__title">Campaign</h1>
       </div>
       <!-- キャンペーン画像 -->
@@ -223,11 +225,11 @@
           <div class="sub-campaign__breadcrumbs breadcrumbs layout-breadcrumbs">
             <span>
               <a href="index.html">
-                <span>Top</span>
+                <span class="breadcrumbs__capital">Top</span>
               </a>
             </span>
             <span>
-              <span>キャンペーン</span>
+              <span class="breadcrumb__sub">キャンペーン</span>
             </span>
           </div>
           <!-- キャンペーン　カテゴリ -->
@@ -290,7 +292,7 @@
               <!-- </div> -->
               <div class="sub-campaign-card__button u-desktop">
                 <a href="" class="button"
-                  >View more
+                  >Contact us
                   <span class="button__arrow"></span>
                 </a>
               </div>
@@ -333,7 +335,7 @@
               <!-- </div> -->
               <div class="sub-campaign-card__button u-desktop">
                 <a href="" class="button"
-                  >View more
+                  >Contact us
                   <span class="button__arrow"></span>
                 </a>
               </div>
@@ -350,7 +352,7 @@
               </picture>
               <div class="sub-campaign-card__body">
                 <span class="sub-campaign-card__tag">体験ダイビング</span>
-                <h2 class="sub-campaign-card__title">体験ダイビング</h2>
+                <h2 class="sub-campaign-card__title">ナイトダイビング</h2>
 
                 <div class="sub-campaign-card__container">
                   <p class="sub-campaign-card__text">全部コミコミ(お一人様)</p>
@@ -376,7 +378,7 @@
               <!-- </div> -->
               <div class="sub-campaign-card__button u-desktop">
                 <a href="" class="button"
-                  >View more
+                  >Contact us
                   <span class="button__arrow"></span>
                 </a>
               </div>
@@ -418,7 +420,7 @@
               </div>
               <div class="sub-campaign-card__button u-desktop">
                 <a href="" class="button"
-                  >View more
+                  >Contact us
                   <span class="button__arrow"></span>
                 </a>
               </div>
@@ -438,7 +440,9 @@
         </div>
       </section>
       <!-- common-contact -->
-      <section id="common-contact" class="common-contact layout-common-contact">
+      <section
+        id="common-contact"
+        class="common-contact layout-common-contact layout-sub-campaign-contact">
         <div class="common-contact__inner inner">
           <div class="common-contact__container">
             <div class="common-contact__info">
@@ -471,7 +475,7 @@
               <h3 class="common-contact__title">
                 <span class="common-contact__title-color">C</span>ontact
               </h3>
-              <p class="common-contact__sub-title">お問合せ</p>
+              <p class="common-contact__sub-title">お問い合わせ</p>
               <p class="common-contact__booking">
                 ご予約・お問い合わせはコチラ
               </p>
@@ -487,7 +491,7 @@
       </section>
     </main>
     <!-- Footer -->
-    <footer class="footer layout-footer">
+    <footer class="footer layout-footer layout-sub-campaign-footer">
       <div class="footer__inner inner">
         <div class="footer__logos">
           <div class="footer__logo">

@@ -8,10 +8,6 @@
   }
 }
 
-// .header.is-open {
-//   background-color: #408f95;
-// }
-
 .header--green {
   background-color: #408f95; /* 希望の緑色を指定 */
 }
@@ -186,17 +182,14 @@
 // ドロワー
 
 .header__drawer {
-  // padding-top: rem(80);
   display: none;
   position: absolute;
   z-index: 900;
   top: rem(80);
   right: 0;
-  // bottom: 0;
   left: 0;
   width: 100%;
   height: calc(100vh - 80px);
-  // height: 100vh;
   background-color: $lightGreen;
   overflow-y: scroll;
   scrollbar-width: none;
@@ -213,11 +206,12 @@
   padding-right: rem(15);
   padding-left: rem(15);
   gap: rem(30);
-  // align-items: center;
   @include mq('md') {
   }
 }
-
+.header__drawer-container {
+  margin-top: rem(27);
+}
 .header__drawer-item a {
   display: flex;
   padding: rem(12) 0;
@@ -232,13 +226,13 @@
 }
 .header__drawer-item.header__drawer-title a {
   font-weight: $bold;
-  // padding-top: rem(27);
-  margin-top: rem(27);
   text-align: left;
   position: relative;
   text-indent: -0.2em;
   @include mq('md') {
   }
+}
+.header__drawer-item.header__drawer-title {
 }
 .header__drawer-item.header__drawer-title a::before {
   position: absolute;
@@ -247,7 +241,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  // top: rem(24);
   left: rem(-25);
   width: rem(18);
   height: rem(18);
@@ -268,4 +261,3 @@ body.active {
   height: 100%;
   overflow: hidden;
 }
-

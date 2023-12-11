@@ -47,6 +47,7 @@
   text-align: center;
   border-bottom: rem(1) solid $lightGreen;
   @include mq('md') {
+    padding-bottom: rem(1);
   }
 }
 .common-contact__logo img {
@@ -86,6 +87,7 @@
 }
 .common-contact__text:not(:first-of-type) {
   margin-top: rem(3);
+  margin-top: rem(3.92);
 }
 
 .common-contact__map {
@@ -152,6 +154,7 @@
   font-weight: $regular;
   @include mq('md') {
     text-indent: 1.7em;
+    margin-top: rem(5.2);
   }
 }
 

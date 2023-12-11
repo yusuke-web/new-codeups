@@ -89,13 +89,13 @@ var swiper = new Swiper('.js-top-mv-swiper', {
 // Top-Campaign スライダー
 jQuery(function ($) {
   // リサイズ処理（PC時のみ矢印表示）
-  var service_slideLength = document.querySelectorAll('.js-top-campaign-swiper .swiper-slide').length;
+  var campaign_slideLength = document.querySelectorAll('.js-top-campaign-swiper .swiper-slide').length;
   $(window).resize(function () {
     service_arrow();
   });
   service_arrow();
   function service_arrow() {
-    if (window.matchMedia('(max-width: 767px)').matches || service_slideLength <= 2) {
+    if (window.matchMedia('(max-width: 767px)').matches || campaign_slideLength <= 2) {
       $('.js-top-campaign-arrow').hide();
     } else {
       $('.js-top-campaign-arrow').show();
@@ -103,7 +103,7 @@ jQuery(function ($) {
   }
 
   // Swiper
-  var service_swiper = new Swiper('.js-top-campaign-swiper', {
+  var campaign_swiper = new Swiper('.js-top-campaign-swiper', {
     loop: true,
     speed: 3000,
     slidesPerView: 1.31,

@@ -6,7 +6,7 @@
   column-gap: rem(40);
   row-gap: rem(35);
   @include mq('md') {
-    // grid-template-columns: repeat(auto-fill, minmax(rem(330), 1fr));
+  
     grid-template-columns: repeat(3, 1fr);
   }
 }

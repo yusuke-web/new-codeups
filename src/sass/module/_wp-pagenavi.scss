@@ -16,9 +16,8 @@
   }
 }
 .wp-pagenavi a.sub-campaign-card__pagination-prev,
-.wp-pagenavi a.sub-campaign-card__pagination-next{
-  padding: rem(9) rem(12);
-
+.wp-pagenavi a.sub-campaign-card__pagination-next {
+  padding: rem(6) rem(12);
 }
 .wp-pagenavi a.sub-campaign-card__pagination-prev::before {
   position: relative;
@@ -28,12 +27,11 @@
   border-top: 1px solid $lightGreen;
   content: '';
   display: inline-block;
-  // margin-bottom: 0.125rem;
   transition: 0.3s;
   width: rem(12);
   height: rem(12);
   transform: rotate(220deg);
-  
+
   @include mq('md') {
   }
 }
@@ -59,22 +57,21 @@
 }
 .wp-pagenavi a,
 .wp-pagenavi span {
-  font-size: 12px;
+  font-size: rem(16);
   color: $lightGreen;
+  font-weight: $bold;
   border: 1px solid $lightGreen;
   background-color: $white;
-  // display: inline-block;
   font-family: $second-font-family;
-  padding: rem(9) rem(14.53);
+  padding: rem(6) rem(13.36);
   @include mq('md') {
   }
 }
 .wp-pagenavi span.current {
   color: $white;
   background-color: $lightGreen;
-  padding: rem(9) rem(14.53);
+  padding: rem(6) rem(13.36);
   margin-left: rem(28);
-  // border: none ;
 
   @include mq('md') {
   }

@@ -7,6 +7,7 @@
 
   @include mq('md') {
     padding-bottom: rem(80);
+    padding-top: rem(0);
   }
 }
 .footer__logos {
@@ -61,6 +62,7 @@
   @include mq('md') {
     column-gap: rem(143);
     margin-top: 0;
+    justify-content: start;
   }
 }
 
@@ -91,7 +93,6 @@
 
 .footer__item.footer__item--title a {
   font-weight: $bold;
-  // padding-top: rem(28);
   position: relative;
   text-align: left;
   padding-top: 0;
@@ -105,7 +106,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  // top: rem(28);
   left: rem(-20);
   width: rem(18);
   height: rem(18);

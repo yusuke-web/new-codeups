@@ -9,14 +9,17 @@
   line-height: 1.5714;
   border: rem(1) solid $lightGreen;
   transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
-  padding: rem(16) 0;
+  padding: rem(15) 0;
   white-space: nowrap;
   z-index: 1;
 
   text-align: center;
   width: 100%;
-  max-width: rem(206);
+  max-width: rem(202);
   background-color: $lightGreen;
+  @include mq('md') {
+    text-indent: rem(-7);
+  }
 }
 
 // ボタンのアニメーション
@@ -32,6 +35,7 @@
   transform-origin: left top;
   transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
   z-index: -1;
+  text-indent: rem(-6);
 }
 
 .button:hover {

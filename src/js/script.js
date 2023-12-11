@@ -90,7 +90,7 @@ const swiper = new Swiper('.js-top-mv-swiper', {
 // Top-Campaign スライダー
 jQuery(function ($) {
   // リサイズ処理（PC時のみ矢印表示）
-  const service_slideLength = document.querySelectorAll(
+  const campaign_slideLength = document.querySelectorAll(
     '.js-top-campaign-swiper .swiper-slide'
   ).length;
   $(window).resize(function () {
@@ -100,7 +100,7 @@ jQuery(function ($) {
   function service_arrow() {
     if (
       window.matchMedia('(max-width: 767px)').matches ||
-      service_slideLength <= 2
+      campaign_slideLength <= 2
     ) {
       $('.js-top-campaign-arrow').hide();
     } else {
@@ -109,7 +109,7 @@ jQuery(function ($) {
   }
 
   // Swiper
-  const service_swiper = new Swiper('.js-top-campaign-swiper', {
+  const campaign_swiper = new Swiper('.js-top-campaign-swiper', {
     loop: true,
     speed: 3000,
     slidesPerView: 1.31,
