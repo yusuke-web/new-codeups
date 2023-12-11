@@ -1,7 +1,7 @@
 @use 'global' as *;
 
 .header {
-  height: rem(80);
+  height: rem(81);
   background-color: rgba(13, 41, 54, 0.68);
   @include mq('md') {
     height: rem(90);

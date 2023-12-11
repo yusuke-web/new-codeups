@@ -145,6 +145,10 @@ a {
 	transition: opacity 0.3s;
 }
 
+.layout-blog {
+	margin-top: 3.25rem;
+}
+
 .layout-common-contact {
 	margin-bottom: 6.5rem;
 	margin-top: 4.75rem;
@@ -720,7 +724,7 @@ a {
 
 .header {
 	background-color: rgba(13, 41, 54, 0.68);
-	height: 5rem;
+	height: 5.0625rem;
 }
 
 .header--green {
@@ -1862,6 +1866,10 @@ html {
 
 .layout-about-us {
 	margin-top: 9.375rem;
+}
+
+.layout-blog {
+	margin-top: 8.5625rem;
 }
 
 .layout-common-contact {

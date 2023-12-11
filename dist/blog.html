@@ -36,7 +36,7 @@
     <!-- JavaScript -->
     <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script defer src="./assets/js/jquery.inview.min.js"></script>
+    <script defer src="./js/jquery.inview.min.js"></script>
 
     <script defer src="./assets/js/script.js"></script>
   </head>
@@ -59,13 +59,15 @@
               <a href="/campaign.html">campaign<span>キャンペーン</span></a>
             </li>
             <li class="header__nav-item">
-              <a href="#top-about-us">About us<span>私たちについて</span></a>
+              <a href="/about-us.html">About us<span>私たちについて</span></a>
             </li>
             <li class="header__nav-item">
-              <a href="#top-info">information<span>ダイビング情報</span></a>
+              <a href="/information.html"
+                >information<span>ダイビング情報</span></a
+              >
             </li>
             <li class="header__nav-item">
-              <a href="#top-blog">blog<span>ブログ</span></a>
+              <a href="/blog.html">blog<span>ブログ</span></a>
             </li>
             <li class="header__nav-item">
               <a href="#top-voice">voice<span>お客様の声</span></a>
@@ -114,14 +116,14 @@
               <div class="header__drawer-container">
                 <ul class="header__drawer-items">
                   <li class="header__drawer-item header__drawer-title">
-                    <a href="#top-about-us">私たちについて</a>
+                    <a href="/about-us.html">私たちについて</a>
                   </li>
                 </ul>
               </div>
               <div class="header__drawer-container">
                 <ul class="header__drawer-items">
                   <li class="header__drawer-item header__drawer-title">
-                    <a href="#top-info">ダイビング情報</a>
+                    <a href="/information.html">ダイビング情報</a>
                   </li>
                   <li class="header__drawer-item">
                     <a href="#top-info">ライセンス講習</a>
@@ -137,7 +139,7 @@
               <div class="header__drawer-container">
                 <ul class="header__drawer-items header__drawer-title">
                   <li class="header__drawer-item header__drawer-title">
-                    <a href="#top-blog">ブログ</a>
+                    <a href="/blog.html">ブログ</a>
                   </li>
                 </ul>
               </div>
@@ -203,240 +205,67 @@
 
     <main>
       <!-- common FV -->
-      <div class="sub-campaign layout-sub-campaign">
-        <div class="sub-campaign__inner">
-          <picture class="sub-campaign__img common-fv">
+      <div class="common-fv common-fv layout-common-fv">
+        <div class="common-fv__inner">
+          <picture class="common-fv__img common-fv">
             <source
-              srcset="./assets/images/campaign/campaign-fv-PC.jpg"
+              srcset="./assets/images/blog/blog-fv-PC.jpg"
               media="(min-width: 768px)" />
             <img
-              src="./assets/images/campaign/campaign-fv-SP.jpg"
+              src="./assets/images/blog/blog-fv-SP.jpg"
               alt="黄色い海水魚" />
           </picture>
         </div>
-        <h1 class="sub-campaign__title">Campaign</h1>
+        <h1 class="common-fv__title">Blog</h1>
       </div>
       <!-- キャンペーン画像 -->
-      <div class="sub-campaign-images layout-sub-campaign-images">
-        <div class="sub-campaign__inner inner">
+      <div class="about-us-images layout-about-us-images">
+        <div class="about-us__breadcrumbs-inner breadcrumbs__inner">
           <!-- パンくずリスト -->
-          <div class="sub-campaign__breadcrumbs breadcrumbs layout-breadcrumbs">
+          <div class="about-us__breadcrumbs breadcrumbs layout-breadcrumbs">
             <span>
               <a href="index.html">
                 <span>Top</span>
               </a>
             </span>
             <span>
-              <span>キャンペーン</span>
+              <span>ブログ一覧</span>
             </span>
-          </div>
-          <!-- キャンペーン　カテゴリ -->
-          <div class="sub-campaign__categories">
-            <p
-              class="sub-campaign__category-item sub-campaign__category-item--current">
-              <a href="#">all</a>
-            </p>
-            <p class="sub-campaign__category-item">
-              <a href="#">ライセンス講習</a>
-            </p>
-            <p class="sub-campaign__category-item">
-              <a href="#">ファンダイビング</a>
-            </p>
-            <p class="sub-campaign__category-item">
-              <a href="#">体験ダイビング</a>
-            </p>
           </div>
         </div>
       </div>
-      <!-- Campaign Cards -->
-      <section class="sub-campaign__container layout-sub-campaign-container">
-        <div class="sub-campaign__inner inner">
-          <ul class="sub-campaign__list sub-campaign-list">
-            <li class="sub-campaign-list__item sub-campaign-card">
-              <!-- <div class="top-campaign-swiper__item"> -->
-              <picture class="sub-campaign-card__img">
-                <source
-                  srcset="./assets/images/common/campaign-PC1.jpg"
-                  media="(min-width: 768px)" />
-                <img
-                  src="./assets/images/common/campaign-SP1.jpg"
-                  alt="色鮮やかな海水魚の群れ" />
-              </picture>
-              <div class="sub-campaign-card__body">
-                <span class="sub-campaign-card__tag">ライセンス講習</span>
-                <h2 class="sub-campaign-card__title">ライセンス取得</h2>
 
-                <div class="sub-campaign-card__container">
-                  <p class="sub-campaign-card__text">全部コミコミ(お一人様)</p>
-                  <div class="sub-campaign-card__price-wrap">
-                    <p class="sub-campaign-card__price-sub">¥56,000</p>
-                    <p class="sub-campaign-card__price-main">¥46,000</p>
-                  </div>
+     <!-- blog cards -->
+
+      <section class="blog layout-blog">
+        <div class="blog__inner inner">
+          <ul class="blog__cards blog-cards">
+            <li class="blog-cards__item">
+              <a href="#">
+                <picture class="blog-cards__img">
+                  <source
+                    srcset="./assets/images/common/blogPC1.jpg"
+                    media="(min-width: 768px)" />
+                  <img
+                    src="./assets/images/blog/blog-card-SP1.jpg"
+                    alt="神秘的な珊瑚" />
+                </picture>
+                <div class="blog-cards__body">
+                  <time class="blog-cards__date" datetime="2023-11-17"
+                    >2023.11/17</time
+                  >
+                  <h4 class="blog-cards__title">ライセンス取得</h4>
+                  <p class="blog-cards__text">
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
+                  </p>
                 </div>
-                <!--  -->
-              </div>
-
-              <!-- PCのみ表示 -->
-              <div class="sub-campaign-card__content-wrap u-desktop">
-                <p class="sub-campaign-card__main-text">
-                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                </p>
-                <p class="sub-campaign-card__date">2023/6/1-9/30</p>
-                <p class="sub-campaign-card__reservation">
-                  ご予約・お問い合わせはコチラ
-                </p>
-              </div>
-              <!-- </div> -->
-              <div class="sub-campaign-card__button u-desktop">
-                <a href="" class="button"
-                  >View more
-                  <span class="button__arrow"></span>
-                </a>
-              </div>
-            </li>
-            <li class="sub-campaign-list__item sub-campaign-card">
-              <!-- <div class="top-campaign-swiper__item"> -->
-              <picture class="sub-campaign-card__img">
-                <source
-                  srcset="./assets/images/common/campaign-PC2.jpg"
-                  media="(min-width: 768px)" />
-                <img
-                  src="./assets/images/common/campaign-SP2.jpg"
-                  alt="色鮮やかな海水魚の群れ" />
-              </picture>
-              <div class="sub-campaign-card__body">
-                <span class="sub-campaign-card__tag">体験ダイビング</span>
-                <h2 class="sub-campaign-card__title">貸切体験ダイビング</h2>
-
-                <div class="sub-campaign-card__container">
-                  <p class="sub-campaign-card__text">全部コミコミ(お一人様)</p>
-                  <div class="sub-campaign-card__price-wrap">
-                    <p class="sub-campaign-card__price-sub">¥24,000</p>
-                    <p class="sub-campaign-card__price-main">¥18,000</p>
-                  </div>
-                </div>
-                <!--  -->
-              </div>
-
-              <!-- PCのみ表示 -->
-              <div class="sub-campaign-card__content-wrap u-desktop">
-                <p class="sub-campaign-card__main-text">
-                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                </p>
-                <p class="sub-campaign-card__date">2023/6/1-9/30</p>
-                <p class="sub-campaign-card__reservation">
-                  ご予約・お問い合わせはコチラ
-                </p>
-              </div>
-              <!-- </div> -->
-              <div class="sub-campaign-card__button u-desktop">
-                <a href="" class="button"
-                  >View more
-                  <span class="button__arrow"></span>
-                </a>
-              </div>
-            </li>
-            <li class="sub-campaign-list__item sub-campaign-card">
-              <!-- <div class="top-campaign-swiper__item"> -->
-              <picture class="sub-campaign-card__img">
-                <source
-                  srcset="./assets/images/common/campaign-PC3.jpg"
-                  media="(min-width: 768px)" />
-                <img
-                  src="./assets/images/common/campaign-SP3.jpg"
-                  alt="色鮮やかな海水魚の群れ" />
-              </picture>
-              <div class="sub-campaign-card__body">
-                <span class="sub-campaign-card__tag">体験ダイビング</span>
-                <h2 class="sub-campaign-card__title">体験ダイビング</h2>
-
-                <div class="sub-campaign-card__container">
-                  <p class="sub-campaign-card__text">全部コミコミ(お一人様)</p>
-                  <div class="sub-campaign-card__price-wrap">
-                    <p class="sub-campaign-card__price-sub">¥10,000</p>
-                    <p class="sub-campaign-card__price-main">¥8,000</p>
-                  </div>
-                </div>
-                <!--  -->
-              </div>
-
-              <!-- PCのみ表示 -->
-              <div class="sub-campaign-card__content-wrap u-desktop">
-                <p class="sub-campaign-card__main-text">
-                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                </p>
-                <p class="sub-campaign-card__date">2023/6/1-9/30</p>
-                <p class="sub-campaign-card__reservation">
-                  ご予約・お問い合わせはコチラ
-                </p>
-              </div>
-              <!-- </div> -->
-              <div class="sub-campaign-card__button u-desktop">
-                <a href="" class="button"
-                  >View more
-                  <span class="button__arrow"></span>
-                </a>
-              </div>
-            </li>
-            <li class="sub-campaign-list__item sub-campaign-card">
-              <!-- <div class="top-campaign-swiper__item"> -->
-              <picture class="sub-campaign-card__img">
-                <source
-                  srcset="./assets/images/common/campaign-PC4.jpg"
-                  media="(min-width: 768px)" />
-                <img
-                  src="./assets/images/common/campaign-SP4.jpg"
-                  alt="色鮮やかな海水魚の群れ" />
-              </picture>
-              <div class="sub-campaign-card__body">
-                <span class="sub-campaign-card__tag">ファンダイビング</span>
-                <h2 class="sub-campaign-card__title">貸切ファンダイビング</h2>
-
-                <div class="sub-campaign-card__container">
-                  <p class="sub-campaign-card__text">全部コミコミ(お一人様)</p>
-                  <div class="sub-campaign-card__price-wrap">
-                    <p class="sub-campaign-card__price-sub">¥20,000</p>
-                    <p class="sub-campaign-card__price-main">¥16,000</p>
-                  </div>
-                </div>
-                <!--  -->
-              </div>
-
-              <!-- PCのみ表示 -->
-              <div class="sub-campaign-card__content-wrap u-desktop">
-                <p class="sub-campaign-card__main-text">
-                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                </p>
-                <p class="sub-campaign-card__date">2023/6/1-9/30</p>
-                <p class="sub-campaign-card__reservation">
-                  ご予約・お問い合わせはコチラ
-                </p>
-              </div>
-              <div class="sub-campaign-card__button u-desktop">
-                <a href="" class="button"
-                  >View more
-                  <span class="button__arrow"></span>
-                </a>
-              </div>
-              <!-- PCのみ表示 -->
+              </a>
             </li>
           </ul>
-          <div class="sub-campaign-card__pagination wp-pagenavi">
-            <a href="#" class="sub-campaign-card__pagination-prev"></a>
-            <span class="current">1</span>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">4</a>
-            <a class="u-desktop" href="#">5</a>
-            <a class="u-desktop" href="#">6</a>
-            <a href="#" class="sub-campaign-card__pagination-next"></a>
-          </div>
         </div>
       </section>
+
       <!-- common-contact -->
       <section id="common-contact" class="common-contact layout-common-contact">
         <div class="common-contact__inner inner">
@@ -530,7 +359,7 @@
               <div class="footer__container">
                 <ul class="footer__items">
                   <li class="footer__item footer__item--title">
-                    <a href="#top-about-us">私たちについて</a>
+                    <a href="#about-us">私たちについて</a>
                   </li>
                 </ul>
               </div>
@@ -555,7 +384,7 @@
               <div class="footer__container">
                 <ul class="footer__items footer__item-title">
                   <li class="footer__item footer__item--title">
-                    <a href="#top-blog">ブログ</a>
+                    <a href="/blog.html">ブログ</a>
                   </li>
                 </ul>
               </div>
@@ -567,7 +396,7 @@
               <div class="footer__container">
                 <ul class="footer__items">
                   <li class="footer__item footer__item--title">
-                    <a href="#top-blog">お客様の声</a>
+                    <a href="#blog">お客様の声</a>
                   </li>
                 </ul>
               </div>

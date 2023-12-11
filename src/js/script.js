@@ -142,26 +142,33 @@ jQuery(function ($) {
     speed = 700;
 
   //.colorboxの付いた全ての要素に対して下記の処理を行う
-  box.each(function () {
-    $(this).append('<div class="color"></div>');
-    const color = $(this).find($('.color')),
-      image = $(this).find('img');
-    const counter = 0;
+  $(function () {
+    let box = $('.js-colorbox');
+    let speed = 700;
 
-    image.css('opacity', '0');
-    color.css('width', '0%');
-    //inviewを使って背景色が画面に現れたら処理をする
-    color.on('inview', function () {
-      if (counter == 0) {
-        $(this)
-          .delay(200)
-          .animate({ width: '100%' }, speed, function () {
-            image.css('opacity', '1');
-            $(this).css({ left: '0', right: 'auto' });
-            $(this).animate({ width: '0%' }, speed);
-          });
-        counter = 1;
-      }
+    box.each(function () {
+      $(this).append('<div class="color"></div>');
+      let color = $(this).find($('.color')),
+        image = $(this).find('img');
+      let executed = false; // executedフラグを追加
+
+      image.css('opacity', '0');
+      color.css('width', '0%');
+
+      // inviewイベントを使用して背景色が画面に現れたら処理をする
+      color.on('inview', function () {
+        if (!executed) {
+          // アニメーションが未実行の場合のみ実行
+          $(this)
+            .delay(200)
+            .animate({ width: '100%' }, speed, function () {
+              image.css('opacity', '1');
+              $(this).css({ left: '0', right: 'auto' });
+              $(this).animate({ width: '0%' }, speed);
+            });
+          executed = true; // アニメーション実行後にフラグを更新
+        }
+      });
     });
   });
 });
@@ -195,47 +202,6 @@ jQuery(function ($) {
     }
   });
 });
-
-// // 画像を取得　（モーダルテスト１）
-// const images = document.querySelectorAll('.gallery__item img');
-// const modal = document.querySelector('.gallery-modal');
-// const modalImg = document.querySelector('.modal__image'); // モーダル内の画像要素
-// const captionText = document.querySelector('.caption'); // キャプション要素
-
-// // 画像をクリックしたときのイベント
-// images.forEach((image) => {
-//   image.onclick = function () {
-//     modal.classList.add('show');
-
-//     modalImg.src = this.src; // クリックされた画像のsrcを設定
-
-//     // if (this.classList.contains('js-tall')) {
-//     //   modalImg.classList.add('tall');
-//     // } else {
-//     //   modalImg.classList.remove('tall');
-//     // }
-//     if (
-//       this.parentElement.matches(
-//         '.gallery__item:nth-of-type(6n + 1), .gallery__item:nth-of-type(6n + 6)'
-//       )
-//     ) {
-//       modalImg.classList.add('special-size');
-//     } else {
-//       modalImg.classList.remove('special-size');
-//     }
-//   };
-// });
-
-// // モーダルをクリックしたときに閉じる
-// // modal.onclick = function () {
-// //   modal.classList.remove('show');
-// // };
-// modal.onclick = function (event) {
-//   // イベントが発生した要素がモーダル自体であるか確認
-//   if (event.target === modal) {
-//     modal.classList.remove('show');
-//   }
-// };
 
 // information タブ切り替え
 
