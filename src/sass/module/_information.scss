@@ -10,7 +10,7 @@
 }
 
 .information-tab__item {
-  padding: rem(10) rem(16);
+  padding: rem(10) rem(15);
 
   font-family: $third-font-family;
   font-size: rem(14);
@@ -41,7 +41,8 @@
 // .information-tab__item-name.is-active {
 //   color: $white;
 // }
-
+.information-tab__item-name {
+}
 .information-tab__item-name::before {
   @include mq('md') {
     background-image: url(../images/information/whale-green.svg);
@@ -64,9 +65,13 @@
 }
 
 .information-tab__content {
-  padding: rem(24);
+  padding: rem(22);
   border: 1px solid $lightGreen;
+  display: none;
 
+}
+.information-tab__content.is-active {
+  display: block;
   @include mq('md') {
   }
 }

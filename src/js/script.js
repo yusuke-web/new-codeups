@@ -1,4 +1,6 @@
 jQuery(function ($) {
+  console.log('クリックされました');
+
   // この中であればWordpressでも「$」が使用可能になる
   // ヘッダーの高さ分だけコンテンツを下げる
 
@@ -26,6 +28,7 @@ jQuery(function ($) {
   });
 });
 // ハンバーガーメニュー
+
 $(function () {
   $('.js-hamburger').on('click', function () {
     $(this).toggleClass('is-open');
@@ -40,6 +43,7 @@ $(function () {
   });
 
   // backgroundまたはページ内リンクをクリックで閉じる
+
   $('.js-drawer a[href]').on('click', function () {
     closeDrawer();
   });
@@ -53,6 +57,7 @@ $(function () {
 });
 
 // resizeイベント
+
 $(window).on('resize', function () {
   if (window.matchMedia('(min-width: 768px)').matches) {
     closeDrawer();
@@ -132,6 +137,7 @@ jQuery(function ($) {
     },
   });
   //要素の取得とスピードの設定
+
   var box = $('.js-colorbox'),
     speed = 700;
 
@@ -168,11 +174,11 @@ var modal = document.querySelector('.gallery-modal');
 var modalImg = document.querySelector('.modal__image'); // モーダル内の画像要素
 var captionText = document.querySelector('.caption'); // キャプション要素
 
-
 // 画像をクリックしたときのイベント
-images.forEach(image => {
-  image.onclick = function() {
+images.forEach((image) => {
+  image.onclick = function () {
     modal.classList.add('show');
+
     modalImg.src = this.src; // クリックされた画像のsrcを設定
 
     // if (this.classList.contains('js-tall')) {
@@ -180,15 +186,44 @@ images.forEach(image => {
     // } else {
     //   modalImg.classList.remove('tall');
     // }
-    if (this.parentElement.matches('.gallery__item:nth-of-type(6n + 1), .gallery__item:nth-of-type(6n + 6)')) {
+    if (
+      this.parentElement.matches(
+        '.gallery__item:nth-of-type(6n + 1), .gallery__item:nth-of-type(6n + 6)'
+      )
+    ) {
       modalImg.classList.add('special-size');
     } else {
       modalImg.classList.remove('special-size');
     }
-  }
+  };
 });
 
 // モーダルをクリックしたときに閉じる
-modal.onclick = function() {
-  modal.classList.remove('show');
-}
+// modal.onclick = function () {
+//   modal.classList.remove('show');
+// };
+modal.onclick = function (event) {
+  // イベントが発生した要素がモーダル自体であるか確認
+  if (event.target === modal) {
+    modal.classList.remove('show');
+  }
+};
+
+
+// information タブ切り替え
+
+console.log('テスト');
+
+
+$(function () {
+  const tabButton = $('.js-tab-button'),
+    tabContent = $('.js-tab-content');
+  tabButton.on('click', function () {
+    let index = tabButton.index(this);
+
+    tabButton.removeClass('is-active');
+    $(this).addClass('is-active');
+    tabContent.removeClass('is-active');
+    tabContent.eq(index).addClass('is-active');
+  });
+});

@@ -1,6 +1,8 @@
 "use strict";
 
 jQuery(function ($) {
+  console.log('クリックされました');
+
   // この中であればWordpressでも「$」が使用可能になる
   // ヘッダーの高さ分だけコンテンツを下げる
 
@@ -29,6 +31,7 @@ jQuery(function ($) {
   });
 });
 // ハンバーガーメニュー
+
 $(function () {
   $('.js-hamburger').on('click', function () {
     $(this).toggleClass('is-open');
@@ -43,6 +46,7 @@ $(function () {
   });
 
   // backgroundまたはページ内リンクをクリックで閉じる
+
   $('.js-drawer a[href]').on('click', function () {
     closeDrawer();
   });
@@ -55,6 +59,7 @@ $(function () {
 });
 
 // resizeイベント
+
 $(window).on('resize', function () {
   if (window.matchMedia('(min-width: 768px)').matches) {
     closeDrawer();
@@ -125,6 +130,7 @@ jQuery(function ($) {
     }
   });
   //要素の取得とスピードの設定
+
   var box = $('.js-colorbox'),
     speed = 700;
 
@@ -185,6 +191,27 @@ images.forEach(function (image) {
 });
 
 // モーダルをクリックしたときに閉じる
-modal.onclick = function () {
-  modal.classList.remove('show');
+// modal.onclick = function () {
+//   modal.classList.remove('show');
+// };
+modal.onclick = function (event) {
+  // イベントが発生した要素がモーダル自体であるか確認
+  if (event.target === modal) {
+    modal.classList.remove('show');
+  }
 };
+
+// information タブ切り替え
+
+console.log('テスト');
+$(function () {
+  var tabButton = $('.js-tab-button'),
+    tabContent = $('.js-tab-content');
+  tabButton.on('click', function () {
+    var index = tabButton.index(this);
+    tabButton.removeClass('is-active');
+    $(this).addClass('is-active');
+    tabContent.removeClass('is-active');
+    tabContent.eq(index).addClass('is-active');
+  });
+});

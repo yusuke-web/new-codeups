@@ -964,7 +964,7 @@ body.active {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.875rem;
 	font-weight: 400;
-	padding: 0.625rem 1rem;
+	padding: 0.625rem 0.9375rem;
 	text-align: center;
 	transition: 0.3s;
 }
@@ -980,7 +980,12 @@ body.active {
 
 .information-tab__content {
 	border: 1px solid #408f95;
-	padding: 1.5rem;
+	display: none;
+	padding: 1.375rem;
+}
+
+.information-tab__content.is-active {
+	display: block;
 }
 
 .information-tab__content-title {

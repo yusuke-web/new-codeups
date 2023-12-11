@@ -36,7 +36,7 @@
     <!-- JavaScript -->
     <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script defer src="./assets/js/jquery.inview.min.js"></script>
+    <script defer src="./js/jquery.inview.min.js"></script>
 
     <script defer src="./assets/js/script.js"></script>
   </head>
@@ -59,10 +59,12 @@
               <a href="/campaign.html">campaign<span>キャンペーン</span></a>
             </li>
             <li class="header__nav-item">
-              <a href="#about-us">About us<span>私たちについて</span></a>
+              <a href="/about-us.html">About us<span>私たちについて</span></a>
             </li>
             <li class="header__nav-item">
-              <a href="#top-info">information<span>ダイビング情報</span></a>
+              <a href="/information.html"
+                >information<span>ダイビング情報</span></a
+              >
             </li>
             <li class="header__nav-item">
               <a href="#top-blog">blog<span>ブログ</span></a>
@@ -114,14 +116,14 @@
               <div class="header__drawer-container">
                 <ul class="header__drawer-items">
                   <li class="header__drawer-item header__drawer-title">
-                    <a href="#about-us">私たちについて</a>
+                    <a href="/about-us.html">私たちについて</a>
                   </li>
                 </ul>
               </div>
               <div class="header__drawer-container">
                 <ul class="header__drawer-items">
                   <li class="header__drawer-item header__drawer-title">
-                    <a href="#top-info">ダイビング情報</a>
+                    <a href="/information.html">ダイビング情報</a>
                   </li>
                   <li class="header__drawer-item">
                     <a href="#top-info">ライセンス講習</a>
@@ -237,6 +239,7 @@
 
       <section class="information layout-information">
         <div class="information__inner inner">
+          <!-- タブボタン -->
           <div class="information__tab information-tab">
             <ul class="information-tab__list">
               <li class="information-tab__item js-tab-button is-active">
@@ -256,15 +259,38 @@
               </li>
             </ul>
           </div>
+          <!--  タブカードリスト-->
           <ul class="information-tab__contents">
-            <li class="information-tab__content is-active js-tab-content">
-              <p class="information-tab__content-title">ライセンス講習</p>
+            <li class="information-tab__content js-tab-content is-active">
+              <h2 class="information-tab__content-title">ライセンス講習</h2>
               <p class="information-tab__content-text">
                 泳げない人も、ちょっと水が苦手な人も、ダイビングを「安全に」楽しんでいただけるよう、スタッフがサポートいたします！スキューバダイビングを楽しむためには最低限の知識とスキルが要求されます。知識やスキルと言ってもそんなに難しい事ではなく、安全に楽しむ事を目的としたものです。プロダイバーの指導のもと知識とスキルを習得しCカードを取得して、ダイバーになろう！
               </p>
               <div class="information-tab__content-img">
                 <img
                   src="./assets/images/information/information-tab-imageSP1.jpg"
+                  alt="" />
+              </div>
+            </li>
+            <li class="information-tab__content js-tab-content">
+              <h2 class="information-tab__content-title">ファンダイビング</h2>
+              <p class="information-tab__content-text">
+                ブランクダイバー、ライセンスを取り立ての方も安心！沖縄本島を代表する「青の洞窟」（真栄田岬）やケラマ諸島などメジャーなポイントはモチロンのこと、最北端「辺戸岬」や最南端の「大渡海岸」等もご用意！
+              </p>
+              <div class="information-tab__content-img">
+                <img
+                  src="./assets/images/information/information-tab-imageSP2.jpg"
+                  alt="" />
+              </div>
+            </li>
+            <li class="information-tab__content js-tab-content">
+              <h2 class="information-tab__content-title">体験ダイビング</h2>
+              <p class="information-tab__content-text">
+                ブランクダイバー、ライセンスを取り立ての方も安心！沖縄本島を代表する「青の洞窟」（真栄田岬）やケラマ諸島などメジャーなポイントはモチロンのこと、最北端「辺戸岬」や最南端の「大渡海岸」等もご用意！
+              </p>
+              <div class="information-tab__content-img">
+                <img
+                  src="./assets/images/information/information-tab-imageSP3.jpg"
                   alt="" />
               </div>
             </li>
