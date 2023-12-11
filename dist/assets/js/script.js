@@ -1,5 +1,6 @@
 "use strict";
 
+function _readOnlyError(name) { throw new TypeError("\"" + name + "\" is read-only"); }
 jQuery(function ($) {
   console.log('クリックされました');
 
@@ -157,7 +158,7 @@ jQuery(function ($) {
             width: '0%'
           }, speed);
         });
-        counter = 1;
+        1, _readOnlyError("counter");
       }
     });
   });
@@ -165,41 +166,68 @@ jQuery(function ($) {
 
 // モーダル
 
-// 画像を取得
-var images = document.querySelectorAll('.gallery__item img');
-var modal = document.querySelector('.gallery-modal');
-var modalImg = document.querySelector('.modal__image'); // モーダル内の画像要素
-var captionText = document.querySelector('.caption'); // キャプション要素
+jQuery(function ($) {
+  // 画像をクリックしたときのイベント
+  $('.gallery__item img').on('click', function () {
+    $('.gallery-modal').addClass('show');
+    $('.modal__image').attr('src', $(this).attr('src')); // クリックされた画像のsrcを設定
 
-// 画像をクリックしたときのイベント
-images.forEach(function (image) {
-  image.onclick = function () {
-    modal.classList.add('show');
-    modalImg.src = this.src; // クリックされた画像のsrcを設定
-
-    // if (this.classList.contains('js-tall')) {
-    //   modalImg.classList.add('tall');
-    // } else {
-    //   modalImg.classList.remove('tall');
-    // }
-    if (this.parentElement.matches('.gallery__item:nth-of-type(6n + 1), .gallery__item:nth-of-type(6n + 6)')) {
-      modalImg.classList.add('special-size');
+    if ($(this).parent().is('.gallery__item:nth-of-type(6n + 1), .gallery__item:nth-of-type(6n + 6)')) {
+      $('.modal__image').addClass('special-size');
     } else {
-      modalImg.classList.remove('special-size');
+      $('.modal__image').removeClass('special-size');
     }
-  };
+  });
+
+  // モーダルをクリックしたときに閉じる
+  $('.gallery-modal').on('click', function (event) {
+    // イベントが発生した要素がモーダル自体であるか確認
+    if (event.target === this) {
+      $(this).removeClass('show');
+    }
+  });
 });
 
-// モーダルをクリックしたときに閉じる
-// modal.onclick = function () {
-//   modal.classList.remove('show');
+// // 画像を取得　（モーダルテスト１）
+// const images = document.querySelectorAll('.gallery__item img');
+// const modal = document.querySelector('.gallery-modal');
+// const modalImg = document.querySelector('.modal__image'); // モーダル内の画像要素
+// const captionText = document.querySelector('.caption'); // キャプション要素
+
+// // 画像をクリックしたときのイベント
+// images.forEach((image) => {
+//   image.onclick = function () {
+//     modal.classList.add('show');
+
+//     modalImg.src = this.src; // クリックされた画像のsrcを設定
+
+//     // if (this.classList.contains('js-tall')) {
+//     //   modalImg.classList.add('tall');
+//     // } else {
+//     //   modalImg.classList.remove('tall');
+//     // }
+//     if (
+//       this.parentElement.matches(
+//         '.gallery__item:nth-of-type(6n + 1), .gallery__item:nth-of-type(6n + 6)'
+//       )
+//     ) {
+//       modalImg.classList.add('special-size');
+//     } else {
+//       modalImg.classList.remove('special-size');
+//     }
+//   };
+// });
+
+// // モーダルをクリックしたときに閉じる
+// // modal.onclick = function () {
+// //   modal.classList.remove('show');
+// // };
+// modal.onclick = function (event) {
+//   // イベントが発生した要素がモーダル自体であるか確認
+//   if (event.target === modal) {
+//     modal.classList.remove('show');
+//   }
 // };
-modal.onclick = function (event) {
-  // イベントが発生した要素がモーダル自体であるか確認
-  if (event.target === modal) {
-    modal.classList.remove('show');
-  }
-};
 
 // information タブ切り替え
 
@@ -213,5 +241,13 @@ $(function () {
     $(this).addClass('is-active');
     tabContent.removeClass('is-active');
     tabContent.eq(index).addClass('is-active');
+
+    // tabContent.stop().fadeOut(1000, function () {
+    //   tabContent
+    //     .removeClass('is-active')
+    //     .eq(index)
+    //     .addClass('is-active')
+    //     .fadeIn(1000);
+    // });
   });
 });

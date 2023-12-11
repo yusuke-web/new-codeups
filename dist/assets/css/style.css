@@ -947,6 +947,24 @@ body.active {
 	overflow: hidden;
 }
 
+.information__inner {
+	position: relative;
+}
+
+.information__inner::after {
+	background-image: url(../images/common/fish-right.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+	height: 3.4375rem;
+	left: calc(50% - min(48vw, 38.75rem));
+	position: absolute;
+	top: -6%;
+	width: 7.5rem;
+	z-index: -1;
+}
+
 .information-tab__list {
 	grid-column-gap: 1.25rem;
 	-moz-column-gap: 1.25rem;
@@ -979,12 +997,14 @@ body.active {
 }
 
 .information-tab__content {
-	border: 1px solid #408f95;
+	border: 0.0625rem solid #408f95;
 	display: none;
 	padding: 1.375rem;
+	transition: opacity 0.3s;
 }
 
 .information-tab__content.is-active {
+	animation: fade 1s;
 	display: block;
 }
 
@@ -2164,14 +2184,21 @@ html {
 	display: none;
 }
 
+.information__inner::after {
+	height: 8.625rem;
+	top: -15%;
+	width: 18.8125rem;
+}
+
 .information-tab__item {
 	align-items: center;
 	display: flex;
 	font-size: 1.5rem;
+	justify-content: center;
 	margin-left: 0.5rem;
 }
 
-.information-tab__item-name::before {
+.information-tab__item::before {
 	background-image: url(../images/information/whale-green.svg);
 	background-position: center;
 	background-repeat: no-repeat;
@@ -2179,15 +2206,36 @@ html {
 	content: "";
 	display: inline-block;
 	height: 4rem;
+	margin-right: 0.5rem;
 	width: 4rem;
+}
+
+.information-tab__item.is-active::before {
+	background-image: url(../images/information/whale-white.svg);
 }
 
 .information-tab__contents {
 	margin-top: 1.5rem;
 }
 
+.information-tab__content {
+	border: 0.125rem solid #408f95;
+	display: none;
+}
+
+.information-tab__content.is-active {
+	display: flex;
+	gap: 3rem;
+	justify-content: center;
+}
+
+.information-tab__box {
+	width: 50%;
+}
+
 .information-tab__content-img {
 	margin-top: 0;
+	width: 50%;
 }
 
 .inner {
