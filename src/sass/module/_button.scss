@@ -12,6 +12,7 @@
   padding: rem(15) 0;
   white-space: nowrap;
   z-index: 1;
+  text-indent: rem(-6);
 
   text-align: center;
   width: 100%;
@@ -35,7 +36,6 @@
   transform-origin: left top;
   transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
   z-index: -1;
-  text-indent: rem(-6);
 }
 
 .button:hover {

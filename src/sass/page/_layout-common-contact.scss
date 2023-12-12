@@ -1,10 +1,26 @@
-@use "global" as *;
+@use 'global' as *;
 
-.layout-common-contact{
-  margin-top:rem(76);
-  margin-bottom: rem(104);
+.layout-common-contact {
+  margin-top: rem(76);
+  // margin-bottom: rem(104);
   @include mq('md') {
-  margin-top: rem(117);
-  // margin-bottom: rem(180);
+    margin-top: rem(117);
+    // margin-bottom: rem(180);
+  }
+}
+
+.layout-common-contact.layout-common-contact--about {
+  margin-top: rem(105);
+
+  @include mq('md') {
+    margin-top: rem(139);
+    // margin-bottom: rem(104);
+  }
+}
+
+.layout-common-contact.layout-common-contact--information{
+  margin-top: rem(500);
+  @include mq('md') {
+  
   }
 }

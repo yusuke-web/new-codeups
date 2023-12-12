@@ -2,9 +2,9 @@
 
 
 .layout-about-us{
-
+margin-top: rem(8);
   
   @include mq('md') {
-  margin-top: rem(150);
+  // margin-top: rem(150);
   }
 }

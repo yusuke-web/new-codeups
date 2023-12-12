@@ -1,5 +1,9 @@
 @use 'global' as *;
 
+.top-campaign-swiper__slider .swiper-wrapper {
+  padding-bottom: rem(10);
+}
+
 .swiper-slide {
   height: auto;
 }

@@ -3,7 +3,12 @@
 .section-title {
   text-align: center;
 }
-
+.section-title__main.section-title__main--gallery{
+  text-indent: rem(9);
+  @include mq('md') {
+  
+  }
+}
 .section-title__main {
   font-family: $base-font-family;
   font-weight: $regular;

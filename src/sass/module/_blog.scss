@@ -1,2 +1,21 @@
-@use "global" as *;
+@use 'global' as *;
+
+.blog__container {
+  @include mq('md') {
+  }
+}
+.blog__cards-container {
+  @include mq('md') {
+  }
+}
+
+.blog__cards {
+  @include mq('md') {
+  }
+}
+
+.blog__side-menu {
+  @include mq('md') {
+  }
+}
 

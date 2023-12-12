@@ -1,0 +1,90 @@
+@use "global" as *;
+
+// サイドバー
+
+// block
+.blog-side-menu-title {
+  font-family: $third-font-family;
+  font-size: rem(24);
+  font-weight: $regular;
+  color: $darkGreen;
+  border-left: rem(8) solid $lightGreen;
+  display: flex;
+  align-items: center;
+
+  @include mq('md') {
+  }
+}
+.blog-side-menu-title::before {
+  background-image: url(../images/blog/whale-darkGreen.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: '';
+  display: inline-block;
+  height: 4rem;
+  width: 4rem;
+  margin-left: rem(16);
+  margin-right: rem(8);
+}
+
+.blog-side-menu__popular-side-menu {
+  @include mq('md') {
+  }
+}
+
+.blog-side-menu__popular-articles{
+  
+  @include mq('md') {
+    
+  }
+}
+
+.blog-side-menu__popular-article {
+  display: flex;
+  gap: rem(16);
+  padding: rem(16);
+  box-shadow: rem(2) rem(2) rem(10) 0 rgba(0, 0, 0, 0.25) ;
+  
+  margin-top: rem(24);
+  @include mq('md') {
+  }
+}
+
+.blog-side-menu__popular-image {
+  width: 46.18320611%;
+  @include mq('md') {
+  }
+}
+.blog-side-menu__popular-image img{
+  aspect-ratio:121 / 90;
+  object-fit: cover;
+  width: 100%;
+  @include mq('md') {
+  
+  }
+}
+.blog-side-menu__popular-container {
+  width: 47.70992366%;
+}
+
+.blog-side-menu__popular-date{
+  font-family: $base-font-family;
+  font-size: rem(12);
+  line-height: 1.5;
+  color: $darkGreen;
+  font-weight: $regular;
+
+  @include mq('md') {
+  
+  }
+  
+}
+
+.blog-side-menu__popular-title{
+  font-family: $third-font-family;
+  font-weight: $medium;
+  font-size: rem(16);
+  color: $darkGreen;
+  
+}

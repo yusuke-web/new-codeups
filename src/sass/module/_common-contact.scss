@@ -74,7 +74,7 @@
   @include mq('md') {
     text-align: left;
     margin-top: rem(2);
-    width: 33.18181818%;
+    width: calc(50% - min(5.14vw, 10rem));
   }
 }
 
@@ -94,8 +94,8 @@
   text-align: center;
   margin-top: rem(16);
   @include mq('md') {
-    width: 62.04545455%;
     margin-top: 0;
+    width: 61.045455%;
   }
 }
 .common-contact__map iframe {
@@ -160,7 +160,7 @@
 
 .common-contact__button {
   text-align: center;
-  margin-top: rem(40);
+  margin-top: rem(38);
   @include mq('md') {
     margin-top: rem(38);
     margin-left: rem(20);

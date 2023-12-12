@@ -1,22 +1,19 @@
-@use "global" as *;
-
-
-
+@use 'global' as *;
 
 .about-us__inner {
   position: relative;
 }
 .about-us__inner::after {
   position: absolute;
-    content: '';
-    background-image: url(../images/common/fish-right.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: rem(120);
-    height: rem(55);
-    left: calc(50% - min(48vw, 40rem));
-    bottom: -12%;
+  content: '';
+  background-image: url(../images/common/fish-right.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: rem(120);
+  height: rem(55);
+  left: calc(50% - min(46vw, 40rem));
+  top: 9.5%;
   @include mq('md') {
     position: absolute;
     content: '';
@@ -26,28 +23,27 @@
     background-position: center;
     width: rem(301);
     height: rem(138);
-    left: calc(50% - min(48vw, 40rem));
-    top: -12%;
+    left: calc(50% - min(48vw, 38.7rem));
+    top: 12%;
   }
-
 }
 
 .about-us__container {
   position: relative;
 }
 .about-us__image {
-  margin-top: rem(29);
+  margin-top: rem(51);
   position: relative;
   display: flex;
   justify-content: center;
 
   @include mq('md') {
-    margin-top: rem(40);
+    margin-top: rem(150);
     position: relative;
   }
 }
 
-.about-us-image__left{
+.about-us-image__left {
   display: none;
   @include mq('md') {
     width: 37.1%;
@@ -55,7 +51,6 @@
     display: block;
   }
 }
-
 
 .about-us-image__left img {
   aspect-ratio: 128 / 194;
@@ -65,7 +60,7 @@
   }
 }
 .about-us-image__right {
-position: relative;
+  position: relative;
 
   @include mq('md') {
     position: relative;
@@ -89,18 +84,18 @@ position: relative;
     position: absolute;
     margin-top: 0;
     display: flex;
-    gap: rem(40);
+    gap: rem(46);
     align-items: center;
 
     padding: 0 rem(15);
-    top: 35%;
+    top: 30%;
     left: 17%;
   }
 }
 
 .about-us__title {
   position: absolute;
-  top: 10.52631579%;
+  top: 5.52631579%;
   left: 6.956521739%;
   font-family: $base-font-family;
   font-size: rem(40);
@@ -116,6 +111,7 @@ position: relative;
     font-size: rem(80);
     line-height: 1.25;
     z-index: 50;
+    text-indent: rem(2);
   }
 }
 
@@ -136,6 +132,7 @@ position: relative;
   margin-top: rem(17);
   @include mq('md') {
     // margin-top: rem(40);
+    margin-top: 0;
   }
 }
 .about-us__button {
@@ -144,5 +141,3 @@ position: relative;
     margin-top: rem(40);
   }
 }
-
-

@@ -1,6 +1,13 @@
-@use "global" as *;
-.layout-footer{
+@use 'global' as *;
+.layout-footer {
+  margin-top: rem(100);
   @include mq('md') {
-  margin-top: rem(180);
+    margin-top: rem(180);
+  }
+}
+
+.layout-footer.footer__about {
+  @include mq('md') {
+    margin-top: rem(163);
   }
 }

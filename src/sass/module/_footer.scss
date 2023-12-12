@@ -7,12 +7,11 @@
 
   @include mq('md') {
     padding-bottom: rem(80);
-    padding-top: rem(0);
+    padding-top: rem(76);
   }
 }
 .footer__logos {
   @include mq('md') {
-    padding-top: rem(76);
     display: flex;
     align-items: flex-end;
   }

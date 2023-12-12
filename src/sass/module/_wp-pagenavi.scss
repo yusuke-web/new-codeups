@@ -2,24 +2,26 @@
 
 // ページネーション
 
-.sub-campaign-card__pagination {
-  margin-top: rem(80);
-}
-
 .wp-pagenavi {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: rem(12);
-
   @include mq('md') {
   }
 }
-.wp-pagenavi a.sub-campaign-card__pagination-prev,
-.wp-pagenavi a.sub-campaign-card__pagination-next {
+.sub-campaign-card__wp-pagenavi{
+  margin-top: rem(80);
+}
+.blog__wp-pagenavi{
+  margin-top: rem(80);
+}
+
+.wp-pagenavi a.wp-pagenavi-prev,
+.wp-pagenavi a.wp-pagenavi-next {
   padding: rem(6) rem(12);
 }
-.wp-pagenavi a.sub-campaign-card__pagination-prev::before {
+.wp-pagenavi a.wp-pagenavi-prev::before {
   position: relative;
   top: rem(1);
   left: rem(3);
@@ -35,7 +37,7 @@
   @include mq('md') {
   }
 }
-.wp-pagenavi a.sub-campaign-card__pagination-next::after {
+.wp-pagenavi a.wp-pagenavi-next::after {
   position: relative;
   top: rem(1);
   right: rem(3);
@@ -52,7 +54,7 @@
   }
 }
 
-.wp-pagenavi a.sub-campaign-card__pagination-next {
+.wp-pagenavi a.sub-campaign-card__wp-pagenavi-next {
   margin-left: rem(28);
 }
 .wp-pagenavi a,

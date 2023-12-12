@@ -172,11 +172,11 @@ jQuery(function ($) {
 
 jQuery(function ($) {
   // 画像をクリックしたときのイベント
-  $('.gallery__item img').on('click', function () {
+  $('.gallery-list__item img').on('click', function () {
     $('.gallery-modal').addClass('show');
     $('.modal__image').attr('src', $(this).attr('src')); // クリックされた画像のsrcを設定
 
-    if ($(this).parent().is('.gallery__item:nth-of-type(6n + 1), .gallery__item:nth-of-type(6n + 6)')) {
+    if ($(this).parent().is('.gallery-list__item:nth-of-type(6n + 1), .gallery-list__item:nth-of-type(6n + 6)')) {
       $('.modal__image').addClass('special-size');
     } else {
       $('.modal__image').removeClass('special-size');

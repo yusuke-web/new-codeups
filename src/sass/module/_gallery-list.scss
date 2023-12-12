@@ -1,0 +1,66 @@
+@use 'global' as *;
+
+.gallery-list {
+  display: grid;
+  gap: rem(8);
+  cursor: pointer;
+  @include mq('md') {
+    grid-template-columns: repeat(11, 1fr);
+    grid-auto-flow: dense;
+  }
+}
+
+.gallery-list__item {
+  @include mq('md') {
+    grid-column: span 6;
+    grid-row: span 1;
+    overflow: hidden;
+  }
+}
+.gallery-list__item:nth-of-type(6n + 1),
+.gallery-list__item:nth-of-type(6n + 6) {
+  @include mq('md') {
+    grid-column: span 5;
+    grid-row: span 2;
+  }
+}
+.gallery-list__item img {
+  aspect-ratio: 345 / 219;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  @include mq('md') {
+    aspect-ratio: 580 / 369;
+    // max-width: rem(580);
+    // max-height: rem(369);
+  }
+}
+.gallery-list__item {
+
+  @include mq('md') {
+    max-width: rem(580);
+    max-height: rem(369);
+  }
+}
+
+
+.gallery-list__item:nth-of-type(6n + 1),
+.gallery-list__item:nth-of-type(6n + 6) {
+
+  @include mq('md') {
+      max-width: rem(492);
+      max-height: rem(746);
+    }
+
+}   
+
+.gallery-list__item:nth-of-type(6n + 1) img,
+.gallery-list__item:nth-of-type(6n + 6) img {
+  aspect-ratio: 345/523;
+  @include mq('md') {
+    aspect-ratio: 492 / 746;
+    // max-width: rem(492);
+    // max-height: rem(746);
+  }
+  }
+

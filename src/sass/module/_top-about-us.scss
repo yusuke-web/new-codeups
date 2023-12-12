@@ -76,7 +76,7 @@
     align-items: center;
 
     padding: 0 rem(15);
-    top: 35%;
+    top: 40%;
     left: 17%;
   }
 }
@@ -118,6 +118,5 @@
 .top-about-us__button {
   margin-top: rem(26);
   @include mq('md') {
-    margin-top: rem(40);
   }
 }

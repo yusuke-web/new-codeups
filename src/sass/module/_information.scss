@@ -105,25 +105,33 @@
 }
 
 .information-tab__content {
-  padding: rem(22);
-  border: rem(1) solid $lightGreen;
-  display: none;
-
-  // opacity: 0;
-  transition: opacity 0.3s;
+  // border: rem(1) solid $lightGreen;
+  // display: none;
+  height: 0;
+  opacity: 0;
   @include mq('md') {
-    display: none;
-    border: rem(2) solid $lightGreen;
+    // display: none;
+    opacity: 0;
+    height: 0;
   }
 }
 .information-tab__content.is-active {
   display: block;
   // opacity:1;
-  animation: fade 1s;
+  // border: rem(1) solid $lightGreen;
+  transition: opacity 0.8s ease;
+  opacity: 1;
+  // animation: fade 1s;
   @include mq('md') {
+    border: rem(2) solid $lightGreen;
     display: flex;
-    gap: rem(48);
+    gap: 3rem;
+    padding: rem(22);
     justify-content: center;
+    opacity: 1;
+    height: 100%;
+    padding: 1.375rem;
+    transition: opacity 0.3s ease;
   }
 }
 .information-tab__box {
@@ -137,7 +145,7 @@
   font-size: rem(24);
   color: $darkGreen;
   line-height: 1;
-  border-bottom:rem(1) solid $lightGreen;
+  border-bottom: rem(1) solid $lightGreen;
   padding-bottom: rem(8);
   @include mq('md') {
   }
