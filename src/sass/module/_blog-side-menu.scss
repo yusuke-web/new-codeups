@@ -1,7 +1,11 @@
-@use "global" as *;
+@use 'global' as *;
 
 // サイドバー
-
+.blog-side-menu {
+  @include mq('md') {
+  width: 26.01769912%;
+  }
+}
 // block
 .blog-side-menu-title {
   font-family: $third-font-family;
@@ -15,6 +19,15 @@
   @include mq('md') {
   }
 }
+
+// 人気記事
+.blog-side-menu__popular {
+  width: 100%;
+}
+
+.blog-side-menu__popular-section {
+}
+
 .blog-side-menu-title::before {
   background-image: url(../images/blog/whale-darkGreen.svg);
   background-position: center;
@@ -28,27 +41,34 @@
   margin-right: rem(8);
 }
 
-.blog-side-menu__popular-side-menu {
+.blog-side-menu__popular {
   @include mq('md') {
   }
 }
 
-.blog-side-menu__popular-articles{
-  
+.blog-side-menu__popular-articles {
   @include mq('md') {
-    
   }
 }
 
 .blog-side-menu__popular-article {
-  display: flex;
-  gap: rem(16);
+  // display: flex;
   padding: rem(16);
-  box-shadow: rem(2) rem(2) rem(10) 0 rgba(0, 0, 0, 0.25) ;
-  
+  box-shadow: rem(2) rem(2) rem(10) 0 rgba(0, 0, 0, 0.25);
+
   margin-top: rem(24);
   @include mq('md') {
   }
+}
+.blog-side-menu__popular-article a {
+  display: flex;
+  gap: rem(16);
+  transition: 0.3s opacity;
+  @include mq('md') {
+  }
+}
+.blog-side-menu__popular-article a:hover {
+  opacity: 0.7;
 }
 
 .blog-side-menu__popular-image {
@@ -56,19 +76,18 @@
   @include mq('md') {
   }
 }
-.blog-side-menu__popular-image img{
-  aspect-ratio:121 / 90;
+.blog-side-menu__popular-image img {
+  aspect-ratio: 121 / 90;
   object-fit: cover;
   width: 100%;
   @include mq('md') {
-  
   }
 }
 .blog-side-menu__popular-container {
   width: 47.70992366%;
 }
 
-.blog-side-menu__popular-date{
+.blog-side-menu__popular-date {
   font-family: $base-font-family;
   font-size: rem(12);
   line-height: 1.5;
@@ -76,15 +95,149 @@
   font-weight: $regular;
 
   @include mq('md') {
-  
   }
-  
 }
-
-.blog-side-menu__popular-title{
+// 口コミ
+.blog-side-menu__review-title {
   font-family: $third-font-family;
   font-weight: $medium;
   font-size: rem(16);
   color: $darkGreen;
+}
+
+.blog-side-menu__review {
+  margin-top: rem(80);
+  @include mq('md') {
+  }
+}
+.blog-side-menu__review-side-menu {
+  @include mq('md') {
+  }
+}
+
+.blog-side-menu__review-card {
+  margin-top: rem(24);
+
+  @include mq('md') {
+  }
+}
+
+.blog-side-menu__review-image img {
+  aspect-ratio: 294 / 218;
+  object-fit: cover;
+  width: 100%;
+  @include mq('md') {
+  }
+}
+
+.blog-side-menu__reviewer-info {
+  font-family: $third-font-family;
+  font-weight: $regular;
+  font-size: rem(12);
+  line-height: 1.5;
+  color: $darkGreen;
+
+  margin-top: rem(16);
+}
+
+.blog-side-menu__review-title {
+  font-family: $third-font-family;
+  font-size: rem(24);
+  font-weight: $medium;
+  color: $darkGreen;
+  margin-top: rem(8);
+}
+.blog-side-menu__review-button {
+  text-align: center;
+  margin-top: rem(40);
+}
+// キャンペーン
+
+.blog-side-menu__campaign {
+  margin-top: rem(80);
+  @include mq('md') {
+  }
+}
+
+.blog-side-menu__campaign-cards {
+  margin-top: rem(16);
+  @include mq('md') {
+  }
+}
+
+.blog-side-menu__campaign-button {
+  margin-top: rem(40);
+  text-align: center;
+  @include mq('md') {
+  }
+}
+
+// アーカイブ
+.blog-side-menu__archive {
+  margin-top: rem(80);
+
+  @include mq('md') {
+  }
+}
+
+.blog-side-menu-accordion {
+  margin-top: rem(24);
+  @include mq('md') {
+  }
+}
+
+.blog-side-menu-accordion__title {
+  font-family: $third-font-family;
+  font-size: rem(24);
+  font-weight: $regular;
+  color: $lightGreen;
+}
+.blog-side-menu-accordion__title::before {
+  margin-right: rem(8);
+
+  position: relative;
+  display: inline-block;
+  content: '';
+  width: 0;
+  top: rem(2);
+  height: 0;
+  border-style: solid;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 17px solid #408f95;
+  border-right: 0;
+  transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+}
+.blog-side-menu-accordion__title.is-open::before {
+  transform: rotate(90deg);
+}
+.blog-side-menu-accordion__text {
+  text-indent: 1em;
+  margin-top: rem(4);
+  padding-left: rem(8);
+
+  font-family: 
+  $third-font-family;
+  font-size: rem(24);
+  font-weight: $regular;
+  color: $lightGreen;
   
+  @include mq('md') {
+  }
+}
+
+.blog-side-menu-accordion__text::before {
+  margin-right: rem(8);
+  position: relative;
+  display: inline-block;
+  content: '';
+  width: 0;
+  top: rem(2);
+  height: 0;
+  border-style: solid;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 17px solid #408f95;
+  border-right: 0;
+  transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
 }

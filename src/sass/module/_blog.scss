@@ -1,11 +1,17 @@
 @use 'global' as *;
 
 .blog__container {
+  margin-top: rem(52);
   @include mq('md') {
+    display: flex;
+    gap: rem(80);
+    margin-top: rem(150);
   }
 }
 .blog__cards-container {
   @include mq('md') {
+    width: 62.47787611%;
+    // margin-top: rem(150);
   }
 }
 
@@ -15,7 +21,11 @@
 }
 
 .blog__side-menu {
+  margin-top: 5rem;
+  width: 85.22%;
+  margin-right: auto;
+  margin-left: auto;
   @include mq('md') {
+    margin-top: 0;
   }
 }
-

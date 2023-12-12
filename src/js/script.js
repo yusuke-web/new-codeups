@@ -1,5 +1,4 @@
 jQuery(function ($) {
-
   // この中であればWordpressでも「$」が使用可能になる
   // ヘッダーの高さ分だけコンテンツを下げる
 
@@ -204,7 +203,6 @@ jQuery(function ($) {
 
 // information タブ切り替え
 
-
 $(function () {
   const tabButton = $('.js-tab-button'),
     tabContent = $('.js-tab-content');
@@ -215,6 +213,19 @@ $(function () {
     $(this).addClass('is-active');
     tabContent.removeClass('is-active');
     tabContent.eq(index).addClass('is-active');
+  });
+});
 
+// Blog アコーディオン
+
+$(function () {
+  $('.js-accordion__item:first-child .js-accordion__content').css(
+    'display',
+    'block'
+  );
+  $('.js-accordion__item:first-child .js-accordion__title').addClass('is-open');
+  $('.js-accordion__title').on('click', function () {
+    $(this).toggleClass('is-open');
+    $(this).next().slideToggle(300);
   });
 });
