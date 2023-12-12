@@ -180,8 +180,8 @@ a {
 	margin-top: 6.6875rem;
 }
 
-.layout-sub-campaign-container {
-	margin-top: 2.5rem;
+.layout-sub-campaign {
+	margin-top: 0.5rem;
 }
 
 .layout-swiper-wrapper {
@@ -295,7 +295,6 @@ a {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 0.875rem;
 	font-weight: 400;
-	margin-top: 0.5rem;
 }
 
 .breadcrumbs__capital {
@@ -1229,6 +1228,10 @@ body.active {
 	width: 81.16%;
 }
 
+.sub-campaign__container {
+	margin-top: 2.5rem;
+}
+
 .sub-campaign__categories {
 	-moz-column-gap: 1.25rem;
 	column-gap: 1.25rem;
@@ -1928,10 +1931,6 @@ html {
 	margin-top: 8.5rem;
 }
 
-.layout-sub-campaign-container {
-	margin-top: 2.625rem;
-}
-
 .layout-footer.layout-sub-campaign-footer {
 	margin-top: 10rem;
 }
@@ -2361,19 +2360,19 @@ html {
 }
 
 .sub-campaign-card__body {
-	padding: 1.75rem 1.5rem 0rem;
+	padding: 1.5rem 1.5rem 0rem;
 }
 
 .sub-campaign-card__tag {
 	display: inline-block;
 	max-width: -moz-fit-content;
 	max-width: fit-content;
-	padding: 0.453125rem 0.945rem;
+	padding: 0.3129993rem 0.945rem;
 }
 
 .sub-campaign-card__title {
 	font-size: 1.5rem;
-	margin-top: 0.5625rem;
+	margin-top: 0.1875rem;
 	padding-bottom: 0.1875rem;
 }
 
@@ -2444,6 +2443,10 @@ html {
 	grid-template-columns: repeat(2, 1fr);
 	row-gap: 5rem;
 	width: 100%;
+}
+
+.sub-campaign__container {
+	margin-top: 2.625rem;
 }
 
 .sub-campaign__categories {

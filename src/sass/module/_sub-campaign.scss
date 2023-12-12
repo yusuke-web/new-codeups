@@ -1,5 +1,12 @@
 @use 'global' as *;
 
+
+.sub-campaign__container{
+  margin-top: rem(40);
+  @include mq('md') {
+  margin-top: rem(42);
+  }
+}
 .sub-campaign__categories {
   position: relative;
   display: flex;

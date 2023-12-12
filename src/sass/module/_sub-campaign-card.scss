@@ -29,7 +29,7 @@
 .sub-campaign-card__body {
   padding: rem(20) rem(16) rem(24);
   @include mq('md') {
-    padding: rem(28) rem(24) rem(0);
+    padding: rem(24) rem(24) rem(0);
   }
 }
 
@@ -45,7 +45,7 @@
   line-height: 1.8333;
   color: $lightGreen;
   @include mq('md') {
-    padding: rem(7.25) rem(15.12);
+    padding: rem(5.0079888) rem(15.12);
     max-width: fit-content;
     display: inline-block;
   }
@@ -61,7 +61,7 @@
   border-bottom: rem(1) solid $lightGreen;
   padding-bottom: rem(7);
   @include mq('md') {
-    margin-top: rem(9);
+    margin-top: rem(3);
     font-size: rem(24);
     padding-bottom: rem(3);
   }

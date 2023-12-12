@@ -216,12 +216,5 @@ $(function () {
     tabContent.removeClass('is-active');
     tabContent.eq(index).addClass('is-active');
 
-    // tabContent.stop().fadeOut(1000, function () {
-    //   tabContent
-    //     .removeClass('is-active')
-    //     .eq(index)
-    //     .addClass('is-active')
-    //     .fadeIn(1000);
-    // });
   });
 });

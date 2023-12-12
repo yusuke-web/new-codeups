@@ -1,7 +1,6 @@
 @use 'global' as *;
 
 .breadcrumbs {
-  margin-top: rem(8);
   font-family: $third-font-family;
   font-size: rem(14);
   font-weight: $regular;
@@ -10,7 +9,7 @@
   @include mq('md') {
   }
 }
-.breadcrumbs__capital{
+.breadcrumbs__capital {
   text-transform: uppercase;
 }
 .breadcrumbs__inner {
@@ -21,10 +20,9 @@
   padding-left: rem(15);
   padding-right: rem(15);
 }
-.breadcrumb__sub{
+.breadcrumb__sub {
   margin-left: rem(6);
   @include mq('md') {
-  
   }
 }
 
@@ -40,8 +38,5 @@
   top: rem(-2);
   transform: rotate(45deg);
   @include mq('md') {
-  
   }
 }
-
-
