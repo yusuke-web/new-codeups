@@ -10,11 +10,16 @@
   @include mq('md') {
   }
 }
-.sub-campaign-card__wp-pagenavi{
+.sub-campaign-card__wp-pagenavi {
   margin-top: rem(80);
 }
-.blog__wp-pagenavi{
+.blog__wp-pagenavi {
   margin-top: rem(80);
+}
+.wp-pagenavi-next {
+  margin-left: rem(28);
+  @include mq('md') {
+  }
 }
 
 .wp-pagenavi a.wp-pagenavi-prev,

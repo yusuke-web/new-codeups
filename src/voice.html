@@ -36,8 +36,8 @@
     <!-- JavaScript -->
     <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script defer src="./js/jquery.inview.min.js"></script>
-
+    <script defer src="./assets/js/jquery.inview.min.js"></script>
+    <!-- <script src="./assets/js/jquery.inview.min.js"></script> -->
     <script defer src="./assets/js/script.js"></script>
   </head>
   <body>
@@ -209,278 +209,255 @@
         <div class="common-fv__inner">
           <picture class="common-fv__img common-fv">
             <source
-              srcset="./assets/images/blog/blog-fv-PC.jpg"
+              srcset="./assets/images/voice/voice-fv-PC.jpg"
               media="(min-width: 768px)" />
-            <img src="./assets/images/blog/blog-fv-SP.jpg" alt="黄色い海水魚" />
+            <img
+              src="./assets/images/voice/voice-fv-SP.jpg"
+              alt="黄色い海水魚" />
           </picture>
         </div>
-        <h1 class="common-fv__title">Blog</h1>
+        <h1 class="common-fv__title">Voice</h1>
       </div>
       <!-- キャンペーン画像 -->
 
       <!-- blog cards -->
 
-      <section class="blog-detail layout-blog-detail">
-        <div class="blog__inner inner">
+      <section class="voice layout-voice">
+        <div class="voice__inner inner">
           <!-- パンくずリスト -->
-          <div class="blog__breadcrumbs breadcrumbs layout-breadcrumbs">
+          <div class="voice__breadcrumbs breadcrumbs layout-breadcrumbs">
             <span>
               <a href="index.html">
                 <span>Top</span>
               </a>
             </span>
             <span>
-              <a href="/blog.html">
-                <span>ブログ一覧</span>
-              </a>
-            </span>
-            <span>
-              <span>ブログ詳細</span>
+              <span>お客様の声</span>
             </span>
           </div>
-          <div class="blog__container">
-            <!-- Blog detail -->
 
-            <div class="blog-detail__contents">
-              <time datetime="2023-11-17">2023.11/17</time>
-              <h2 class="blog-detail__header">ライセンス取得</h2>
-              <div class="blog-detail__contents-img">
-                <img
-                  src="./assets/images/blog-detail/blog-detailPC.jpg"
-                  alt="" />
-              </div>
-              <p class="blog-detail__contents-text">
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-              </p>
-              <div class="blog-detail__contents-img">
-                <img
-                  src="./assets/images/blog-detail/blog-detailPC.jpg"
-                  alt="" />
-              </div>
-              <p class="blog-detail__contents-text">
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-              </p>
-              <ul class="blog-detail__contents-lists">
-                <li class="blog-detail__contents-list">リスト１</li>
-                <li class="blog-detail__contents-list">リスト2</li>
-                <li class="blog-detail__contents-list">リスト3</li>
-              </ul>
-              <p class="blog-detail__contents-text">
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-              </p>
-              <div class="blog-detail__button">
-                <a href="#"></a>
-                <a href="#"></a>
-              </div>
-            </div>
+          <!-- Voice カテゴリ -->
 
-            <!-- サイドメニュー -->
-            <div class="blog-detail__side-menu blog-side-menu">
-              <div class="blog-side-menu__inner">
-                <!-- 人気記事 -->
-                <div class="blog-side-menu__popular">
-                  <h2
-                    class="blog-side-menu__popular-section blog-side-menu-title">
-                    人気記事
-                  </h2>
-
-                  <ul class="blog-side-menu__popular-articles">
-                    <li class="blog-side-menu__popular-article">
-                      <a href="#">
-                        <div class="blog-side-menu__popular-image">
-                          <img
-                            src="./assets/images/blog/blog-popular1.jpg"
-                            alt="黄色い魚が泳いいでいる様子" />
-                        </div>
-                        <div class="blog-side-menu__popular-container">
-                          <time
-                            class="blog-side-menu__popular-date"
-                            datetime="20323-11-17"
-                            >2023.11.17</time
-                          >
-                          <p class="blog-side-menu__popular-title">
-                            ライセンス取得
-                          </p>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="blog-side-menu__popular-article">
-                      <a href="#">
-                        <div class="blog-side-menu__popular-image">
-                          <img
-                            src="./assets/images/blog/blog-popular2.jpg"
-                            alt="ウミガメが泳いいでいる様子" />
-                        </div>
-                        <div class="blog-side-menu__popular-container">
-                          <time
-                            class="blog-side-menu__popular-date"
-                            datetime="20323-11-17"
-                            >2023.11.17</time
-                          >
-                          <p class="blog-side-menu__popular-title">
-                            ウミガメと泳ぐ
-                          </p>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="blog-side-menu__popular-article">
-                      <a href="#">
-                        <div class="blog-side-menu__popular-image">
-                          <img
-                            src="./assets/images/blog/blog-popular3.jpg"
-                            alt="カクレクマノミがイソギンチャクに隠れている様子" />
-                        </div>
-                        <div class="blog-side-menu__popular-container">
-                          <time
-                            class="blog-side-menu__popular-date"
-                            datetime="20323-11-17"
-                            >2023.11.17</time
-                          >
-                          <p class="blog-side-menu__popular-title">
-                            カクレクマノミ
-                          </p>
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <!-- 口コミ -->
-                <div class="blog-side-menu__review">
-                  <h2
-                    class="blog-side-menu__review-side-menu blog-side-menu-title">
-                    口コミ
-                  </h2>
-                  <div class="blog-side-menu__review-card">
-                    <div class="blog-side-menu__review-image">
+          <div class="voice__categories">
+            <p class="voice__category-item voice__category-item--current">
+              <a href="#">all</a>
+            </p>
+            <p class="voice__category-item">
+              <a href="#">ライセンス講習</a>
+            </p>
+            <p class="voice__category-item">
+              <a href="#">ファンダイビング</a>
+            </p>
+            <p class="voice__category-item">
+              <a href="#">体験ダイビング</a>
+            </p>
+          </div>
+          <!--  -->
+          <div class="voice__cards-container">
+            <ul class="voice__cards voice-cards">
+              <li class="voice-cards__item">
+                <a href="#" class="">
+                  <div class="voice-cards__container">
+                    <div class="voice-cards__info">
+                      <div class="voice-cards__tag">
+                        <p class="voice-cards__age">20代(女性)</p>
+                        <div class="voice-cards__category">ライセンス講習</div>
+                      </div>
+                      <p class="voice-cards__title">
+                        ここにタイトルが入ります。ここにタイトル
+                      </p>
+                    </div>
+                    <picture class="voice-cards__img js-colorbox">
+                      <source
+                        srcset="./assets/images/voice/voice-cardPC1.jpg"
+                        media="(min-width: 768px)" />
                       <img
-                        src="./assets/images/blog/blog-review.jpg"
-                        alt="カップルがインタビューに答えている様子" />
-                    </div>
-                    <p class="blog-side-menu__reviewer-info">30代(カップル)</p>
-                    <p class="blog-side-menu__review-title">
-                      ここにタイトルが入ります。ここにタイトル
+                        src="./assets/images/voice/voice-cardSP1.jpg"
+                        alt="麦わら帽子を被った笑顔の女性" />
+                    </picture>
+                  </div>
+                  <div class="voice-cards__body">
+                    <p class="voice-cards__text">
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                      ここにテキストが入ります。ここにテキストが入ります。
                     </p>
-                    <div class="blog-side-menu__review-button">
-                      <a href="" class="button"
-                        >View more
-                        <span class="button__arrow"></span>
-                      </a>
+                  </div>
+                </a>
+              </li>
+              <li class="voice-cards__item">
+                <a href="#" class="">
+                  <div class="voice-cards__container">
+                    <div class="voice-cards__info">
+                      <div class="voice-cards__tag">
+                        <p class="voice-cards__age">20代(男性)</p>
+                        <div class="voice-cards__category">
+                          ファンダイビング
+                        </div>
+                      </div>
+                      <p class="voice-cards__title">
+                        ここにタイトルが入ります。ここにタイトル
+                      </p>
                     </div>
+                    <picture class="voice-cards__img js-colorbox">
+                      <source
+                        srcset="./assets/images/voice/voice-cardPC2.jpg"
+                        media="(min-width: 768px)" />
+                      <img
+                        src="./assets/images/voice/voice-cardSP2.jpg"
+                        alt="サムアップしている男性" />
+                    </picture>
                   </div>
-                </div>
-                <!-- キャンペーン -->
-                <div class="blog-side-menu__campaign">
-                  <h2
-                    class="blog-side-menu__review-side-menu blog-side-menu-title">
-                    キャペーン
-                  </h2>
-                  <!-- カード -->
-                  <ul
-                    class="blog-side-menu__campaign-cards blog-side-menu-campaign-cards">
-                    <li
-                      class="blog-side-menu-campaign-cards__item blog-side-menu-campaign-card">
-                      <picture class="blog-side-menu-campaign-card__img">
-                        <source
-                          srcset="./assets/images/blog/blog-campaign1.jpg"
-                          media="(min-width: 768px)" />
-                        <img
-                          src="./assets/images/blog/blog-campaign1.jpg"
-                          alt="色鮮やかな海水魚の群れ" />
-                      </picture>
-                      <div class="blog-side-menu-campaign-card__body">
-                        <h2 class="blog-side-menu-campaign-card__title">
-                          ライセンス取得
-                        </h2>
-
-                        <div class="blog-side-menu-campaign-card__container">
-                          <p class="blog-side-menu-campaign-card__text">
-                            全部コミコミ(お一人様)
-                          </p>
-                          <div class="blog-side-menu-campaign-card__price-wrap">
-                            <p class="blog-side-menu-campaign-card__price-sub">
-                              ¥56,000
-                            </p>
-                            <p class="blog-side-menu-campaign-card__price-main">
-                              ¥46,000
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li
-                      class="blog-side-menu-campaign-cards__item blog-side-menu-campaign-card">
-                      <picture class="blog-side-menu-campaign-card__img">
-                        <source
-                          srcset="./assets/images/blog/blog-campaign2.jpg"
-                          media="(min-width: 768px)" />
-                        <img
-                          src="./assets/images/blog/blog-campaign2.jpg"
-                          alt="色鮮やかな海水魚の群れ" />
-                      </picture>
-                      <div class="blog-side-menu-campaign-card__body">
-                        <h2 class="blog-side-menu-campaign-card__title">
-                          貸切体験ダイビング
-                        </h2>
-
-                        <div class="blog-side-menu-campaign-card__container">
-                          <p class="blog-side-menu-campaign-card__text">
-                            全部コミコミ(お一人様)
-                          </p>
-                          <div class="blog-side-menu-campaign-card__price-wrap">
-                            <p class="blog-side-menu-campaign-card__price-sub">
-                              ¥24,000
-                            </p>
-                            <p class="blog-side-menu-campaign-card__price-main">
-                              ¥18,000
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                  <div class="blog-side-menu__campaign-button">
-                    <a href="" class="button"
-                      >View more
-                      <span class="button__arrow"></span>
-                    </a>
+                  <div class="voice-cards__body">
+                    <p class="voice-cards__text">
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                      ここにテキストが入ります。ここにテキストが入ります。
+                    </p>
                   </div>
-                </div>
-
-                <!-- アーカイブ -->
-                <div class="blog-side-menu__archive">
-                  <h2
-                    class="blog-side-menu__archive-side-menu blog-side-menu-title">
-                    アーカイブ
-                  </h2>
-                  <!-- アコーディオン -->
-                  <div
-                    class="blog-side-menu__accordion blog-side-menu-accordion js-accordion">
-                    <div class="blog-side-menu-accordion__container">
-                      <div
-                        class="blog-side-menu-accordion__item js-accordion__item">
-                        <p
-                          class="blog-side-menu-accordion__title js-accordion__title">
-                          2023
-                        </p>
-                        <div
-                          class="blog-side-menu-accordion__content js-accordion__content">
-                          <p class="blog-side-menu-accordion__text">3月</p>
-                          <p class="blog-side-menu-accordion__text">2月</p>
-                          <p class="blog-side-menu-accordion__text">1月</p>
+                </a>
+              </li>
+              <li class="voice-cards__item">
+                <a href="#" class="">
+                  <div class="voice-cards__container">
+                    <div class="voice-cards__info">
+                      <div class="voice-cards__tag">
+                        <p class="voice-cards__age">20代(男性)</p>
+                        <div class="voice-cards__category">
+                          ファンダイビング
                         </div>
                       </div>
-                      <div
-                        class="blog-side-menu-accordion__item js-accordion__item">
-                        <p
-                          class="blog-side-menu-accordion__title js-accordion__title">
-                          2022
-                        </p>
-                      </div>
+                      <p class="voice-cards__title">
+                        ここにタイトルが入ります。ここにタイトル
+                      </p>
                     </div>
+                    <picture class="voice-cards__img js-colorbox">
+                      <source
+                        srcset="./assets/images/voice/voice-cardPC3.jpg"
+                        media="(min-width: 768px)" />
+                      <img
+                        src="./assets/images/voice/voice-cardSP3.jpg"
+                        alt="サムアップしている男性" />
+                    </picture>
                   </div>
-                </div>
-              </div>
+                  <div class="voice-cards__body">
+                    <p class="voice-cards__text">
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                      ここにテキストが入ります。ここにテキストが入ります。
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="voice-cards__item">
+                <a href="#" class="">
+                  <div class="voice-cards__container">
+                    <div class="voice-cards__info">
+                      <div class="voice-cards__tag">
+                        <p class="voice-cards__age">20代(男性)</p>
+                        <div class="voice-cards__category">
+                          ファンダイビング
+                        </div>
+                      </div>
+                      <p class="voice-cards__title">
+                        ここにタイトルが入ります。ここにタイトル
+                      </p>
+                    </div>
+                    <picture class="voice-cards__img js-colorbox">
+                      <source
+                        srcset="./assets/images/voice/voice-cardPC4.jpg"
+                        media="(min-width: 768px)" />
+                      <img
+                        src="./assets/images/voice/voice-cardSP4.jpg"
+                        alt="サムアップしている男性" />
+                    </picture>
+                  </div>
+                  <div class="voice-cards__body">
+                    <p class="voice-cards__text">
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                      ここにテキストが入ります。ここにテキストが入ります。
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="voice-cards__item">
+                <a href="#" class="">
+                  <div class="voice-cards__container">
+                    <div class="voice-cards__info">
+                      <div class="voice-cards__tag">
+                        <p class="voice-cards__age">20代(男性)</p>
+                        <div class="voice-cards__category">
+                          ファンダイビング
+                        </div>
+                      </div>
+                      <p class="voice-cards__title">
+                        ここにタイトルが入ります。ここにタイトル
+                      </p>
+                    </div>
+                    <picture class="voice-cards__img js-colorbox">
+                      <source
+                        srcset="./assets/images/voice/voice-cardPC5.jpg"
+                        media="(min-width: 768px)" />
+                      <img
+                        src="./assets/images/voice/voice-cardSP5.jpg"
+                        alt="サムアップしている男性" />
+                    </picture>
+                  </div>
+                  <div class="voice-cards__body">
+                    <p class="voice-cards__text">
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                      ここにテキストが入ります。ここにテキストが入ります。
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="voice-cards__item">
+                <a href="#" class="">
+                  <div class="voice-cards__container">
+                    <div class="voice-cards__info">
+                      <div class="voice-cards__tag">
+                        <p class="voice-cards__age">20代(男性)</p>
+                        <div class="voice-cards__category">
+                          ファンダイビング
+                        </div>
+                      </div>
+                      <p class="voice-cards__title">
+                        ここにタイトルが入ります。ここにタイトル
+                      </p>
+                    </div>
+                    <picture class="voice-cards__img js-colorbox">
+                      <source
+                        srcset="./assets/images/voice/voice-cardPC6.jpg"
+                        media="(min-width: 768px)" />
+                      <img
+                        src="./assets/images/voice/voice-cardSP6.jpg"
+                        alt="サムアップしている男性" />
+                    </picture>
+                  </div>
+                  <div class="voice-cards__body">
+                    <p class="voice-cards__text">
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                      ここにテキストが入ります。ここにテキストが入ります。
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <!-- Pagination -->
+            <div class="blog__wp-pagenavi wp-pagenavi">
+              <a href="/blog-detail.html" class="wp-pagenavi-prev"></a>
+              <span class="current">1</span>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+              <a class="u-desktop" href="#">5</a>
+              <a class="u-desktop" href="#">6</a>
+              <a href="#" class="wp-pagenavi-next"></a>
             </div>
+            <!--  -->
           </div>
         </div>
       </section>

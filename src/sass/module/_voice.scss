@@ -1,0 +1,78 @@
+@use "global" as *;
+
+.voice__cards-container{
+  margin-top: rem(40);
+  @include mq('md') {
+  
+  }
+}
+
+
+// Category
+
+.voice__categories {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: rem(50);
+  column-gap: rem(20);
+  row-gap: rem(14);
+  @include mq('md') {
+    margin-top: rem(148);
+    column-gap: rem(32);
+    row-gap: 0;
+  }
+}
+
+.voice__categories::after {
+  position: absolute;
+  content: '';
+  background-image: url(../images/common/fish-right.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: rem(120);
+  height: rem(55);
+  left: calc(50% - min(46vw, 38.75rem));
+  top: -27%;
+  z-index: -1;
+  @include mq('md') {
+    width: rem(301);
+    height: rem(138);
+    top: -192%;
+  }
+}
+
+.voice__category-item {
+  font-size: rem(14);
+  
+  font-family: $third-font-family;
+  font-weight: $regular;
+  line-height: 1.5714285714;
+  width: 100%;
+  max-width: rem(162);
+  color: $lightGreen;
+  text-align: center;
+  border: rem(1) solid $lightGreen;
+  
+  @include mq('md') {
+  }
+}
+.voice__category-item a{
+  display: block;
+  height: 100%;
+  padding: rem(6);
+}
+.voice__category-item.voice__category-item--current {
+  font-family: $third-font-family;
+  font-weight: $regular;
+  line-height: 1.5714285714;
+  background-color: $lightGreen;
+  text-transform: uppercase;
+  color: $white;
+  font-size: rem(14);
+
+  @include mq('md') {
+  }
+}
+

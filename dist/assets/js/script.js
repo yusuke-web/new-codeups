@@ -127,10 +127,12 @@ jQuery(function ($) {
       clickable: true
     }
   });
-  //要素の取得とスピードの設定
 
-  var box = $('.js-colorbox'),
-    speed = 700;
+  // カラーボックスの設定
+
+  //要素の取得とスピードの設定
+  // const box = $('.js-colorbox'),
+  //   speed = 700;
 
   //.colorboxの付いた全ての要素に対して下記の処理を行う
   $(function () {

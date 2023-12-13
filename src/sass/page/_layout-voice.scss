@@ -1,0 +1,9 @@
+@use "global" as *;
+
+
+.layout-voice{
+  margin-top: rem(8);
+  @include mq('md') {
+  
+  }
+}
