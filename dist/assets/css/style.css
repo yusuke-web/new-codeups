@@ -369,6 +369,83 @@ a {
 	margin-top: 1rem;
 }
 
+.blog-detail__contents-list {
+	position: relative;
+	text-indent: 1em;
+}
+
+.blog-detail__contents-list::before {
+	background-image: url(../images/blog-detail/hitode-green.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	content: "";
+	height: 1.125rem;
+	left: -0.25rem;
+	position: absolute;
+	width: 1.125rem;
+	z-index: 10;
+}
+
+.blog-detail__button {
+	display: flex;
+	gap: 5.125rem;
+	justify-content: center;
+	margin-top: 2.5rem;
+}
+
+.blog-detail__button a {
+	border: 0.0625rem solid #408f95;
+}
+
+.blog-detail__button a:first-child,
+.blog-detail__button a:last-child {
+	background-color: #fff;
+	display: inline-block;
+	height: 2.375rem;
+	position: relative;
+	transition: background-color 0.3s;
+	width: 2.375rem;
+}
+
+.blog-detail__button a:first-child::before {
+	background-image: url(../images/blog-detail/arrow-left.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	content: "";
+	height: 1rem;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 0.5rem;
+}
+
+.blog-detail__button a:last-child::after {
+	background-image: url(../images/blog-detail/arrow-right.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	content: "";
+	height: 1rem;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 0.5rem;
+}
+
+.blog-detail__button a:first-child:hover::before {
+	background-image: url(../images/blog-detail/arrow-left-white.svg);
+}
+
+.blog-detail__button a:last-child:hover::after {
+	background-image: url(../images/blog-detail/arrow-right-white.svg);
+}
+
+.blog-detail__button a:hover {
+	background-color: #408f95;
+}
+
 .blog-side-menu-campaign-card {
 	box-shadow: 0.25rem 0.25rem 0.625rem rgba(0, 0, 0, 0.25);
 	display: flex;
@@ -2423,6 +2500,10 @@ html {
 
 .blog-cards__item a {
 	padding: 1rem 1.1875rem 1.5rem 1rem;
+}
+
+.blog-detail__button {
+	margin-top: 5rem;
 }
 
 .blog-side-menu-campaign-card {

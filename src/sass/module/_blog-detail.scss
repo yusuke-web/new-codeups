@@ -1,2 +1,98 @@
-@use "global" as *;
+@use 'global' as *;
+.blog-detail__contents-list {
+  position: relative;
+  text-indent: 1em;
+}
+.blog-detail__contents-list::before {
+  background-image: url(../images/blog-detail/hitode-green.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: '';
+  height: rem(18);
+  left: rem(-4);
+  position: absolute;
+  width: rem(18);
+  z-index: 10;
+}
+.blog-detail__button {
+  display: flex;
+  justify-content: center;
+  gap: rem(82);
+  margin-top: rem(40);
 
+  @include mq('md') {
+    margin-top: rem(80);
+  }
+}
+// .blog-detail__button:first-child{
+//   position: relative;
+// }
+// .blog-detail__button:last-child{
+//   position: relative;
+// }
+
+// .blog-detail__button:first-child::before{
+
+// }
+// .blog-detail__button:last-child:before{
+// }
+
+.blog-detail__button a {
+  border: rem(1) solid $lightGreen;
+  // padding: rem(11) rem(15);
+}
+
+.blog-detail__button a:first-child,
+.blog-detail__button a:last-child {
+  display: inline-block;
+  position: relative;
+  background-color: $white;
+  width: rem(38);
+  height: rem(38);
+  transition: background-color 0.3s;
+}
+
+// .blog-detail__button a:first-child::before,
+// .blog-detail__button a:last-child::after {
+//   content: '';
+//   // background-color: $lightGreen;
+// }
+
+.blog-detail__button a:first-child::before {
+  position: absolute;
+  content: '';
+  background-image: url(../images/blog-detail/arrow-left.svg);
+  background-repeat: no-repeat;
+  // background-size: cover;
+  background-position: center;
+  width: rem(8);
+  height: rem(16);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.blog-detail__button a:last-child::after {
+  position: absolute;
+  content: '';
+  background-image: url(../images/blog-detail/arrow-right.svg);
+  background-repeat: no-repeat;
+  // background-size: cover;
+  background-position: center;
+  width: rem(8);
+  height: rem(16);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.blog-detail__button a:first-child:hover::before {
+  background-image: url(../images/blog-detail/arrow-left-white.svg);
+}
+.blog-detail__button a:last-child:hover::after {
+  background-image: url(../images/blog-detail/arrow-right-white.svg);
+}
+
+.blog-detail__button a:hover {
+  background-color: $lightGreen;
+}
