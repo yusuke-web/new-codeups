@@ -1,63 +1,63 @@
-@use "global" as *;
-
+@use 'global' as *;
 
 .form-checkbox label {
-    display: block;
-    @include mq(md){
-        display: inline-block;
-    }
+  display: block;
+  @include mq(md) {
+    display: inline-block;
+  }
 }
 
 .form-checkbox label:not(:first-of-type) {
-    margin-top: rem(10);
-    @include mq(md){
-        margin-top: 0;
-        margin-left: rem(20);
-    }
+  margin-top: rem(10);
+  @include mq(md) {
+    margin-top: 0;
+    margin-left: rem(20);
+  }
 }
 
 .form-checkbox input {
-    display: none;
+  display: none;
 }
 
 .form-checkbox input + span {
-    cursor: pointer;
-    display: inline-block;
-    padding: 0 0 0 rem(25);
-    position: relative;
-    font-size: rem(15);
-    line-height: 1;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 0 0 rem(25);
+  position: relative;
+  font-family: $third-font-family;
+  font-weight: $regular;
+  font-size: rem(16);
 }
 
 .form-checkbox input + span::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    background: #fff;
-    border: 1px solid #ccc;
-    display: block;
-    width: rem(15);
-    height: rem(15);
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background: #fff;
+  border: 1px solid $lightGreen;
+  display: block;
+  width: rem(15);
+  height: rem(15);
 }
 
 .form-checkbox input + span::after {
-    content: "";
-    margin-top: rem(-2);
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%) rotate(-45deg);
-    display: block;
-    width: rem(15);
-    height: rem(8);
-    border-bottom: rem(3) solid $red;
-    border-left: rem(3) solid $red;
-    transition:  .3s;
-    opacity: 0;
+  content: '';
+  margin-top: rem(-2);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) rotate(-45deg);
+  display: block;
+  width: rem(15);
+  height: rem(8);
+  border-bottom: rem(3) solid $red;
+  border-left: rem(3) solid $red;
+  transition: 0.3s;
+  opacity: 0;
 }
 
 .form-checkbox input:checked + span::after {
-    opacity: 1;
+  opacity: 1;
 }

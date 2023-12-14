@@ -244,25 +244,13 @@
             <dl class="form__wrap">
               <dt class="form__label">メールアドレス<span>必須</span></dt>
               <dd class="form__input form-input">
-                <input type="email" placeholder="aaa000@ggmail.com"/>
+                <input type="email" placeholder="aaa000@ggmail.com" />
               </dd>
             </dl>
             <dl class="form__wrap">
               <dt class="form__label">電話番号<span>必須</span></dt>
               <dd class="form__input form-input">
                 <input type="tel" placeholder="000-0000-0000" />
-              </dd>
-            </dl>
-            <dl class="form__wrap">
-              <dt class="form__label">キャンペーン</dt>
-              <dd class="form__select form-select">
-                <select>
-                  <option hidden>キャンペーン内容を選択</option>
-                  <option value="ライセンス取得">ライセンス取得</option>
-                  <option value="貸切体験ダイビング">貸切体験ダイビング</option>
-                  <option value="ナイトダイビング">ナイトダイビング</option>
-                  <option value="貸切ファンダイビング">貸切ファンダイビング</option>
-                </select>
               </dd>
             </dl>
 
@@ -286,12 +274,38 @@
                 >
               </dd>
             </dl>
+            <dl class="form__wrap">
+              <dt class="form__label">キャンペーン</dt>
+              <dd class="form__select form-select">
+                <select>
+                  <option hidden>キャンペーン内容を選択</option>
+                  <option value="ライセンス取得">ライセンス取得</option>
+                  <option value="貸切体験ダイビング">貸切体験ダイビング</option>
+                  <option value="ナイトダイビング">ナイトダイビング</option>
+                  <option value="貸切ファンダイビング">
+                    貸切ファンダイビング
+                  </option>
+                </select>
+              </dd>
+            </dl>
             <dl class="form__wrap form__wrap--textarea">
               <dt class="form__label">お問い合わせ内容<span>必須</span></dt>
               <dd class="form__textarea form-textarea">
                 <textarea name="message"></textarea>
               </dd>
             </dl>
+            <div class="form__consent-box">
+              <dl class="form__wrap">
+                <dt class="form__label"></dt>
+                <dd class="form__consent form-checkbox">
+                  <label
+                    ><input type="checkbox" name="sns" checked /><span class="consent"
+                      >個人情報の取り扱いについて同意のうえ 送信します。</span
+                    ></label
+                  >
+                </dd>
+              </dl>
+            </div>
             <!-- <div class="form__submit form-submit common-contact__button">
               <input class="button" type="submit" value="送信" />
               <span class="button__arrow"></span>
@@ -307,7 +321,7 @@
       </section>
 
       <!-- common-contact -->
-      <section id="common-contact" class="common-contact layout-common-contact">
+      <!-- <section id="common-contact" class="common-contact layout-common-contact">
         <div class="common-contact__inner inner">
           <div class="common-contact__container">
             <div class="common-contact__info">
@@ -353,7 +367,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
     <!-- Footer -->
     <footer class="footer layout-footer">

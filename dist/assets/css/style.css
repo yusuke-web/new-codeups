@@ -1182,15 +1182,16 @@ a {
 .form-checkbox input + span {
 	cursor: pointer;
 	display: inline-block;
-	font-size: 0.9375rem;
-	line-height: 1;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
 	padding: 0 0 0 1.5625rem;
 	position: relative;
 }
 
 .form-checkbox input + span::before {
 	background: #fff;
-	border: 1px solid #ccc;
+	border: 1px solid #408f95;
 	content: "";
 	display: block;
 	height: 0.9375rem;
@@ -1249,7 +1250,7 @@ a {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
-	border: 1px solid #ccc;
+	border: 1px solid #408f95;
 	color: #111;
 	cursor: pointer;
 	font-family: "Noto Sans JP", sans-serif;
@@ -1300,18 +1301,26 @@ a {
 	appearance: none;
 	background-color: transparent;
 	background-image: none;
-	border: 1px solid #ccc;
+	border: 1px solid #408f95;
 	border-radius: 0;
-	font-size: 0.9375rem;
-	height: 9.375rem;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	height: 12.5rem;
 	padding: 0.5rem 0.9375rem;
+	resize: none;
 	width: 100%;
 }
 
 .form-textarea textarea:focus {
-	border: 1px solid #ccc;
+	border: 1px solid #408f95;
 	box-shadow: none;
 	outline: none;
+}
+
+.form__wrap:not(:last-child) {
+	border-bottom: 1px dashed #408f95;
+	padding-bottom: 1.5rem;
 }
 
 .form__wrap + .form__wrap {
@@ -1367,6 +1376,19 @@ a {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	font-weight: 400;
+}
+
+.form__consent-box {
+	margin-top: 2.5rem;
+}
+
+.form-checkbox input + .consent {
+	color: #111;
+	color: #0d2936;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 0.875rem;
+	font-weight: 400;
+	line-height: 1.5714285714;
 }
 
 .gallery-list {
@@ -3293,8 +3315,15 @@ html {
 	opacity: 0.8;
 }
 
+.form {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 43.75rem;
+	width: 100%;
+}
+
 .form__wrap {
-	align-items: center;
+	align-items: self-start;
 	display: flex;
 }
 
@@ -3317,6 +3346,10 @@ html {
 .form__checkbox,
 .form__textarea {
 	margin-top: 0;
+}
+
+.form__consent-box {
+	margin-top: 5rem;
 }
 
 .gallery-list {

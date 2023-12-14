@@ -1,9 +1,25 @@
 @use 'global' as *;
 
+.form {
+  @include mq('md') {
+    max-width: rem(700);
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+  }
+}
+
 .form__wrap {
   @include mq(md) {
     display: flex;
-    align-items: center;
+    align-items: self-start;
+    
+  }
+}
+.form__wrap:not(:last-child) {
+  border-bottom: 1px dashed $lightGreen;
+  padding-bottom: rem(24);
+  @include mq('md') {
   }
 }
 
@@ -72,6 +88,26 @@
   color: $lightBlue;
   font-size: rem(16);
   font-weight: $regular;
+  @include mq('md') {
+  }
+}
+
+.form__consent-box {
+  margin-top: rem(40);
+
+  @include mq('md') {
+    margin-top: rem(80);
+  }
+}
+
+.form-checkbox input + .consent {
+  font-family: $third-font-family;
+  color: $black;
+  font-weight: $regular;
+  font-size: rem(14);
+  line-height: 1.5714285714;
+  color: $darkGreen;
+
   @include mq('md') {
   }
 }
