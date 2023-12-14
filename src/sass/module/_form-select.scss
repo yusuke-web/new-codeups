@@ -1,0 +1,46 @@
+@use 'global' as *;
+
+.form-select {
+  position: relative;
+}
+.form-select select {
+  font-family: $third-font-family;
+  padding: rem(12) rem(50) rem(12) rem(8);
+  width: 100%;
+  font-size: rem(12);
+  color: $black;
+  // border-radius: 0;
+  border: 1px solid #ccc;
+  // background-image: url(./../images/common/arrow.svg);
+  // background-repeat: no-repeat;
+  // background-size: rem(15);
+  // background-position: right rem(15) top rem(15);
+  appearance: none;
+  cursor: pointer;
+}
+.form-select::after {
+  position: absolute;
+  content: '';
+
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent;
+  border-top: 12px solid #408f95;
+  border-bottom: 0;
+  top: rem(12);
+  right: rem(9);
+  transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+  transform: rotate(120deg);
+}
+
+.form-select select::-ms-expand {
+  display: none;
+}
+
+.form-select select:focus {
+  border: 1px solid #ccc;
+  box-shadow: none;
+  outline: none;
+}

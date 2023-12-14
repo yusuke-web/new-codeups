@@ -169,6 +169,14 @@ a {
 	margin-top: 31.25rem;
 }
 
+.layout-contact {
+	margin-top: 0.5rem;
+}
+
+.layout-faq {
+	margin-top: 0.5rem;
+}
+
 .layout-footer {
 	margin-top: 6.25rem;
 }
@@ -315,6 +323,68 @@ a {
 
 .about-us__button {
 	margin-top: 1.625rem;
+}
+
+.accordion {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 43.75rem;
+	width: 100%;
+}
+
+.accordion__item:not(:first-child) {
+	margin-top: 2.5rem;
+}
+
+.accordion__title {
+	background-color: #408f95;
+	color: #fff;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	padding: 1rem;
+	position: relative;
+}
+
+.accordion__title::after,
+.accordion__title::before {
+	background-color: #fff;
+	content: "";
+	height: 0.0625rem;
+	position: absolute;
+	right: 20px;
+	top: 30px;
+	transition: 0.3s transform, 0.3s opacity;
+	width: 1.75rem;
+}
+
+.accordion__title::before {
+	transform: rotate(90deg);
+}
+
+.accordion__title.is-open::before {
+	opacity: 0;
+}
+
+.accordion__title.is-open::after {
+	transform: rotate(180deg);
+}
+
+.accordion__title-text {
+	color: #fff;
+}
+
+.accordion__content {
+	display: none;
+}
+
+.accordion__text {
+	border: 0.0625rem solid #408f95;
+	color: #0d2936;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	padding: 1rem;
 }
 
 .blog-cards {
@@ -997,6 +1067,14 @@ a {
 	width: 100%;
 }
 
+.contact__form {
+	margin-top: 3.25rem;
+}
+
+.faq__accordion {
+	margin-top: 3.25rem;
+}
+
 .footer {
 	background-color: #408f95;
 	padding-bottom: 3.5rem;
@@ -1087,6 +1165,208 @@ a {
 	font-weight: 400;
 	line-height: 1.5;
 	margin-top: 1.6875rem;
+}
+
+.form-checkbox label {
+	display: block;
+}
+
+.form-checkbox label:not(:first-of-type) {
+	margin-top: 0.625rem;
+}
+
+.form-checkbox input {
+	display: none;
+}
+
+.form-checkbox input + span {
+	cursor: pointer;
+	display: inline-block;
+	font-size: 0.9375rem;
+	line-height: 1;
+	padding: 0 0 0 1.5625rem;
+	position: relative;
+}
+
+.form-checkbox input + span::before {
+	background: #fff;
+	border: 1px solid #ccc;
+	content: "";
+	display: block;
+	height: 0.9375rem;
+	left: 0;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 0.9375rem;
+}
+
+.form-checkbox input + span::after {
+	border-bottom: 0.1875rem solid #C94800;
+	border-left: 0.1875rem solid #C94800;
+	content: "";
+	display: block;
+	height: 0.5rem;
+	left: 0;
+	margin-top: -0.125rem;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%) rotate(-45deg);
+	transition: 0.3s;
+	width: 0.9375rem;
+}
+
+.form-checkbox input:checked + span::after {
+	opacity: 1;
+}
+
+.form-input input {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: transparent;
+	background-image: none;
+	border: 1px solid #408f95;
+	border-radius: 0;
+	font-size: 0.9375rem;
+	line-height: 1;
+	padding: 0.5rem 0.9375rem;
+	width: 100%;
+}
+
+.form-input input:focus {
+	border: 1px solid #408f95;
+	box-shadow: none;
+	outline: none;
+}
+
+.form-select {
+	position: relative;
+}
+
+.form-select select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: 1px solid #ccc;
+	color: #111;
+	cursor: pointer;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 0.75rem;
+	padding: 0.75rem 3.125rem 0.75rem 0.5rem;
+	width: 100%;
+}
+
+.form-select::after {
+	border-bottom: 0;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-style: solid;
+	border-top: 12px solid #408f95;
+	content: "";
+	height: 0;
+	position: absolute;
+	right: 0.5625rem;
+	top: 0.75rem;
+	transform: rotate(120deg);
+	transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+	width: 0;
+}
+
+.form-select select::-ms-expand {
+	display: none;
+}
+
+.form-select select:focus {
+	border: 1px solid #ccc;
+	box-shadow: none;
+	outline: none;
+}
+
+.form-submit input:hover,
+.form-submit input:focus {
+	outline: none;
+}
+
+.form-submit input::-moz-foucus-inner {
+	border: none;
+	padding: 0;
+}
+
+.form-textarea textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: transparent;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 0;
+	font-size: 0.9375rem;
+	height: 9.375rem;
+	padding: 0.5rem 0.9375rem;
+	width: 100%;
+}
+
+.form-textarea textarea:focus {
+	border: 1px solid #ccc;
+	box-shadow: none;
+	outline: none;
+}
+
+.form__wrap + .form__wrap {
+	margin-top: 1.875rem;
+}
+
+.form__label {
+	color: #0d2936;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+.form__label span {
+	background-color: #C94800;
+	color: #fff;
+	display: inline-block;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 0.75rem;
+	font-weight: 400;
+	letter-spacing: 0.04em;
+	margin-left: 0.75rem;
+	padding: 0.125rem 1rem;
+}
+
+.form__input,
+.form__select,
+.form__radio,
+.form__checkbox,
+.form__textarea {
+	margin-top: 0.625rem;
+}
+
+.form__input,
+.form__textarea {
+	flex-grow: 1;
+}
+
+.form__submit {
+	margin-top: 3.75rem;
+	text-align: center;
+}
+
+::-moz-placeholder {
+	color: #ddf0f1;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+::placeholder {
+	color: #ddf0f1;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
 }
 
 .gallery-list {
@@ -2717,6 +2997,22 @@ html {
 	margin-top: 2.5rem;
 }
 
+.accordion__title {
+	font-size: 1.25rem;
+	padding: 1.625rem 2.5rem;
+}
+
+.accordion__title::after,
+.accordion__title::before {
+	right: 12px;
+	width: 2rem;
+	width: 12px;
+}
+
+.accordion__text {
+	padding: 2.5rem;
+}
+
 .blog-cards {
 	grid-template-columns: repeat(2, 1fr);
 }
@@ -2921,6 +3217,14 @@ html {
 	aspect-ratio: 1440/548;
 }
 
+.contact__form {
+	margin-top: 9.375rem;
+}
+
+.faq__accordion {
+	margin-top: 9.375rem;
+}
+
 .footer {
 	padding-bottom: 5rem;
 	padding-top: 4.75rem;
@@ -2974,6 +3278,45 @@ html {
 	line-height: 1.2857;
 	margin-top: 4.3125rem;
 	text-align: center;
+}
+
+.form-checkbox label {
+	display: inline-block;
+}
+
+.form-checkbox label:not(:first-of-type) {
+	margin-left: 1.25rem;
+	margin-top: 0;
+}
+
+.form-submit input:hover {
+	opacity: 0.8;
+}
+
+.form__wrap {
+	align-items: center;
+	display: flex;
+}
+
+.form__wrap.form__wrap--textarea {
+	align-items: flex-start;
+}
+
+.form__label {
+	max-width: 12.5rem;
+	width: 100%;
+}
+
+.form__wrap.form__wrap--textarea .form__label {
+	margin-top: 0.625rem;
+}
+
+.form__input,
+.form__select,
+.form__radio,
+.form__checkbox,
+.form__textarea {
+	margin-top: 0;
 }
 
 .gallery-list {

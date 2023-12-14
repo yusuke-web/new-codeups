@@ -36,8 +36,8 @@
     <!-- JavaScript -->
     <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script defer src="./js/jquery.inview.min.js"></script>
-
+    <script defer src="./assets/js/jquery.inview.min.js"></script>
+    <!-- <script src="./assets/js/jquery.inview.min.js"></script> -->
     <script defer src="./assets/js/script.js"></script>
   </head>
   <body>
@@ -70,16 +70,16 @@
               <a href="/blog.html">blog<span>ブログ</span></a>
             </li>
             <li class="header__nav-item">
-              <a href="/voice.html">voice<span>お客様の声</span></a>
+              <a href="#top-voice">voice<span>お客様の声</span></a>
             </li>
             <li class="header__nav-item">
               <a href="/price.html">price<span>料金一覧</span></a>
             </li>
             <li class="header__nav-item">
-              <a href="/faq.html">FAQ<span>よくある質問</span></a>
+              <a href="#">FAQ<span>よくある質問</span></a>
             </li>
             <li class="header__nav-item">
-              <a href="/contact.html">Contact<span>お問合せ</span></a>
+              <a href="#common-contact">Contact<span>お問合せ</span></a>
             </li>
           </ul>
         </nav>
@@ -149,7 +149,7 @@
               <div class="header__drawer-container">
                 <ul class="header__drawer-items">
                   <li class="header__drawer-item header__drawer-title">
-                    <a href="/voice.html">お客様の声</a>
+                    <a href="#top-voice">お客様の声</a>
                   </li>
                 </ul>
               </div>
@@ -193,7 +193,7 @@
               <div class="header__drawer-container">
                 <ul class="header__drawer-items">
                   <li class="header__drawer-item header__drawer-title">
-                    <a href="/contact.html">お問い合わせ</a>
+                    <a href="#common-contact">お問い合わせ</a>
                   </li>
                 </ul>
               </div>
@@ -209,279 +209,100 @@
         <div class="common-fv__inner">
           <picture class="common-fv__img common-fv">
             <source
-              srcset="./assets/images/blog/blog-fv-PC.jpg"
+              srcset="./assets/images/contact/contact-fvPC.jpg"
               media="(min-width: 768px)" />
-            <img src="./assets/images/blog/blog-fv-SP.jpg" alt="黄色い海水魚" />
+            <img
+              src="./assets/images/contact/contact-fvSP.jpg"
+              alt="黄色い海水魚" />
           </picture>
         </div>
-        <h1 class="common-fv__title">Blog</h1>
+        <h1 class="common-fv__title">Contact</h1>
       </div>
-      <!-- キャンペーン画像 -->
 
-      <!-- blog cards -->
-
-      <section class="blog-detail layout-blog-detail">
-        <div class="blog__inner inner">
+      <section class="contact layout-contact">
+        <div class="contact__inner inner">
           <!-- パンくずリスト -->
-          <div class="blog__breadcrumbs breadcrumbs layout-breadcrumbs">
+          <div class="contact__breadcrumbs breadcrumbs layout-breadcrumbs">
             <span>
               <a href="index.html">
                 <span>Top</span>
               </a>
             </span>
             <span>
-              <a href="/blog.html">
-                <span>ブログ一覧</span>
+              <span>よくある質問</span>
+            </span>
+          </div>
+
+          <!-- コンタクトフォーム -->
+          <form class="contact__form form" action="">
+            <dl class="form__wrap">
+              <dt class="form__label">お名前<span>必須</span></dt>
+              <dd class="form__input form-input" a>
+                <input type="text" placeholder="沖縄　太郎" />
+              </dd>
+            </dl>
+            <dl class="form__wrap">
+              <dt class="form__label">メールアドレス<span>必須</span></dt>
+              <dd class="form__input form-input">
+                <input type="email" placeholder="aaa000@ggmail.com"/>
+              </dd>
+            </dl>
+            <dl class="form__wrap">
+              <dt class="form__label">電話番号<span>必須</span></dt>
+              <dd class="form__input form-input">
+                <input type="tel" placeholder="000-0000-0000" />
+              </dd>
+            </dl>
+            <dl class="form__wrap">
+              <dt class="form__label">キャンペーン</dt>
+              <dd class="form__select form-select">
+                <select>
+                  <option hidden>キャンペーン内容を選択</option>
+                  <option value="ライセンス取得">ライセンス取得</option>
+                  <option value="貸切体験ダイビング">貸切体験ダイビング</option>
+                  <option value="ナイトダイビング">ナイトダイビング</option>
+                  <option value="貸切ファンダイビング">貸切ファンダイビング</option>
+                </select>
+              </dd>
+            </dl>
+
+            <dl class="form__wrap">
+              <dt class="form__label">お問合せ項目<span>必須</span></dt>
+              <dd class="form__checkbox form-checkbox">
+                <label
+                  ><input type="checkbox" name="sns" checked /><span
+                    >ダイビング講習について</span
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="sns" /><span
+                    >ファンデイビングについて</span
+                  ></label
+                >
+                <label
+                  ><input type="checkbox" name="sns" /><span
+                    >体験ダイビングについて</span
+                  ></label
+                >
+              </dd>
+            </dl>
+            <dl class="form__wrap form__wrap--textarea">
+              <dt class="form__label">お問い合わせ内容<span>必須</span></dt>
+              <dd class="form__textarea form-textarea">
+                <textarea name="message"></textarea>
+              </dd>
+            </dl>
+            <!-- <div class="form__submit form-submit common-contact__button">
+              <input class="button" type="submit" value="送信" />
+              <span class="button__arrow"></span>
+            </div> -->
+            <div class="common-contact__button">
+              <a href="" class="button"
+                >Send
+                <span class="button__arrow"></span>
               </a>
-            </span>
-            <span>
-              <span>ブログ詳細</span>
-            </span>
-          </div>
-          <div class="blog__container">
-            <!-- Blog detail -->
-
-            <div class="blog-detail__contents">
-              <time datetime="2023-11-17">2023.11/17</time>
-              <h2 class="blog-detail__header">ライセンス取得</h2>
-              <div class="blog-detail__contents-img">
-                <img
-                  src="./assets/images/blog-detail/blog-detailPC.jpg"
-                  alt="" />
-              </div>
-              <p class="blog-detail__contents-text">
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-              </p>
-              <div class="blog-detail__contents-img">
-                <img
-                  src="./assets/images/blog-detail/blog-detailPC.jpg"
-                  alt="" />
-              </div>
-              <p class="blog-detail__contents-text">
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-              </p>
-              <ul class="blog-detail__contents-lists">
-                <li class="blog-detail__contents-list">リスト１</li>
-                <li class="blog-detail__contents-list">リスト2</li>
-                <li class="blog-detail__contents-list">リスト3</li>
-              </ul>
-              <p class="blog-detail__contents-text">
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-              </p>
-              <div class="blog-detail__button">
-                <a href="#"></a>
-                <a href="#"></a>
-              </div>
             </div>
-
-            <!-- サイドメニュー -->
-            <div class="blog-detail__side-menu blog-side-menu">
-              <div class="blog-side-menu__inner">
-                <!-- 人気記事 -->
-                <div class="blog-side-menu__popular">
-                  <h2
-                    class="blog-side-menu__popular-section blog-side-menu-title">
-                    人気記事
-                  </h2>
-
-                  <ul class="blog-side-menu__popular-articles">
-                    <li class="blog-side-menu__popular-article">
-                      <a href="#">
-                        <div class="blog-side-menu__popular-image">
-                          <img
-                            src="./assets/images/blog/blog-popular1.jpg"
-                            alt="黄色い魚が泳いいでいる様子" />
-                        </div>
-                        <div class="blog-side-menu__popular-container">
-                          <time
-                            class="blog-side-menu__popular-date"
-                            datetime="20323-11-17"
-                            >2023.11.17</time
-                          >
-                          <p class="blog-side-menu__popular-title">
-                            ライセンス取得
-                          </p>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="blog-side-menu__popular-article">
-                      <a href="#">
-                        <div class="blog-side-menu__popular-image">
-                          <img
-                            src="./assets/images/blog/blog-popular2.jpg"
-                            alt="ウミガメが泳いいでいる様子" />
-                        </div>
-                        <div class="blog-side-menu__popular-container">
-                          <time
-                            class="blog-side-menu__popular-date"
-                            datetime="20323-11-17"
-                            >2023.11.17</time
-                          >
-                          <p class="blog-side-menu__popular-title">
-                            ウミガメと泳ぐ
-                          </p>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="blog-side-menu__popular-article">
-                      <a href="#">
-                        <div class="blog-side-menu__popular-image">
-                          <img
-                            src="./assets/images/blog/blog-popular3.jpg"
-                            alt="カクレクマノミがイソギンチャクに隠れている様子" />
-                        </div>
-                        <div class="blog-side-menu__popular-container">
-                          <time
-                            class="blog-side-menu__popular-date"
-                            datetime="20323-11-17"
-                            >2023.11.17</time
-                          >
-                          <p class="blog-side-menu__popular-title">
-                            カクレクマノミ
-                          </p>
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <!-- 口コミ -->
-                <div class="blog-side-menu__review">
-                  <h2
-                    class="blog-side-menu__review-side-menu blog-side-menu-title">
-                    口コミ
-                  </h2>
-                  <div class="blog-side-menu__review-card">
-                    <div class="blog-side-menu__review-image">
-                      <img
-                        src="./assets/images/blog/blog-review.jpg"
-                        alt="カップルがインタビューに答えている様子" />
-                    </div>
-                    <p class="blog-side-menu__reviewer-info">30代(カップル)</p>
-                    <p class="blog-side-menu__review-title">
-                      ここにタイトルが入ります。ここにタイトル
-                    </p>
-                    <div class="blog-side-menu__review-button">
-                      <a href="" class="button"
-                        >View more
-                        <span class="button__arrow"></span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <!-- キャンペーン -->
-                <div class="blog-side-menu__campaign">
-                  <h2
-                    class="blog-side-menu__review-side-menu blog-side-menu-title">
-                    キャペーン
-                  </h2>
-                  <!-- カード -->
-                  <ul
-                    class="blog-side-menu__campaign-cards blog-side-menu-campaign-cards">
-                    <li
-                      class="blog-side-menu-campaign-cards__item blog-side-menu-campaign-card">
-                      <picture class="blog-side-menu-campaign-card__img">
-                        <source
-                          srcset="./assets/images/blog/blog-campaign1.jpg"
-                          media="(min-width: 768px)" />
-                        <img
-                          src="./assets/images/blog/blog-campaign1.jpg"
-                          alt="色鮮やかな海水魚の群れ" />
-                      </picture>
-                      <div class="blog-side-menu-campaign-card__body">
-                        <h2 class="blog-side-menu-campaign-card__title">
-                          ライセンス取得
-                        </h2>
-
-                        <div class="blog-side-menu-campaign-card__container">
-                          <p class="blog-side-menu-campaign-card__text">
-                            全部コミコミ(お一人様)
-                          </p>
-                          <div class="blog-side-menu-campaign-card__price-wrap">
-                            <p class="blog-side-menu-campaign-card__price-sub">
-                              ¥56,000
-                            </p>
-                            <p class="blog-side-menu-campaign-card__price-main">
-                              ¥46,000
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li
-                      class="blog-side-menu-campaign-cards__item blog-side-menu-campaign-card">
-                      <picture class="blog-side-menu-campaign-card__img">
-                        <source
-                          srcset="./assets/images/blog/blog-campaign2.jpg"
-                          media="(min-width: 768px)" />
-                        <img
-                          src="./assets/images/blog/blog-campaign2.jpg"
-                          alt="色鮮やかな海水魚の群れ" />
-                      </picture>
-                      <div class="blog-side-menu-campaign-card__body">
-                        <h2 class="blog-side-menu-campaign-card__title">
-                          貸切体験ダイビング
-                        </h2>
-
-                        <div class="blog-side-menu-campaign-card__container">
-                          <p class="blog-side-menu-campaign-card__text">
-                            全部コミコミ(お一人様)
-                          </p>
-                          <div class="blog-side-menu-campaign-card__price-wrap">
-                            <p class="blog-side-menu-campaign-card__price-sub">
-                              ¥24,000
-                            </p>
-                            <p class="blog-side-menu-campaign-card__price-main">
-                              ¥18,000
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                  <div class="blog-side-menu__campaign-button">
-                    <a href="" class="button"
-                      >View more
-                      <span class="button__arrow"></span>
-                    </a>
-                  </div>
-                </div>
-
-                <!-- アーカイブ -->
-                <div class="blog-side-menu__archive">
-                  <h2
-                    class="blog-side-menu__archive-side-menu blog-side-menu-title">
-                    アーカイブ
-                  </h2>
-                  <!-- アコーディオン -->
-                  <div
-                    class="blog-side-menu__accordion blog-side-menu-accordion js-accordion">
-                    <div class="blog-side-menu-accordion__container">
-                      <div
-                        class="blog-side-menu-accordion__item js-accordion__item">
-                        <p
-                          class="blog-side-menu-accordion__title js-accordion__title">
-                          2023
-                        </p>
-                        <div
-                          class="blog-side-menu-accordion__content js-accordion__content">
-                          <p class="blog-side-menu-accordion__text">3月</p>
-                          <p class="blog-side-menu-accordion__text">2月</p>
-                          <p class="blog-side-menu-accordion__text">1月</p>
-                        </div>
-                      </div>
-                      <div
-                        class="blog-side-menu-accordion__item js-accordion__item">
-                        <p
-                          class="blog-side-menu-accordion__title js-accordion__title">
-                          2022
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          </form>
         </div>
       </section>
 
@@ -615,7 +436,7 @@
               <div class="footer__container">
                 <ul class="footer__items">
                   <li class="footer__item footer__item--title">
-                    <a href="/voice.html">お客様の声</a>
+                    <a href="#blog">お客様の声</a>
                   </li>
                 </ul>
               </div>
@@ -640,7 +461,7 @@
               <div class="footer__container">
                 <ul class="footer__items">
                   <li class="footer__item footer__item--title">
-                    <a href="/faq.html">よくある質問</a>
+                    <a href="#">よくある質問</a>
                   </li>
                 </ul>
               </div>
@@ -661,7 +482,7 @@
               <div class="footer__container">
                 <ul class="footer__items">
                   <li class="footer__item footer__item--title">
-                    <a href="/contact.html">おい問わ合せ</a>
+                    <a href="#common-contact">おい問わ合せ</a>
                   </li>
                 </ul>
               </div>

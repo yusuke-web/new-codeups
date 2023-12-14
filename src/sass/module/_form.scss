@@ -1,0 +1,77 @@
+@use 'global' as *;
+
+.form__wrap {
+  @include mq(md) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.form__wrap.form__wrap--textarea {
+  @include mq(md) {
+    align-items: flex-start;
+  }
+}
+
+.form__wrap + .form__wrap {
+  margin-top: rem(30);
+}
+
+.form__label {
+  font-family: $third-font-family;
+  font-size: rem(16);
+  font-weight: 700;
+  color: $darkGreen;
+  @include mq(md) {
+    max-width: rem(200);
+    width: 100%;
+  }
+}
+
+.form__wrap.form__wrap--textarea .form__label {
+  @include mq(md) {
+    margin-top: rem(10);
+  }
+}
+
+.form__label span {
+  margin-left: rem(12);
+  padding: rem(2) rem(16);
+  display: inline-block;
+  font-family: $third-font-family;
+  font-size: rem(12);
+  font-weight: $regular;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background-color: $red;
+}
+
+.form__input,
+.form__select,
+.form__radio,
+.form__checkbox,
+.form__textarea {
+  margin-top: rem(10);
+  @include mq(md) {
+    margin-top: 0;
+  }
+}
+
+.form__input,
+.form__textarea {
+  flex-grow: 1;
+}
+
+.form__submit {
+  margin-top: rem(60);
+  text-align: center;
+}
+
+::placeholder {
+  font-family: $third-font-family;
+  color: $lightBlue;
+  font-size: rem(16);
+  font-weight: $regular;
+  @include mq('md') {
+  }
+}
