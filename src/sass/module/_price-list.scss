@@ -1,0 +1,102 @@
+@use 'global' as *;
+
+.price-list {
+  border: 1px solid $lightGreen;
+  @include mq('md') {
+    display: flex;
+    max-width: rem(700);
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.price-list__body {
+  background-color: $lightGreen;
+  @include mq('md') {
+    width: 28.57142857%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.price-list__name {
+  display: flex;
+  justify-content: center;
+  padding: rem(8);
+  @include mq('md') {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.price-list__image img {
+  width: rem(24);
+  height: rem(24);
+  @include mq('md') {
+    width: rem(64);
+    height: rem(64);
+  }
+}
+
+.price-list__title {
+  margin-left: rem(8);
+
+  font-family: $third-font-family;
+  font-size: rem(16);
+  line-height: 1.5;
+  font-weight: $bold;
+  color: $white;
+}
+
+.price-list__items {
+  @include mq('md') {
+    width: 71.42857143%;
+  }
+}
+
+.price-list__item {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: rem(60);
+
+  @include mq('md') {
+  }
+}
+.price-list__item:not(:last-child) {
+  border-bottom: rem(1) solid $lightGreen;
+}
+
+.price-list__menu {
+  width: 69.56521739%;
+  padding: rem(7);
+  font-family: $third-font-family;
+  font-weight: $regular;
+  font-size: rem(16);
+  line-height: 1.5;
+  color: $darkGreen;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-right: 1px solid $lightGreen;
+  @include mq('md') {
+  }
+}
+.price-list__value {
+  width: 30.72463768%;
+
+  font-family: $third-font-family;
+  font-weight: $regular;
+  font-size: rem(16);
+  line-height: 1.5;
+  color: $darkGreen;
+  @include mq('md') {
+  }
+}

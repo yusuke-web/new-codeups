@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.price__list:not(:first-child){
+  margin-top: rem(40);
+  @include mq('md') {
+  margin-top: rem(80);
+  }
+}
+
+.price__list-container {
+  margin-top: rem(52);
+
+  @include mq('md') {
+    margin-top: rem(150);
+  }
+}
