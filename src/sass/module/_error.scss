@@ -1,0 +1,15 @@
+@use 'global' as *;
+
+.error {
+  background-color: $lightGreen;
+  padding-bottom: rem(5);
+  @include mq('md') {
+  }
+}
+
+.layout-footer.layout-footer--error {
+  margin-top: 0;
+  padding-top: rem(50);
+  @include mq('md') {
+  }
+}

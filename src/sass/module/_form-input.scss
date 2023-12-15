@@ -12,7 +12,10 @@
 	background-color: transparent;
 	background-image: none;
 }
-
+.form-input.form-input__error input{
+  background-color: rgba(201, 72, 0, 0.20);
+  border-color: $red;
+}
 .form-input input:focus {
 	border: 1px solid $lightGreen;
 	box-shadow: none;

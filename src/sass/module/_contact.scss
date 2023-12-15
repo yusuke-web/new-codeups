@@ -1,8 +1,59 @@
 @use 'global' as *;
 
+.contact__error-message {
+  margin-top: rem(52);
+  font-family: $third-font-family;
+  font-size: rem(14);
+  font-weight: $regular;
+
+  color: $red;
+  // margin-inline: auto;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: rem(224);
+  @include mq('md') {
+    max-width: rem(400);
+    margin-top: rem(150);
+  }
+}
+
+.contact__error-indent {
+  display: inline-block;
+  text-indent: 1em;
+  @include mq('md') {
+    text-indent: 0;
+  }
+}
+.contact__error-mark {
+  // color: $red;
+}
+
 .contact__form {
   margin-top: rem(52);
   @include mq('md') {
+    margin-top: rem(40);
+  }
+}
+
+// サンクスページ
+
+.contact__thanks-container {
+  text-align: center;
+  margin-top: rem(52);
+
+  font-family: $third-font-family;
+  line-height: 1.125;
+  color: $darkGreen;
+  font-size: rem(16);
+  font-weight: $regular;
+
+  @include mq('md') {
     margin-top: rem(150);
   }
+}
+
+.contact__thanks-message {
+  margin-top: rem(40);
+  line-height: 1.5;
 }

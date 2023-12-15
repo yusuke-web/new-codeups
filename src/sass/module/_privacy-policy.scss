@@ -1,0 +1,39 @@
+@use 'global' as *;
+
+.terms-of-service__container {
+  margin-top: rem(52);
+
+  @include mq('md') {
+    margin-top: rem(40);
+    max-width: rem(800);
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.terms-of-service__body {
+  margin-top: rem(40);
+  @include mq('md') {
+  }
+}
+
+.terms-of-service__number-list {
+  list-style-position: outside;
+  list-style: auto;
+  padding-left: rem(22);
+
+  @include mq('md') {
+  }
+}
+
+.terms-of-service__non-number-list {
+  list-style-position: outside;
+  padding-left: rem(13);
+  list-style: disc;
+
+}
+
+.terms-of-service__non-number-list-item::marker {
+  font-size: 40%;
+}
