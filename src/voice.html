@@ -21,23 +21,17 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Gotu&family=Lato:wght@400;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif:wght@300;400&display=swap"
-      rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Lato:wght@400;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif:wght@300;400&display=swap" rel="stylesheet" />
     <!-- font awesome -->
-    <script
-      src="https://kit.fontawesome.com/fbe101ccb3.js"
-      crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/fbe101ccb3.js" crossorigin="anonymous"></script>
     <!-- css -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- JavaScript -->
     <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script defer src="./assets/js/jquery.inview.min.js"></script>
-   
+
     <script defer src="./assets/js/script.js"></script>
   </head>
   <body>
@@ -46,9 +40,7 @@
         <div class="header__logo">
           <a href="index.html">
             <picture class="">
-              <source
-                srcset="./assets/images/common/logo-PC.svg"
-                media="(min-width: 768px)" />
+              <source srcset="./assets/images/common/logo-PC.svg" media="(min-width: 768px)" />
               <img src="./assets/images/common/logoSP.svg" alt="CodeUps" />
             </picture>
           </a>
@@ -62,9 +54,7 @@
               <a href="/about-us.html">About us<span>私たちについて</span></a>
             </li>
             <li class="header__nav-item">
-              <a href="/information.html"
-                >information<span>ダイビング情報</span></a
-              >
+              <a href="/information.html">information<span>ダイビング情報</span></a>
             </li>
             <li class="header__nav-item">
               <a href="/blog.html">blog<span>ブログ</span></a>
@@ -208,241 +198,177 @@
       <div class="common-fv common-fv layout-common-fv">
         <div class="common-fv__inner">
           <picture class="common-fv__img common-fv">
-            <source
-              srcset="./assets/images/voice/voice-fv-PC.jpg"
-              media="(min-width: 768px)" />
-            <img
-              src="./assets/images/voice/voice-fv-SP.jpg"
-              alt="黄色い海水魚" />
+            <source srcset="./assets/images/voice/voice-fv-PC.jpg" media="(min-width: 768px)" />
+            <img src="./assets/images/voice/voice-fv-SP.jpg" alt="黄色い海水魚" />
           </picture>
         </div>
         <h1 class="common-fv__title">Voice</h1>
       </div>
       <!-- キャンペーン画像 -->
 
-      <!-- blog cards -->
+      <!-- パンくずリスト -->
 
-      <section class="voice layout-voice">
+      <div class="voice__breadcrumbs breadcrumbs layout-breadcrumbs">
+        <span>
+          <a href="index.html">
+            <span class="breadcrumbs__capital">Top</span>
+          </a>
+        </span>
+        <span>
+          <span>お客様の声</span>
+        </span>
+      </div>
+      <div class="voice layout-voice">
         <div class="voice__inner inner">
-          <!-- パンくずリスト -->
-          <div class="voice__breadcrumbs breadcrumbs layout-breadcrumbs">
-            <span>
-              <a href="index.html">
-                <span class="breadcrumbs__capital">Top</span>
-              </a>
-            </span>
-            <span>
-              <span>お客様の声</span>
-            </span>
-          </div>
-
           <!-- Voice カテゴリ -->
 
-          <div class="voice__categories">
-            <p class="voice__category-item voice__category-item--current">
+          <div class="voice__categories category-tag">
+            <p class="category-tag-item category-tag-item--current">
               <a href="#">all</a>
             </p>
-            <p class="voice__category-item">
+            <p class="category-tag-item">
               <a href="#">ライセンス講習</a>
             </p>
-            <p class="voice__category-item">
+            <p class="category-tag-item">
               <a href="#">ファンダイビング</a>
             </p>
-            <p class="voice__category-item">
+            <p class="category-tag-item">
               <a href="#">体験ダイビング</a>
             </p>
           </div>
           <div class="voice__cards-container">
             <ul class="voice__cards voice-cards">
               <li class="voice-cards__item">
-                <a href="#" class="">
-                  <div class="voice-cards__container">
-                    <div class="voice-cards__info">
-                      <div class="voice-cards__tag">
-                        <p class="voice-cards__age">20代(女性)</p>
-                        <div class="voice-cards__category">ライセンス講習</div>
-                      </div>
-                      <p class="voice-cards__title">
-                        ここにタイトルが入ります。ここにタイトル
-                      </p>
+                <div class="voice-cards__container">
+                  <div class="voice-cards__info">
+                    <div class="voice-cards__tag">
+                      <p class="voice-cards__age">20代(女性)</p>
+                      <div class="voice-cards__category">ライセンス講習</div>
                     </div>
-                    <picture class="voice-cards__img js-colorbox">
-                      <source
-                        srcset="./assets/images/voice/voice-cardPC1.jpg"
-                        media="(min-width: 768px)" />
-                      <img
-                        src="./assets/images/voice/voice-cardSP1.jpg"
-                        alt="麦わら帽子を被った笑顔の女性" />
-                    </picture>
+                    <p class="voice-cards__title">ここにタイトルが入ります。ここにタイトル</p>
                   </div>
-                  <div class="voice-cards__body">
-                    <p class="voice-cards__text">
-                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                      ここにテキストが入ります。ここにテキストが入ります。
-                    </p>
-                  </div>
-                </a>
+                  <picture class="voice-cards__img js-colorbox">
+                    <source srcset="./assets/images/voice/voice-cardPC1.jpg" media="(min-width: 768px)" />
+                    <img src="./assets/images/voice/voice-cardSP1.jpg" alt="麦わら帽子を被った笑顔の女性" />
+                  </picture>
+                </div>
+                <div class="voice-cards__body">
+                  <p class="voice-cards__text">
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                    ここにテキストが入ります。ここにテキストが入ります。
+                  </p>
+                </div>
               </li>
               <li class="voice-cards__item">
-                <a href="#" class="">
-                  <div class="voice-cards__container">
-                    <div class="voice-cards__info">
-                      <div class="voice-cards__tag">
-                        <p class="voice-cards__age">20代(男性)</p>
-                        <div class="voice-cards__category">
-                          ファンダイビング
-                        </div>
-                      </div>
-                      <p class="voice-cards__title">
-                        ここにタイトルが入ります。ここにタイトル
-                      </p>
+                <div class="voice-cards__container">
+                  <div class="voice-cards__info">
+                    <div class="voice-cards__tag">
+                      <p class="voice-cards__age">20代(男性)</p>
+                      <div class="voice-cards__category">ファンダイビング</div>
                     </div>
-                    <picture class="voice-cards__img js-colorbox">
-                      <source
-                        srcset="./assets/images/voice/voice-cardPC2.jpg"
-                        media="(min-width: 768px)" />
-                      <img
-                        src="./assets/images/voice/voice-cardSP2.jpg"
-                        alt="サムアップしている男性" />
-                    </picture>
+                    <p class="voice-cards__title">ここにタイトルが入ります。ここにタイトル</p>
                   </div>
-                  <div class="voice-cards__body">
-                    <p class="voice-cards__text">
-                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                      ここにテキストが入ります。ここにテキストが入ります。
-                    </p>
-                  </div>
-                </a>
+                  <picture class="voice-cards__img js-colorbox">
+                    <source srcset="./assets/images/voice/voice-cardPC2.jpg" media="(min-width: 768px)" />
+                    <img src="./assets/images/voice/voice-cardSP2.jpg" alt="サムアップしている男性" />
+                  </picture>
+                </div>
+                <div class="voice-cards__body">
+                  <p class="voice-cards__text">
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                    ここにテキストが入ります。ここにテキストが入ります。
+                  </p>
+                </div>
               </li>
               <li class="voice-cards__item">
-                <a href="#" class="">
-                  <div class="voice-cards__container">
-                    <div class="voice-cards__info">
-                      <div class="voice-cards__tag">
-                        <p class="voice-cards__age">20代(男性)</p>
-                        <div class="voice-cards__category">
-                          ファンダイビング
-                        </div>
-                      </div>
-                      <p class="voice-cards__title">
-                        ここにタイトルが入ります。ここにタイトル
-                      </p>
+                <div class="voice-cards__container">
+                  <div class="voice-cards__info">
+                    <div class="voice-cards__tag">
+                      <p class="voice-cards__age">20代(男性)</p>
+                      <div class="voice-cards__category">ファンダイビング</div>
                     </div>
-                    <picture class="voice-cards__img js-colorbox">
-                      <source
-                        srcset="./assets/images/voice/voice-cardPC3.jpg"
-                        media="(min-width: 768px)" />
-                      <img
-                        src="./assets/images/voice/voice-cardSP3.jpg"
-                        alt="サムアップしている男性" />
-                    </picture>
+                    <p class="voice-cards__title">ここにタイトルが入ります。ここにタイトル</p>
                   </div>
-                  <div class="voice-cards__body">
-                    <p class="voice-cards__text">
-                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                      ここにテキストが入ります。ここにテキストが入ります。
-                    </p>
-                  </div>
-                </a>
+                  <picture class="voice-cards__img js-colorbox">
+                    <source srcset="./assets/images/voice/voice-cardPC3.jpg" media="(min-width: 768px)" />
+                    <img src="./assets/images/voice/voice-cardSP3.jpg" alt="サムアップしている男性" />
+                  </picture>
+                </div>
+                <div class="voice-cards__body">
+                  <p class="voice-cards__text">
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                    ここにテキストが入ります。ここにテキストが入ります。
+                  </p>
+                </div>
               </li>
               <li class="voice-cards__item">
-                <a href="#" class="">
-                  <div class="voice-cards__container">
-                    <div class="voice-cards__info">
-                      <div class="voice-cards__tag">
-                        <p class="voice-cards__age">20代(男性)</p>
-                        <div class="voice-cards__category">
-                          ファンダイビング
-                        </div>
-                      </div>
-                      <p class="voice-cards__title">
-                        ここにタイトルが入ります。ここにタイトル
-                      </p>
+                <div class="voice-cards__container">
+                  <div class="voice-cards__info">
+                    <div class="voice-cards__tag">
+                      <p class="voice-cards__age">20代(男性)</p>
+                      <div class="voice-cards__category">ファンダイビング</div>
                     </div>
-                    <picture class="voice-cards__img js-colorbox">
-                      <source
-                        srcset="./assets/images/voice/voice-cardPC4.jpg"
-                        media="(min-width: 768px)" />
-                      <img
-                        src="./assets/images/voice/voice-cardSP4.jpg"
-                        alt="サムアップしている男性" />
-                    </picture>
+                    <p class="voice-cards__title">ここにタイトルが入ります。ここにタイトル</p>
                   </div>
-                  <div class="voice-cards__body">
-                    <p class="voice-cards__text">
-                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                      ここにテキストが入ります。ここにテキストが入ります。
-                    </p>
-                  </div>
-                </a>
+                  <picture class="voice-cards__img js-colorbox">
+                    <source srcset="./assets/images/voice/voice-cardPC4.jpg" media="(min-width: 768px)" />
+                    <img src="./assets/images/voice/voice-cardSP4.jpg" alt="サムアップしている男性" />
+                  </picture>
+                </div>
+                <div class="voice-cards__body">
+                  <p class="voice-cards__text">
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                    ここにテキストが入ります。ここにテキストが入ります。
+                  </p>
+                </div>
               </li>
               <li class="voice-cards__item">
-                <a href="#" class="">
-                  <div class="voice-cards__container">
-                    <div class="voice-cards__info">
-                      <div class="voice-cards__tag">
-                        <p class="voice-cards__age">20代(男性)</p>
-                        <div class="voice-cards__category">
-                          ファンダイビング
-                        </div>
-                      </div>
-                      <p class="voice-cards__title">
-                        ここにタイトルが入ります。ここにタイトル
-                      </p>
+                <div class="voice-cards__container">
+                  <div class="voice-cards__info">
+                    <div class="voice-cards__tag">
+                      <p class="voice-cards__age">20代(男性)</p>
+                      <div class="voice-cards__category">ファンダイビング</div>
                     </div>
-                    <picture class="voice-cards__img js-colorbox">
-                      <source
-                        srcset="./assets/images/voice/voice-cardPC5.jpg"
-                        media="(min-width: 768px)" />
-                      <img
-                        src="./assets/images/voice/voice-cardSP5.jpg"
-                        alt="サムアップしている男性" />
-                    </picture>
+                    <p class="voice-cards__title">ここにタイトルが入ります。ここにタイトル</p>
                   </div>
-                  <div class="voice-cards__body">
-                    <p class="voice-cards__text">
-                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                      ここにテキストが入ります。ここにテキストが入ります。
-                    </p>
-                  </div>
-                </a>
+                  <picture class="voice-cards__img js-colorbox">
+                    <source srcset="./assets/images/voice/voice-cardPC5.jpg" media="(min-width: 768px)" />
+                    <img src="./assets/images/voice/voice-cardSP5.jpg" alt="サムアップしている男性" />
+                  </picture>
+                </div>
+                <div class="voice-cards__body">
+                  <p class="voice-cards__text">
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                    ここにテキストが入ります。ここにテキストが入ります。
+                  </p>
+                </div>
               </li>
               <li class="voice-cards__item">
-                <a href="#" class="">
-                  <div class="voice-cards__container">
-                    <div class="voice-cards__info">
-                      <div class="voice-cards__tag">
-                        <p class="voice-cards__age">20代(男性)</p>
-                        <div class="voice-cards__category">
-                          ファンダイビング
-                        </div>
-                      </div>
-                      <p class="voice-cards__title">
-                        ここにタイトルが入ります。ここにタイトル
-                      </p>
+                <div class="voice-cards__container">
+                  <div class="voice-cards__info">
+                    <div class="voice-cards__tag">
+                      <p class="voice-cards__age">20代(男性)</p>
+                      <div class="voice-cards__category">ファンダイビング</div>
                     </div>
-                    <picture class="voice-cards__img js-colorbox">
-                      <source
-                        srcset="./assets/images/voice/voice-cardPC6.jpg"
-                        media="(min-width: 768px)" />
-                      <img
-                        src="./assets/images/voice/voice-cardSP6.jpg"
-                        alt="サムアップしている男性" />
-                    </picture>
+                    <p class="voice-cards__title">ここにタイトルが入ります。ここにタイトル</p>
                   </div>
-                  <div class="voice-cards__body">
-                    <p class="voice-cards__text">
-                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                      ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                      ここにテキストが入ります。ここにテキストが入ります。
-                    </p>
-                  </div>
-                </a>
+                  <picture class="voice-cards__img js-colorbox">
+                    <source srcset="./assets/images/voice/voice-cardPC6.jpg" media="(min-width: 768px)" />
+                    <img src="./assets/images/voice/voice-cardSP6.jpg" alt="サムアップしている男性" />
+                  </picture>
+                </div>
+                <div class="voice-cards__body">
+                  <p class="voice-cards__text">
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                    ここにテキストが入ります。ここにテキストが入ります。
+                  </p>
+                </div>
               </li>
             </ul>
             <!-- Pagination -->
@@ -458,7 +384,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       <!-- common-contact -->
       <section id="common-contact" class="common-contact layout-common-contact">
@@ -466,9 +392,7 @@
           <div class="common-contact__container">
             <div class="common-contact__info">
               <div class="common-contact__logo">
-                <img
-                  src="./assets/images/common/logo-coloreSP.svg"
-                  alt="CodeUps" />
+                <img src="./assets/images/common/logo-coloreSP.svg" alt="CodeUps" />
               </div>
               <div class="common-contact__access">
                 <div class="common-contact__address">
@@ -479,25 +403,14 @@
                 </div>
 
                 <div class="common-contact__map">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1789.5135835504034!2d127.7015532!3d26.2283068!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e56bdd9c1c829f%3A0x7681a611ddf31ec6!2z44CSOTAwLTAwMDQg5rKW57iE55yM6YKj6KaH5biC6YqY6IuF77yR5LiB55uu77yR!5e0!3m2!1sja!2sjp!4v1701683152240!5m2!1sja!2sjp"
-                    width="295"
-                    height="160"
-                    style="border: 0"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1789.5135835504034!2d127.7015532!3d26.2283068!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e56bdd9c1c829f%3A0x7681a611ddf31ec6!2z44CSOTAwLTAwMDQg5rKW57iE55yM6YKj6KaH5biC6YqY6IuF77yR5LiB55uu77yR!5e0!3m2!1sja!2sjp!4v1701683152240!5m2!1sja!2sjp" width="295" height="160" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
               </div>
             </div>
             <div class="common-contact__here">
-              <h3 class="common-contact__title">
-                <span class="common-contact__title-color">C</span>ontact
-              </h3>
+              <h3 class="common-contact__title"><span class="common-contact__title-color">C</span>ontact</h3>
               <p class="common-contact__sub-title">お問合せ</p>
-              <p class="common-contact__booking">
-                ご予約・お問い合わせはコチラ
-              </p>
+              <p class="common-contact__booking">ご予約・お問い合わせはコチラ</p>
               <div class="common-contact__button">
                 <a href="" class="button"
                   >Contact us
@@ -514,18 +427,17 @@
       <div class="footer__inner inner">
         <div class="footer__logos">
           <div class="footer__logo">
-            <img src="./assets/images/common/logo-largeSP.svg" alt="CodeUps" />
+            <a href="#"> <img src="./assets/images/common/logo-largeSP.svg" alt="CodeUps" /> </a>
           </div>
           <div class="footer__icons">
             <div class="footer__facebook">
-              <img
-                src="./assets/images/common/facebook.svg"
-                alt="facebookのアイコン" />
+              <a href="/campaign.html" target="_blank" rel="noopener noreferrer"></a>
+              <img src="./assets/images/common/facebook.svg" alt="facebookのアイコン" />
             </div>
             <div class="footer__instagram">
-              <img
-                src="./assets/images/common/instagram.svg"
-                alt="instagramのアイコン" />
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img src="./assets/images/common/instagram.svg" alt="instagramのアイコン" />
+              </a>
             </div>
           </div>
         </div>
@@ -644,9 +556,7 @@
           </div>
         </nav>
 
-        <small class="footer__copyright"
-          >Copyright&nbsp;&copy;&nbsp;2021&nbsp;-&nbsp;2023&nbsp;CodeUps&nbsp;LLC.&nbsp;All&nbsp;Rights&nbsp;Reserved.</small
-        >
+        <small class="footer__copyright">Copyright&nbsp;&copy;&nbsp;2021&nbsp;-&nbsp;2023&nbsp;CodeUps&nbsp;LLC.&nbsp;All&nbsp;Rights&nbsp;Reserved.</small>
       </div>
     </footer>
     <div class="layout-page-top page-top js-page-top">

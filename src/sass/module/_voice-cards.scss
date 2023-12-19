@@ -1,5 +1,4 @@
-@use "global" as *;
-
+@use 'global' as *;
 
 .voice-cards {
   display: grid;
@@ -10,7 +9,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
-.voice-cards__item a {
+.voice-cards__item {
   padding: rem(16) rem(16) rem(23) rem(16);
   display: block;
   height: 100%;
@@ -113,14 +112,18 @@
     aspect-ratio: 180 / 140;
   }
 }
+
+.voice-cards__body {
+  margin-top: rem(16);
+
+  @include mq('md') {
+    margin-top: rem(40);
+  }
+}
 .voice-cards__text {
   font-family: $third-font-family;
   font-size: rem(16);
   font-weight: $regular;
   line-height: 1.5;
   color: $darkGreen;
-  margin-top: rem(16);
-  @include mq('md') {
-    margin-top: rem(40);
-  }
 }

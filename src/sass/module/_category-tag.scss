@@ -1,18 +1,19 @@
-@use "global" as *;
+@use 'global' as *;
 
-.voice__cards-container{
-  margin-top: rem(40);
+// カテゴリータグ
+.category-tag {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: rem(20);
+  row-gap: rem(14);
   @include mq('md') {
-  
+    column-gap: rem(32);
+    row-gap: 0;
   }
 }
 
-
-// Category
-
-
-
-.voice__categories::after {
+.sub-campaign__categories::after {
   position: absolute;
   content: '';
   background-image: url(../images/common/fish-right.svg);
@@ -31,9 +32,9 @@
   }
 }
 
-.voice__category-item {
+.category-tag-item {
   font-size: rem(14);
-  
+
   font-family: $third-font-family;
   font-weight: $regular;
   line-height: 1.5714285714;
@@ -42,16 +43,21 @@
   color: $lightGreen;
   text-align: center;
   border: rem(1) solid $lightGreen;
-  
+
   @include mq('md') {
   }
 }
-.voice__category-item a{
+.category-tag-item a {
   display: block;
   height: 100%;
   padding: rem(6);
+  transition: 0.3s;
 }
-.voice__category-item.voice__category-item--current {
+.category-tag-item a:hover {
+  color: $white;
+  background-color: $lightGreen;
+}
+.category-tag-item.category-tag-item--current {
   font-family: $third-font-family;
   font-weight: $regular;
   line-height: 1.5714285714;
@@ -63,4 +69,3 @@
   @include mq('md') {
   }
 }
-

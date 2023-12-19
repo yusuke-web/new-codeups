@@ -1,6 +1,11 @@
 @use "global" as *;
 
 .layout-sub-campaign {
-  margin-top: rem(8);
+  margin-top: rem(50);
   
+
+  @include mq('md') {
+    margin-top: rem(148);
+  
+  }
 }

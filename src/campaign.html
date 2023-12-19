@@ -198,32 +198,32 @@
       <div class="common-fv layout-common-fv">
         <h1 class="common-fv__title">Campaign</h1>
       </div>
+      <!-- パンくずリスト -->
 
+      <div class="sub-campaign__breadcrumbs breadcrumbs">
+        <span>
+          <a href="index.html">
+            <span class="">Top</span>
+          </a>
+        </span>
+        <span>
+          <span class="breadcrumb__sub">キャンペーン</span>
+        </span>
+      </div>
       <section class="sub-campaign layout-sub-campaign">
         <div class="sub-campaign__inner inner">
-          <!-- パンくずリスト -->
-          <div class="sub-campaign__breadcrumbs breadcrumbs layout-breadcrumbs">
-            <span>
-              <a href="index.html">
-                <span class="breadcrumbs__capital">Top</span>
-              </a>
-            </span>
-            <span>
-              <span class="breadcrumb__sub">キャンペーン</span>
-            </span>
-          </div>
           <!-- キャンペーンカテゴリ -->
-          <div class="sub-campaign__categories">
-            <p class="sub-campaign__category-item sub-campaign__category-item--current">
+          <div class="sub-campaign__categories category-tag">
+            <p class="category-tag-item category-tag-item--current">
               <a href="#">all</a>
             </p>
-            <p class="sub-campaign__category-item">
+            <p class="category-tag-item">
               <a href="#">ライセンス講習</a>
             </p>
-            <p class="sub-campaign__category-item">
+            <p class="category-tag-item">
               <a href="#">ファンダイビング</a>
             </p>
-            <p class="sub-campaign__category-item">
+            <p class="category-tag-item">
               <a href="#">体験ダイビング</a>
             </p>
           </div>
@@ -364,6 +364,7 @@
                 <!-- PCのみ表示 -->
               </li>
             </ul>
+            <!-- ページネーション -->
             <div class="sub-campaign-card__wp-pagenavi wp-pagenavi">
               <a href="#" class="wp-pagenavi-prev"></a>
               <span class="current">1</span>
@@ -374,6 +375,8 @@
               <a class="u-desktop" href="#">6</a>
               <a href="#" class="wp-pagenavi-next"></a>
             </div>
+            <!-- ページネーション -->
+
           </div>
         </div>
       </section>

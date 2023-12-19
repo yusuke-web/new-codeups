@@ -5,12 +5,27 @@
   font-size: rem(14);
   font-weight: $regular;
   color: $darkGreen;
+  max-width: rem(600);
+  width: 100%;
+  padding-right: rem(15);
+  padding-left: rem(15);
+  margin-right: auto;
+  margin-left: auto;
 
   @include mq('md') {
+    max-width: rem(1130);
+    padding-right: rem(25);
+    padding-left: rem(25);
   }
 }
-.breadcrumbs__capital {
+
+.breadcrumbs span a span {
   text-transform: uppercase;
+}
+.breadcrumbs span span {
+  margin-left: rem(6);
+  @include mq('md') {
+  }
 }
 .breadcrumbs__inner {
   margin-left: auto;
@@ -19,11 +34,6 @@
   width: 100%;
   padding-left: rem(15);
   padding-right: rem(15);
-}
-.breadcrumb__sub {
-  margin-left: rem(6);
-  @include mq('md') {
-  }
 }
 
 .breadcrumbs span a::after {
