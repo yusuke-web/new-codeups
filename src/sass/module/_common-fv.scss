@@ -16,7 +16,6 @@
   font-family: $second-font-family;
   font-weight: $regular;
   font-size: rem(40);
-  // text-transform: capitalize;
   color: $white;
   @include mq('md') {
     font-size: rem(80);

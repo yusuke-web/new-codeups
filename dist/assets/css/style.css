@@ -201,6 +201,7 @@ a {
 	bottom: 0.9375rem;
 	position: fixed;
 	right: 0.9375rem;
+	z-index: 20;
 }
 
 .layout-price {
@@ -1906,19 +1907,19 @@ body.active {
 }
 
 .page-top a {
-	background-color: white; /* 背景色を白に設定 */
-	border-radius: 50%; /* 要素を円形にする */
+	background-color: white;
+	border-radius: 50%;
 	display: inline-block;
-	height: 3rem; /* ボタンの高さ */
-	line-height: 3rem; /* 子要素を垂直中央に配置 */
-	text-align: center; /* 子要素を中央に配置 */
-	width: 3rem; /* ボタンの幅 */
+	height: 3rem;
+	line-height: 3rem;
+	text-align: center;
+	width: 3rem;
 }
 
 .page-top a img {
-	height: auto; /* 画像の高さを自動調整 */
-	vertical-align: middle; /* 画像を垂直中央に配置 */
-	width: 100%; /* 画像の幅を親要素に合わせる */
+	height: auto;
+	vertical-align: middle;
+	width: 100%;
 }
 
 .price-list {
@@ -2455,16 +2456,10 @@ body.active {
 }
 
 .top-campaign-swiper__swiper-slide {
+	box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
 	display: flex;
 	flex-direction: column;
 	height: auto;
-	width: 100%;
-}
-
-.top-campaign-swiper__swiper-slide a {
-	box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
-	display: block;
-	height: 100%;
 	width: 100%;
 }
 

@@ -1,10 +1,6 @@
 @use 'global' as *;
 
-// .gallery__section-title .section-title--main {
-//   text-indent: rem(9);
-//   @include mq('md') {
-//   }
-// }
+
 .gallery__list {
   margin-top: rem(40);
   @include mq('md') {

@@ -75,26 +75,9 @@
     background-image: url(../images/information/whale-white.svg);
   }
 }
-// .information-tab__item-name {
 
-// }
-// .information-tab__item-name.is-active {
-//   color: $white;
-// }
 .information-tab__item-name {
 }
-// .information-tab__item-name::before {
-//   @include mq('md') {
-//     background-image: url(../images/information/whale-green.svg);
-//     background-repeat: no-repeat;
-//     background-size: contain;
-//     background-position: center;
-//     content: '';
-//     width: rem(64);
-//     height: rem(64);
-//     display: inline-block;
-//   }
-// }
 
 .information-tab__contents {
   margin-top: rem(16);
@@ -105,23 +88,18 @@
 }
 
 .information-tab__content {
-  // border: rem(1) solid $lightGreen;
-  // display: none;
+
   height: 0;
   opacity: 0;
   @include mq('md') {
-    // display: none;
     opacity: 0;
     height: 0;
   }
 }
 .information-tab__content.is-active {
   display: block;
-  // opacity:1;
-  // border: rem(1) solid $lightGreen;
   transition: opacity 0.8s ease;
   opacity: 1;
-  // animation: fade 1s;
   @include mq('md') {
     border: rem(2) solid $lightGreen;
     display: flex;
