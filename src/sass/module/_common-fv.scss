@@ -2,7 +2,18 @@
 
 .common-fv {
   position: relative;
+
+  background-image: url(../images/campaign/campaign-fv-SP.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  height: rem(460);
+
   @include mq('md') {
+    background-image: url(../images/campaign/campaign-fv-PC.jpg);
+    height: rem(548);
   }
 }
 
@@ -24,12 +35,12 @@
   }
 }
 
-.common-fv img {
-  aspect-ratio: 375 / 460;
-  object-fit: cover;
-  width: 100%;
+// .common-fv img {
+//   aspect-ratio: 375 / 460;
+//   object-fit: cover;
+//   width: 100%;
 
-  @include mq('md') {
-    aspect-ratio: 1440 /548;
-  }
-}
+//   @include mq('md') {
+//     aspect-ratio: 1440 /548;
+//   }
+// }
