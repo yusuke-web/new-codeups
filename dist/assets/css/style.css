@@ -888,6 +888,18 @@ a {
 	width: 85.22%;
 }
 
+.sub-campaign__breadcrumbs {
+	margin-top: 0.5rem;
+}
+
+.about-us__breadcrumbs {
+	margin-top: 0.5rem;
+}
+
+.information__breadcrumbs {
+	margin-top: 0.5rem;
+}
+
 .breadcrumbs {
 	color: #0d2936;
 	font-family: "Noto Sans JP", sans-serif;
@@ -1184,6 +1196,14 @@ a {
 	width: 100%;
 }
 
+.common-fv.common-fv--about {
+	background-image: url(../images/about-us/about-us-SP.jpg);
+}
+
+.common-fv.common-fv--information {
+	background-image: url(../images/information/information-fv_SP.jpg);
+}
+
 .common-fv__title {
 	color: #fff;
 	font-family: "Lato", sans-serif;
@@ -1329,8 +1349,7 @@ a {
 
 .footer__copyright {
 	color: #fff;
-	display: inline-block;
-	display: inline-block;
+	display: block;
 	font-family: "Gotu", sans-serif;
 	font-size: 0.75rem;
 	font-weight: 400;
@@ -2368,10 +2387,6 @@ body.active {
 	width: 81.16%;
 }
 
-.sub-campaign__breadcrumbs {
-	margin-top: 0.5rem;
-}
-
 .sub-campaign__container {
 	margin-top: 2.5rem;
 }
@@ -3061,7 +3076,7 @@ html {
 	height: 8.625rem;
 	left: calc(50% - min(48vw, 38.7rem));
 	position: absolute;
-	top: 12%;
+	top: -11%;
 	width: 18.8125rem;
 }
 
@@ -3275,7 +3290,7 @@ html {
 }
 
 .breadcrumbs {
-	max-width: 70.625rem;
+	max-width: 71.375rem;
 	padding-left: 1.5625rem;
 	padding-right: 1.5625rem;
 }
@@ -3371,6 +3386,14 @@ html {
 	height: 34.25rem;
 }
 
+.common-fv.common-fv--about {
+	background-image: url(../images/about-us/about-us-PC.jpg);
+}
+
+.common-fv.common-fv--information {
+	background-image: url(../images/information/information-fv_PC.jpg);
+}
+
 .common-fv__title {
 	font-size: 5rem;
 	line-height: 1.25;
@@ -3446,7 +3469,6 @@ html {
 }
 
 .footer__copyright {
-	display: block;
 	font-size: 0.875rem;
 	line-height: 1.2857;
 	margin-top: 4.3125rem;

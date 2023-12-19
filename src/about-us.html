@@ -21,17 +21,11 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Gotu&family=Lato:wght@400;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif:wght@300;400&display=swap"
-      rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Lato:wght@400;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif:wght@300;400&display=swap" rel="stylesheet" />
     <!-- font awesome -->
-    <script
-      src="https://kit.fontawesome.com/fbe101ccb3.js"
-      crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/fbe101ccb3.js" crossorigin="anonymous"></script>
     <!-- css -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- JavaScript -->
     <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
@@ -45,12 +39,7 @@
       <div class="header__inner">
         <div class="header__logo">
           <a href="index.html">
-            <picture class="">
-              <source
-                srcset="./assets/images/common/logo-PC.svg"
-                media="(min-width: 768px)" />
-              <img src="./assets/images/common/logoSP.svg" alt="CodeUps" />
-            </picture>
+            <img src="./assets/images/common/logo-PC.svg" alt="CodeUps" />
           </a>
         </div>
         <nav class="header__nav">
@@ -62,9 +51,7 @@
               <a href="#about-us">About us<span>私たちについて</span></a>
             </li>
             <li class="header__nav-item">
-              <a href="/information.html"
-                >information<span>ダイビング情報</span></a
-              >
+              <a href="/information.html">information<span>ダイビング情報</span></a>
             </li>
             <li class="header__nav-item">
               <a href="/blog.html">blog<span>ブログ</span></a>
@@ -205,55 +192,35 @@
 
     <main>
       <!-- common FV -->
-      <div class="common-fv common-fv layout-common-fv">
-        <div class="common-fv__inner">
-          <picture class="common-fv__img common-fv">
-            <source
-              srcset="./assets/images/about-us/about-us-PC.jpg"
-              media="(min-width: 768px)" />
-            <img
-              src="./assets/images/about-us/about-us-SP.jpg"
-              alt="黄色い海水魚" />
-          </picture>
-        </div>
+      <div class="common-fv common-fv--about">
         <h1 class="common-fv__title">About us</h1>
       </div>
       <!-- キャンペーン画像 -->
 
       <!-- about　us img -->
+      <!-- パンくずリスト -->
+      <div class="about-us__breadcrumbs breadcrumbs">
+        <span>
+          <a href="index.html">
+            <span class="">Top</span>
+          </a>
+        </span>
+        <span>
+          <span class="breadcrumb__sub">私たちについて</span>
+        </span>
+      </div>
+
       <section id="about-us" class="about-us layout-about-us">
         <div class="about-us__inner inner">
-          <div class="about-us__breadcrumbs breadcrumbs layout-breadcrumbs">
-            <span>
-              <a href="index.html">
-                <span class="breadcrumbs__capital">Top</span>
-              </a>
-            </span>
-            <span>
-              <span class="breadcrumb__sub">私たちについて</span>
-            </span>
-          </div>
 
           <div class="about-us__container">
-        
-
             <div class="about-us__image">
-              <picture class="about-us-image__left">
-                <source
-                  srcset="./assets/images/common/aboutUs-leftPC.jpg"
-                  media="(min-width: 768px)" />
-                <img
-                  src="./assets/images/common/aboutUs-leftSP.jpg"
-                  alt="シーサーの画像" />
-              </picture>
-              <picture class="about-us-image__right">
-                <source
-                  srcset="./assets/images/common/aboutUs-rightPC.jpg"
-                  media="(min-width: 768px)" />
-                <img
-                  src="./assets/images/common/aboutUs-rightSP.jpg"
-                  alt="ヤッコの画像" />
-              </picture>
+              <div class="about-us-image__left">
+                <img src="./assets/images/common/aboutUs-leftPC.jpg" alt="シーサーの画像" />
+              </div>
+              <div class="about-us-image__right">
+                <img src="./assets/images/common/aboutUs-rightPC.jpg" alt="ヤッコの画像" />
+              </div>
             </div>
             <div class="about-us__body">
               <h4 class="about-us__title">
@@ -275,47 +242,27 @@
         <div class="gallery__inner inner">
           <div class="gallery-container">
             <div class="gallery__section-title section-title">
-              <p class="section-title__main section-title__main--gallery">
-                <span class="section-title__color section-title__color--gallery"
-                  >G</span
-                >allery
-              </p>
-              <h3 class="section-title__sub section-title__sub--gallery">
-                フォト
-              </h3>
+              <p class="section-title__main section-title__main--gallery"><span class="section-title__color section-title__color--gallery">G</span>allery</p>
+              <h3 class="section-title__sub section-title__sub--gallery">フォト</h3>
             </div>
             <ul class="gallery__list gallery-list">
               <li class="gallery-list__item">
-                <img
-                  src="./assets/images/about-us/about-us-gallery-SP1.jpg"
-                  alt="珊瑚礁に群がるハナダイ"
-                  class="js-tall" />
+                <img src="./assets/images/about-us/about-us-gallery-SP1.jpg" alt="珊瑚礁に群がるハナダイ" class="js-tall" />
               </li>
               <li class="gallery-list__item">
-                <img
-                  src="./assets/images/about-us/about-us-gallery-SP2.jpg"
-                  alt="珊瑚礁に群がるハナダイ" />
+                <img src="./assets/images/about-us/about-us-gallery-SP2.jpg" alt="珊瑚礁に群がるハナダイ" />
               </li>
               <li class="gallery-list__item">
-                <img
-                  src="./assets/images/about-us/about-us-gallery-SP3.jpg"
-                  alt="珊瑚礁に群がるハナダイ" />
+                <img src="./assets/images/about-us/about-us-gallery-SP3.jpg" alt="珊瑚礁に群がるハナダイ" />
               </li>
               <li class="gallery-list__item">
-                <img
-                  src="./assets/images/about-us/about-us-gallery-SP4.jpg"
-                  alt="珊瑚礁に群がるハナダイ" />
+                <img src="./assets/images/about-us/about-us-gallery-SP4.jpg" alt="珊瑚礁に群がるハナダイ" />
               </li>
               <li class="gallery-list__item">
-                <img
-                  src="./assets/images/about-us/about-us-gallery-SP5.jpg"
-                  alt="珊瑚礁に群がるハナダイ" />
+                <img src="./assets/images/about-us/about-us-gallery-SP5.jpg" alt="珊瑚礁に群がるハナダイ" />
               </li>
               <li class="gallery-list__item">
-                <img
-                  src="./assets/images/about-us/about-us-gallery-SP6.jpg"
-                  alt="珊瑚礁に群がるハナダイ"
-                  class="js-tall" />
+                <img src="./assets/images/about-us/about-us-gallery-SP6.jpg" alt="珊瑚礁に群がるハナダイ" class="js-tall" />
               </li>
             </ul>
           </div>
@@ -323,26 +270,18 @@
 
         <!-- モーダル -->
         <div class="gallery__modal gallery-modal js-gallery-modal">
-          <img
-            class="modal__content modal__image"
-            src="./assets/images/about-us/about-us-gallery-SP1.jpg"
-            alt="" />
+          <img class="modal__content modal__image" src="./assets/images/about-us/about-us-gallery-SP1.jpg" alt="" />
           <div class="caption"></div>
         </div>
-      
       </section>
 
       <!-- common-contact -->
-      <section
-        id="common-contact"
-        class="common-contact layout-common-contact layout-common-contact--about">
+      <section id="common-contact" class="common-contact layout-common-contact layout-common-contact--about">
         <div class="common-contact__inner inner">
           <div class="common-contact__container">
             <div class="common-contact__info">
               <div class="common-contact__logo">
-                <img
-                  src="./assets/images/common/logo-coloreSP.svg"
-                  alt="CodeUps" />
+                <img src="./assets/images/common/logo-coloreSP.svg" alt="CodeUps" />
               </div>
               <div class="common-contact__access">
                 <div class="common-contact__address">
@@ -353,25 +292,14 @@
                 </div>
 
                 <div class="common-contact__map">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1789.5135835504034!2d127.7015532!3d26.2283068!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e56bdd9c1c829f%3A0x7681a611ddf31ec6!2z44CSOTAwLTAwMDQg5rKW57iE55yM6YKj6KaH5biC6YqY6IuF77yR5LiB55uu77yR!5e0!3m2!1sja!2sjp!4v1701683152240!5m2!1sja!2sjp"
-                    width="295"
-                    height="160"
-                    style="border: 0"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1789.5135835504034!2d127.7015532!3d26.2283068!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e56bdd9c1c829f%3A0x7681a611ddf31ec6!2z44CSOTAwLTAwMDQg5rKW57iE55yM6YKj6KaH5biC6YqY6IuF77yR5LiB55uu77yR!5e0!3m2!1sja!2sjp!4v1701683152240!5m2!1sja!2sjp" width="295" height="160" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
               </div>
             </div>
             <div class="common-contact__here">
-              <h3 class="common-contact__title">
-                <span class="common-contact__title-color">C</span>ontact
-              </h3>
+              <h3 class="common-contact__title"><span class="common-contact__title-color">C</span>ontact</h3>
               <p class="common-contact__sub-title">お問合せ</p>
-              <p class="common-contact__booking">
-                ご予約・お問い合わせはコチラ
-              </p>
+              <p class="common-contact__booking">ご予約・お問い合わせはコチラ</p>
               <div class="common-contact__button">
                 <a href="" class="button"
                   >Contact us
@@ -392,14 +320,10 @@
           </div>
           <div class="footer__icons">
             <div class="footer__facebook">
-              <img
-                src="./assets/images/common/facebook.svg"
-                alt="facebookのアイコン" />
+              <img src="./assets/images/common/facebook.svg" alt="facebookのアイコン" />
             </div>
             <div class="footer__instagram">
-              <img
-                src="./assets/images/common/instagram.svg"
-                alt="instagramのアイコン" />
+              <img src="./assets/images/common/instagram.svg" alt="instagramのアイコン" />
             </div>
           </div>
         </div>
@@ -518,9 +442,7 @@
           </div>
         </nav>
 
-        <small class="footer__copyright"
-          >Copyright&nbsp;&copy;&nbsp;2021&nbsp;-&nbsp;2023&nbsp;CodeUps&nbsp;LLC.&nbsp;All&nbsp;Rights&nbsp;Reserved.</small
-        >
+        <small class="footer__copyright">Copyright&nbsp;&copy;&nbsp;2021&nbsp;-&nbsp;2023&nbsp;CodeUps&nbsp;LLC.&nbsp;All&nbsp;Rights&nbsp;Reserved.</small>
       </div>
     </footer>
     <div class="layout-page-top page-top js-page-top">

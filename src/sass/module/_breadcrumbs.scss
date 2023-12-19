@@ -1,4 +1,24 @@
 @use 'global' as *;
+// キャンペーン
+.sub-campaign__breadcrumbs {
+  margin-top: rem(8);
+  @include mq('md') {
+  }
+}
+
+// About-us
+.about-us__breadcrumbs{
+  margin-top: rem(8);
+  @include mq('md') {
+  }
+}
+// information
+.information__breadcrumbs{
+  margin-top: rem(8);
+  @include mq('md') {
+  
+  }
+}
 
 .breadcrumbs {
   font-family: $third-font-family;
@@ -13,7 +33,7 @@
   margin-left: auto;
 
   @include mq('md') {
-    max-width: rem(1130);
+    max-width: rem(1142);
     padding-right: rem(25);
     padding-left: rem(25);
   }

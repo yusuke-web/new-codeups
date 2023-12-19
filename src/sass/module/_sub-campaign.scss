@@ -1,11 +1,5 @@
 @use 'global' as *;
 
-.sub-campaign__breadcrumbs{
-  margin-top: rem(8);
-  @include mq('md') {
-  
-  }
-}
 
 .sub-campaign__container{
   margin-top: rem(40);

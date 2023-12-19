@@ -127,18 +127,16 @@
 }
 
 .footer__copyright {
-  display: inline-block;
+  display: block;
   text-align: center;
   font-family: $base-font-family;
   font-size: rem(12);
   line-height: 1.5;
   font-weight: $regular;
   color: $white;
-  display: inline-block;
   margin-top: rem(27);
   @include mq('md') {
     margin-top: rem(69);
-    display: block;
     text-align: center;
     line-height: 1.2857;
     font-size: rem(14);

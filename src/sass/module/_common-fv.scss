@@ -16,6 +16,24 @@
     height: rem(548);
   }
 }
+// about-us画像
+.common-fv.common-fv--about {
+  background-image: url(../images/about-us/about-us-SP.jpg);
+
+  @include mq('md') {
+    background-image: url(../images/about-us/about-us-PC.jpg);
+  }
+}
+.common-fv.common-fv--information {
+  background-image: url(../images/information/information-fv_SP.jpg);
+
+  @include mq('md') {
+    background-image: url(../images/information/information-fv_PC.jpg);
+  }
+}
+// information画像
+
+
 
 .common-fv__title {
   position: absolute;
@@ -34,13 +52,3 @@
     line-height: 1.25;
   }
 }
-
-// .common-fv img {
-//   aspect-ratio: 375 / 460;
-//   object-fit: cover;
-//   width: 100%;
-
-//   @include mq('md') {
-//     aspect-ratio: 1440 /548;
-//   }
-// }
