@@ -1,7 +1,7 @@
 @use 'global' as *;
 
 .price-list {
-  border: 1px solid $lightGreen;
+  border: rem(1) solid $lightGreen;
   @include mq('md') {
     display: flex;
     max-width: rem(700);
@@ -85,7 +85,7 @@
   align-items: center;
   justify-content: center;
 
-  border-right: 1px solid $lightGreen;
+  border-right:rem(1) solid $lightGreen;
   @include mq('md') {
   }
 }

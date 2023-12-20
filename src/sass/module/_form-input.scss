@@ -7,7 +7,7 @@
 	font-size: rem(15);
 	line-height: 1;
 	border-radius: 0;
-	border: 1px solid $lightGreen;
+	border: rem(1) solid $lightGreen;
 	appearance: none;
 	background-color: transparent;
 	background-image: none;
@@ -17,7 +17,7 @@
   border-color: $red;
 }
 .form-input input:focus {
-	border: 1px solid $lightGreen;
+	border: rem(1) solid $lightGreen;
 	box-shadow: none;
 	outline: none;
 }

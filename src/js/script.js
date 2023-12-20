@@ -29,7 +29,6 @@ jQuery(function ($) {
 
 $(function () {
   $('.js-hamburger').on('click', function () {
-
     $(this).toggleClass('is-open');
     $('.js-header').addClass('header--green'); // 新しいクラスをトグルする
     $('body').addClass('active');
@@ -89,18 +88,13 @@ const swiper = new Swiper('.js-top-mv-swiper', {
 // Top-Campaign スライダー
 jQuery(function ($) {
   // リサイズ処理（PC時のみ矢印表示）
-  const campaign_slideLength = document.querySelectorAll(
-    '.js-top-campaign-swiper .swiper-slide'
-  ).length;
+  const campaign_slideLength = document.querySelectorAll('.js-top-campaign-swiper .swiper-slide').length;
   $(window).resize(function () {
     service_arrow();
   });
   service_arrow();
   function service_arrow() {
-    if (
-      window.matchMedia('(max-width: 767px)').matches ||
-      campaign_slideLength <= 2
-    ) {
+    if (window.matchMedia('(max-width: 767px)').matches || campaign_slideLength <= 2) {
       $('.js-top-campaign-arrow').hide();
     } else {
       $('.js-top-campaign-arrow').show();
@@ -182,13 +176,7 @@ jQuery(function ($) {
     $('.gallery-modal').addClass('show');
     $('.modal__image').attr('src', $(this).attr('src')); // クリックされた画像のsrcを設定
 
-    if (
-      $(this)
-        .parent()
-        .is(
-          '.gallery-list__item:nth-of-type(6n + 1), .gallery-list__item:nth-of-type(6n + 6)'
-        )
-    ) {
+    if ($(this).parent().is('.gallery-list__item:nth-of-type(6n + 1), .gallery-list__item:nth-of-type(6n + 6)')) {
       $('.modal__image').addClass('special-size');
     } else {
       $('.modal__image').removeClass('special-size');
@@ -222,10 +210,7 @@ $(function () {
 // Blog アコーディオン
 
 $(function () {
-  $('.js-accordion__item:first-child .js-accordion__content').css(
-    'display',
-    'block'
-  );
+  $('.js-accordion__item:first-child .js-accordion__content').css('display', 'block');
   $('.js-accordion__item:first-child .js-accordion__title').addClass('is-open');
   $('.js-accordion__title').on('click', function () {
     $(this).toggleClass('is-open');
@@ -235,17 +220,18 @@ $(function () {
 
 // Topへ戻るボタン
 $(function () {
-  const pageTop = $(".page-top");
+  const pageTop = $('.page-top');
   pageTop.hide(); // 最初はボタンを非表示にする
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) { // 100pxスクロールしたら表示
+    if ($(this).scrollTop() > 100) {
+      // 100pxスクロールしたら表示
       pageTop.fadeIn(); // 100px以上スクロールしたらボタンをフェードイン
     } else {
       pageTop.fadeOut(); // 100px以下になったらボタンをフェードアウト
     }
   });
   pageTop.click(function () {
-    $("body,html").animate(
+    $('body,html').animate(
       {
         scrollTop: 0, // 上から0pxの位置に戻る
       },

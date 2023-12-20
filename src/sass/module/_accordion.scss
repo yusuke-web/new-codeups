@@ -38,8 +38,8 @@
 .accordion__title::before {
   position: absolute;
   content: '';
-  top: 30px;
-  right: 20px;
+  top: rem(30);
+  right: rem(20);
   width: rem(28);
   height: rem(1);
   background-color: $white;
@@ -47,8 +47,8 @@
 
   @include mq('md') {
     width: rem(32);
-    right: 12px;
-    width: 12px;
+    right: rem(12);
+    width: rem(12);
   }
 }
 

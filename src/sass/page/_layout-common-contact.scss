@@ -16,8 +16,8 @@
 }
 
 .layout-common-contact.layout-common-contact--information{
-  margin-top: rem(500);
+  margin-top: rem(104);
   @include mq('md') {
-  
+  margin-top: rem(132)
   }
 }

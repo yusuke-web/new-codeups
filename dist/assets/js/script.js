@@ -221,7 +221,7 @@ $(function () {
 
 // Topへ戻るボタン
 $(function () {
-  var pageTop = $(".page-top");
+  var pageTop = $('.page-top');
   pageTop.hide(); // 最初はボタンを非表示にする
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
@@ -233,7 +233,7 @@ $(function () {
   });
 
   pageTop.click(function () {
-    $("body,html").animate({
+    $('body,html').animate({
       scrollTop: 0 // 上から0pxの位置に戻る
     }, 500 // 500ミリ秒かけて戻る
     );

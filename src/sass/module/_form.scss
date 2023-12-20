@@ -17,7 +17,7 @@
   }
 }
 .form__wrap:not(:last-child) {
-  border-bottom: 1px dashed $lightGreen;
+  border-bottom: rem(1) dashed $lightGreen;
   padding-bottom: rem(24);
   @include mq('md') {
   }

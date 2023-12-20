@@ -9,7 +9,7 @@
   width: 100%;
   font-size: rem(12);
   color: $black;
-  border: 1px solid $lightGreen;
+  border: rem(1) solid $lightGreen;
  
   appearance: none;
   cursor: pointer;
@@ -21,9 +21,9 @@
   width: 0;
   height: 0;
   border-style: solid;
-  border-right: 7px solid transparent;
-  border-left: 7px solid transparent;
-  border-top: 12px solid #408f95;
+  border-right: rem(7) solid transparent;
+  border-left: rem(7) solid transparent;
+  border-top: rem(12) solid #408f95;
   border-bottom: 0;
   top: rem(12);
   right: rem(9);
@@ -36,7 +36,7 @@
 }
 
 .form-select select:focus {
-  border: 1px solid #ccc;
+  border: rem(1) solid #ccc;
   box-shadow: none;
   outline: none;
 }

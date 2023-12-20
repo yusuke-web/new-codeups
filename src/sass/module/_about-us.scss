@@ -13,7 +13,7 @@
   width: rem(120);
   height: rem(55);
   left: calc(50% - min(46vw, 40rem));
-  top: 9.5%;
+  top: -5.5%;
   @include mq('md') {
     position: absolute;
     content: '';
@@ -32,13 +32,11 @@
   position: relative;
 }
 .about-us__image {
-  margin-top: rem(51);
   position: relative;
   display: flex;
   justify-content: center;
 
   @include mq('md') {
-    margin-top: rem(150);
     position: relative;
   }
 }

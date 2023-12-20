@@ -202,9 +202,9 @@
   top: rem(2);
   height: 0;
   border-style: solid;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 17px solid #408f95;
+  border-top: rem(10) solid transparent;
+  border-bottom: rem(10) solid transparent;
+  border-left: rem(17) solid #408f95;
   border-right: 0;
   transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
 }
@@ -235,9 +235,9 @@
   top: rem(2);
   height: 0;
   border-style: solid;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 17px solid #408f95;
+  border-top: rem(10) solid transparent;
+  border-bottom: rem(10) solid transparent;
+  border-left: rem(17) solid #408f95;
   border-right: 0;
   transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
 }
