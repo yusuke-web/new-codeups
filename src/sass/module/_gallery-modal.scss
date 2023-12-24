@@ -22,7 +22,7 @@
   pointer-events: auto;
 }
 
-.modal__content {
+.gallery-modal__content {
   margin: auto;
   display: block;
   width: 80%;
@@ -35,14 +35,14 @@
   }
 }
 
-.modal__content.special-size {
+.gallery-modal__content.special-size {
   width: min(100%, 25rem); /* 幅を特定の値に設定 */
 }
-.modal__content.tall {
+.gallery-modal__content.tall {
   width: min(100%, 25rem);
 }
 
-.gallery-modal.show .modal__content {
+.gallery-modal.show .gallery-modal__content {
   opacity: 1;
   transform: scale(1);
 }
