@@ -24,6 +24,8 @@
     background-image: url(../images/about-us/about-us-PC.jpg);
   }
 }
+//information画像
+
 .common-fv.common-fv--information {
   background-image: url(../images/information/information-fv_SP.jpg);
 
@@ -31,9 +33,23 @@
     background-image: url(../images/information/information-fv_PC.jpg);
   }
 }
-// information画像
+// Blog一覧画像
+.common-fv.common-fv--blog {
+  background-image: url(../images/blog/blog-fv-PC.jpg);
 
+  @include mq('md') {
+    background-image: url(../images/blog/blog-fv-PC.jpg);
+  }
+}
 
+// Voice
+.common-fv.common-fv--voice {
+  background-image: url(../images/voice/voice-fv-SP.jpg);
+
+  @include mq('md') {
+    background-image: url(../images/voice/voice-fv-PC.jpg);
+  }
+}
 
 .common-fv__title {
   position: absolute;

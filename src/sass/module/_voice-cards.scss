@@ -10,7 +10,7 @@
   }
 }
 .voice-cards__item {
-  padding: rem(16) rem(16) rem(23) rem(16);
+  padding: rem(15) rem(16) rem(23) rem(16);
   display: block;
   height: 100%;
   box-shadow: rem(2) rem(2) rem(10) 0px rgba(0, 0, 0, 0.25);
@@ -22,13 +22,15 @@
 
 .voice-cards__container {
   display: flex;
-  gap: rem(7);
+  gap: rem(13);
   align-items: flex-end;
   @include mq('md') {
     gap: rem(16);
   }
 }
 .voice-cards__info {
+  width: 100%;
+  max-width: rem(149);
   @include mq('md') {
     width: 58.47457627%;
   }
@@ -88,7 +90,8 @@
 
 .voice-cards__img {
   position: relative;
-
+  width: 100%;
+  max-width: rem(151);
   @include mq('md') {
     width: 38.13559322%;
   }

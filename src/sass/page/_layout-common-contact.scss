@@ -21,3 +21,18 @@
   margin-top: rem(132)
   }
 }
+
+.layout-common-contact.layout-common-contact--blog {
+
+  @include mq('md') {
+  margin-top: rem(137);
+  }
+
+}
+.layout-common-contact.layout-common-contact--blog-detail{
+  margin-top: rem(105);
+
+  @include mq('md') {
+  margin-top: rem(136);
+  }
+}

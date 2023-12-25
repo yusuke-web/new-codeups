@@ -9,7 +9,7 @@
 
   box-shadow: rem(4) rem(4) rem(10) rgba(0, 0, 0, 0.25);
   @include mq('md') {
-    padding-bottom: rem(44);
+    // padding-bottom: rem(44);
   }
 }
 
@@ -26,9 +26,9 @@
 }
 
 .blog-side-menu-campaign-card__body {
-  padding: rem(20) rem(16) rem(24);
+  padding: rem(16) rem(23) rem(24) rem(23);
   @include mq('md') {
-    padding: rem(24) rem(24) rem(0);
+    padding: rem(12) rem(23) rem(24) rem(23);
   }
 }
 
@@ -51,20 +51,19 @@
 }
 
 .blog-side-menu-campaign-card__title {
-text-align: center;
+  text-align: center;
 
   font-family: $third-font-family;
   color: $darkGreen;
   font-size: rem(16);
   line-height: 1.5;
   font-weight: $medium;
-  margin-top: rem(6);
+  margin-top: rem(0);
   border-bottom: rem(1) solid $lightGreen;
   padding-bottom: rem(7);
   @include mq('md') {
     margin-top: rem(3);
-    font-size: rem(24);
-    padding-bottom: rem(3);
+    padding-bottom: rem(7);
   }
 }
 
@@ -73,7 +72,7 @@ text-align: center;
   margin-top: rem(8);
   height: auto;
   @include mq('md') {
-    margin-top: rem(21);
+    margin-top: rem(10);
   }
 }
 
@@ -86,8 +85,7 @@ text-align: center;
   text-align: center;
 
   @include mq('md') {
-    font-size: rem(16);
-    text-indent: -1em;
+    // text-indent: -1em;
   }
 }
 
@@ -115,7 +113,7 @@ text-align: center;
   display: flex;
   align-items: center;
   @include mq('md') {
-    font-size: rem(24);
+    font-size: rem(20);
     align-items: flex-end;
   }
 }
@@ -128,7 +126,9 @@ text-align: center;
   color: $lightGreen;
   text-indent: rem(2);
   @include mq('md') {
-    font-size: clamp(0.75rem, 0.1338rem + 2.6291vw, 2.5rem);
+    // font-size: clamp(0.75rem, 0.1338rem + 2.6291vw, 2.5rem);
+    font-size: rem(32);
+    text-indent: rem(-4);
   }
 }
 

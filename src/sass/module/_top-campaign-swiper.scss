@@ -7,7 +7,7 @@
 .swiper-slide {
   height: auto;
 }
-.top-campaign-swiper__swiper-slide {
+.campaign-card {
   height: auto;
   display: flex;
   width: 100%;
@@ -17,7 +17,7 @@
     max-width: rem(333);
   }
 }
-// .top-campaign-swiper__swiper-slide a {
+// .campaign-card a {
 //   height: 100%;
 //   width: 100%;
 //   display: block;
@@ -162,7 +162,7 @@
 .top-campaign-swiper__button {
   text-align: center;
   margin-top: rem(26);
-  padding-bottom: rem(4);
+  padding-bottom: rem(5);
   @include mq('md') {
     margin-top: rem(67);
   }

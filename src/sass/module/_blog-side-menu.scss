@@ -2,12 +2,17 @@
 
 // サイドバー
 .blog-side-menu {
+  width: 85.23%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: rem(79);
   @include mq('md') {
-  width: 26.01769912%;
+    width: 27.2222222222%;
+    margin-top: rem(0);
   }
 }
 // block
-.blog-side-menu-title {
+.blog-side-menu__title {
   font-family: $third-font-family;
   font-size: rem(24);
   font-weight: $regular;
@@ -28,15 +33,15 @@
 .blog-side-menu__popular-section {
 }
 
-.blog-side-menu-title::before {
+.blog-side-menu__title::before {
   background-image: url(../images/blog/whale-darkGreen.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   content: '';
   display: inline-block;
-  height: 4rem;
-  width: 4rem;
+  height: rem(50);
+  width: rem(50);
   margin-left: rem(16);
   margin-right: rem(8);
 }
@@ -93,8 +98,23 @@
   line-height: 1.5;
   color: $darkGreen;
   font-weight: $regular;
+  margin-top: rem(4);
+  display: flex;
+  align-items: flex-start;
+  line-height: 1;
 
   @include mq('md') {
+    line-height: 1;
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+.blog-side-menu__popular-title {
+  margin-top: rem(9);
+
+  @include mq('md') {
+    margin-top: rem(8);
   }
 }
 // 口コミ
@@ -106,14 +126,11 @@
 }
 
 .blog-side-menu__review {
-  margin-top: rem(80);
+  margin-top: rem(82);
   @include mq('md') {
   }
 }
-.blog-side-menu__review-side-menu {
-  @include mq('md') {
-  }
-}
+
 
 .blog-side-menu__review-card {
   margin-top: rem(24);
@@ -145,28 +162,33 @@
   font-size: rem(24);
   font-weight: $medium;
   color: $darkGreen;
-  margin-top: rem(8);
+  margin-top: rem(6);
 }
 .blog-side-menu__review-button {
   text-align: center;
   margin-top: rem(40);
+  @include mq('md') {
+  margin-top: rem(45);
+  }
 }
 // キャンペーン
 
 .blog-side-menu__campaign {
-  margin-top: rem(80);
+  margin-top: rem(86);
   @include mq('md') {
+    margin-top: rem(84);
   }
 }
 
 .blog-side-menu__campaign-cards {
-  margin-top: rem(16);
+  margin-top: rem(23);
   @include mq('md') {
+    margin-top: rem(26);
   }
 }
 
 .blog-side-menu__campaign-button {
-  margin-top: rem(40);
+  margin-top: rem(43);
   text-align: center;
   @include mq('md') {
   }
@@ -174,70 +196,11 @@
 
 // アーカイブ
 .blog-side-menu__archive {
-  margin-top: rem(80);
+  margin-top: rem(85);
 
   @include mq('md') {
+
+    margin-top: rem(82);
   }
 }
-
-.blog-side-menu-accordion {
-  margin-top: rem(24);
-  @include mq('md') {
-  }
-}
-
-.blog-side-menu-accordion__title {
-  font-family: $third-font-family;
-  font-size: rem(24);
-  font-weight: $regular;
-  color: $lightGreen;
-}
-.blog-side-menu-accordion__title::before {
-  margin-right: rem(8);
-
-  position: relative;
-  display: inline-block;
-  content: '';
-  width: 0;
-  top: rem(2);
-  height: 0;
-  border-style: solid;
-  border-top: rem(10) solid transparent;
-  border-bottom: rem(10) solid transparent;
-  border-left: rem(17) solid #408f95;
-  border-right: 0;
-  transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
-}
-.blog-side-menu-accordion__title.is-open::before {
-  transform: rotate(90deg);
-}
-.blog-side-menu-accordion__text {
-  text-indent: 1em;
-  margin-top: rem(4);
-  padding-left: rem(8);
-
-  font-family: 
-  $third-font-family;
-  font-size: rem(24);
-  font-weight: $regular;
-  color: $lightGreen;
-  
-  @include mq('md') {
-  }
-}
-
-.blog-side-menu-accordion__text::before {
-  margin-right: rem(8);
-  position: relative;
-  display: inline-block;
-  content: '';
-  width: 0;
-  top: rem(2);
-  height: 0;
-  border-style: solid;
-  border-top: rem(10) solid transparent;
-  border-bottom: rem(10) solid transparent;
-  border-left: rem(17) solid #408f95;
-  border-right: 0;
-  transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
-}
+// アコーディオン

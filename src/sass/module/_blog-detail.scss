@@ -1,7 +1,100 @@
 @use 'global' as *;
+
+.blog-detail__inner {
+  position: relative;
+}
+
+.blog-detail__inner::after {
+  background-image: url(../images/common/fish-right.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: '';
+  height: rem(55);
+  left: calc(50% - min(46vw, 38.75rem));
+  position: absolute;
+  top: -0.65%;
+  width: rem(120);
+  z-index: -1;
+  @include mq('md') {
+    width: rem(301);
+    height: rem(138);
+    top: -2.9%;
+  }
+}
+
+.blog-detail__contents {
+  @include mq('md') {
+    width: 65.09259259%;
+  }
+}
+.blog-detail__contents time {
+  font-size: rem(14);
+  line-height: 1.2857142857;
+  color: $darkGreen;
+  font-weight: $regular;
+  font-family: $base-font-family;
+  @include mq('md') {
+  }
+}
+.blog-detail__header {
+  font-family: $third-font-family;
+  font-size: rem(24);
+  font-weight: $medium;
+  color: $darkGreen;
+  border-bottom: rem(1) solid $lightGreen;
+  padding-bottom: rem(5);
+  @include mq('md') {
+    font-size: rem(32);
+    padding-bottom: 0;
+  }
+}
+.blog-detail__contents-img {
+  margin-top: rem(24);
+
+  @include mq('md') {
+    margin-top: rem(39);
+  }
+}
+.blog-detail__container {
+  // margin-top: rem(52);
+  @include mq('md') {
+    display: flex;
+    gap: rem(86);
+    justify-content: space-between;
+    // margin-top: rem(150);
+    margin-top: rem(0);
+  }
+}
+.blog-detail__contents-text {
+  margin-top: rem(24);
+
+  @include mq('md') {
+    margin-top: rem(42);
+  }
+}
+.blog-detail__contents-lists {
+  margin-top: rem(24);
+
+  @include mq('md') {
+    margin-top: rem(38);
+  }
+}
+
 .blog-detail__contents-list {
   position: relative;
-  text-indent: 1em;
+  text-indent: 1.7em;
+  font-family: $third-font-family;
+  font-weight: $regular;
+  font-size: rem(16);
+  line-height: 1.5;
+  color: #000;
+}
+.blog-detail__contents-list:not(:first-child) {
+  margin-top: rem(3);
+
+  @include mq('md') {
+  }
 }
 .blog-detail__contents-list::before {
   background-image: url(../images/blog-detail/hitode-green.svg);
@@ -39,7 +132,6 @@
   height: rem(38);
   transition: background-color 0.3s;
 }
-
 
 .blog-detail__button a:first-child::before {
   position: absolute;

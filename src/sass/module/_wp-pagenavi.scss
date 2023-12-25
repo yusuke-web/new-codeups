@@ -6,6 +6,10 @@
   margin-top: rem(80);
 }
 .blog__wp-pagenavi {
+  margin-top: rem(84);
+}
+
+.voice__wp-pagenavi {
   margin-top: rem(80);
 }
 // 共通部分
@@ -69,6 +73,14 @@
   @include mq('md') {
   }
 }
+.wp-pagenavi a:first-child:hover::before {
+  border-right: rem(1) solid $white;
+  border-top: rem(1) solid $white;
+}
+.wp-pagenavi a:last-child:hover::after {
+  border-right: rem(1) solid $white;
+  border-top: rem(1) solid $white;
+}
 
 // .wp-pagenavi a.sub-campaign-card__wp-pagenavi-next {
 //   margin-left: rem(28);
@@ -87,7 +99,7 @@
   }
 }
 
-.wp-pagenavi a:hover{
+.wp-pagenavi a:hover {
   color: $white;
   background-color: $lightGreen;
 }

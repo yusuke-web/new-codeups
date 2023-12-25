@@ -1,16 +1,42 @@
 @use 'global' as *;
 
+.blog__inner {
+  position: relative;
+}
+
+.blog__inner::after {
+  background-image: url(../images/common/fish-right.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: '';
+  height: rem(55);
+  left: calc(50% - min(46vw, 38.75rem));
+  position: absolute;
+  top: -0.45%;
+  width: rem(120);
+  z-index: -1;
+  @include mq('md') {
+    width: rem(301);
+    height: rem(138);
+    top: -2.9%;
+  }
+}
+
 .blog__container {
-  margin-top: rem(52);
+  // margin-top: rem(52);
+  // margin-top: rem(52);
   @include mq('md') {
     display: flex;
     gap: rem(80);
-    margin-top: rem(150);
+    justify-content: space-between;
+    // margin-top: rem(150);
+    margin-top: rem(0);
   }
 }
 .blog__cards-container {
   @include mq('md') {
-    width: 62.47787611%;
+    width: 65.37037037%;
   }
 }
 
