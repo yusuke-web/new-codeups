@@ -1,5 +1,30 @@
 @use "global" as *;
 
+
+.voice__inner {
+  position: relative;
+}
+
+.voice__inner::after {
+  background-image: url(../images/common/fish-right.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: '';
+  height: rem(55);
+  left: calc(50% - min(46vw, 38.75rem));
+  position: absolute;
+  top: -0.45%;
+  width: rem(120);
+  z-index: 1;
+  @include mq('md') {
+    width: rem(301);
+    height: rem(138);
+    top: -2.9%;
+  }
+}
+
+
 .voice__cards-container{
   margin-top: rem(40);
   @include mq('md') {

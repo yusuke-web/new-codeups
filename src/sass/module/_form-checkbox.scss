@@ -8,10 +8,10 @@
 }
 
 .form-checkbox label:not(:first-of-type) {
-  margin-top: rem(10);
+  margin-top: rem(3);
   @include mq(md) {
-    margin-top: 0;
-    margin-left: rem(20);
+    margin-top: rem(3);
+    margin-left: rem(0);
   }
 }
 
@@ -22,7 +22,8 @@
 .form-checkbox input + span {
   cursor: pointer;
   display: inline-block;
-  padding: 0 0 0 rem(25);
+  padding: 0 0 0 rem(21);
+  line-height: 1;
   position: relative;
   font-family: $third-font-family;
   font-weight: $regular;
@@ -32,32 +33,39 @@
 .form-checkbox input + span::before {
   content: '';
   position: absolute;
-  top: 50%;
-  left: 0;
+  top: 46%;
+  left: rem(0);
   transform: translateY(-50%);
   background: #fff;
   border: rem(1) solid $lightGreen;
   display: block;
-  width: rem(15);
-  height: rem(15);
+  width: rem(14);
+  height: rem(14);
 }
 
 .form-checkbox input + span::after {
   content: '';
   margin-top: rem(-2);
   position: absolute;
-  top: 50%;
-  left: 0;
+  top: 46%;
+  left: rem(1);
   transform: translateY(-50%) rotate(-45deg);
   display: block;
-  width: rem(15);
-  height: rem(8);
-  border-bottom: rem(3) solid $red;
-  border-left: rem(3) solid $red;
+  width: rem(12);
+  height: rem(6);
+  border-bottom: rem(2) solid $red;
+  border-left: rem(2) solid $red;
   transition: 0.3s;
   opacity: 0;
 }
 
 .form-checkbox input:checked + span::after {
   opacity: 1;
+}
+
+.form-checkbox {
+  @include mq('md') {
+  display: flex;
+  flex-direction: column;
+  }
 }

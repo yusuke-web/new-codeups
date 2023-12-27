@@ -21,23 +21,17 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Gotu&family=Lato:wght@400;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif:wght@300;400&display=swap"
-      rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Lato:wght@400;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif:wght@300;400&display=swap" rel="stylesheet" />
     <!-- font awesome -->
-    <script
-      src="https://kit.fontawesome.com/fbe101ccb3.js"
-      crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/fbe101ccb3.js" crossorigin="anonymous"></script>
     <!-- css -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- JavaScript -->
     <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script defer src="./assets/js/jquery.inview.min.js"></script>
-   
+
     <script defer src="./assets/js/script.js"></script>
   </head>
   <body>
@@ -57,15 +51,13 @@
               <a href="/about-us.html">About us<span>私たちについて</span></a>
             </li>
             <li class="header__nav-item">
-              <a href="/information.html"
-                >information<span>ダイビング情報</span></a
-              >
+              <a href="/information.html">information<span>ダイビング情報</span></a>
             </li>
             <li class="header__nav-item">
               <a href="/blog.html">blog<span>ブログ</span></a>
             </li>
             <li class="header__nav-item">
-              <a href="#top-voice">voice<span>お客様の声</span></a>
+              <a href="/voice.html">voice<span>お客様の声</span></a>
             </li>
             <li class="header__nav-item">
               <a href="/price.html">price<span>料金一覧</span></a>
@@ -74,7 +66,7 @@
               <a href="#">FAQ<span>よくある質問</span></a>
             </li>
             <li class="header__nav-item">
-              <a href="#common-contact">Contact<span>お問合せ</span></a>
+              <a href="/contact.html">Contact<span>お問合せ</span></a>
             </li>
           </ul>
         </nav>
@@ -144,7 +136,7 @@
               <div class="header__drawer-container">
                 <ul class="header__drawer-items">
                   <li class="header__drawer-item header__drawer-title">
-                    <a href="#top-voice">お客様の声</a>
+                    <a href="/voice.html">お客様の声</a>
                   </li>
                 </ul>
               </div>
@@ -200,51 +192,39 @@
 
     <main>
       <!-- common FV -->
-      <div class="common-fv common-fv layout-common-fv">
-        <div class="common-fv__inner">
-          <picture class="common-fv__img common-fv">
-            <source
-              srcset="./assets/images/contact/contact-fvPC.jpg"
-              media="(min-width: 768px)" />
-            <img
-              src="./assets/images/contact/contact-fvSP.jpg"
-              alt="黄色い海水魚" />
-          </picture>
-        </div>
+      <div class="common-fv common-fv--contact">
         <h1 class="common-fv__title">Contact</h1>
       </div>
 
+      <!-- パンくずリスト -->
+      <div class="contact__breadcrumbs breadcrumbs layout-breadcrumbs">
+        <span>
+          <a href="index.html">
+            <span class="breadcrumbs__capital">Top</span>
+          </a>
+        </span>
+        <span>
+          <a href="/contact.html">
+            <span>お問い合わせ</span>
+          </a>
+        </span>
+        <span>
+          <span>お問い合わせエラー</span>
+        </span>
+      </div>
+
+
       <section class="contact layout-contact">
         <div class="contact__inner inner">
-          <!-- パンくずリスト -->
-          <div class="blog__breadcrumbs breadcrumbs layout-breadcrumbs">
-            <span>
-              <a href="index.html">
-                <span class="breadcrumbs__capital">Top</span>
-              </a>
-            </span>
-            <span>
-              <a href="/blog.html">
-                <span>お問い合わせ</span>
-              </a>
-            </span>
-            <span>
-              <span>お問い合わせエラー</span>
-            </span>
-          </div>
-
-          <!-- エラーメッセージ -->
-          <div class="contact__error-message">
-            <span class="contact__error-mark">※</span
-            >必須項目が入力されていません。<br class="u-mobile"/><span class="contact__error-indent">入力してください。</span
-            >
-          </div>
-
+          
+                <!-- エラーメッセージ -->
+          
+                <div class="contact__error-message"><span class="contact__error-mark">※</span>必須項目が入力されていません。<br class="u-mobile" /><span class="contact__error-indent">入力してください。</span></div>
           <!-- コンタクトフォーム -->
-          <form class="contact__form form" action="">
+          <form class="contact__form form" action="POST">
             <dl class="form__wrap">
               <dt class="form__label">お名前<span>必須</span></dt>
-              <dd class="form__input form-input form-input__error" a>
+              <dd class="form__input form-input form-input--error">
                 <input type="text" placeholder="沖縄　太郎" />
               </dd>
             </dl>
@@ -264,24 +244,12 @@
             <dl class="form__wrap">
               <dt class="form__label">お問合せ項目<span>必須</span></dt>
               <dd class="form__checkbox form-checkbox">
-                <label
-                  ><input type="checkbox" name="sns" checked /><span
-                    >ダイビング講習について</span
-                  ></label
-                >
-                <label
-                  ><input type="checkbox" name="sns" /><span
-                    >ファンデイビングについて</span
-                  ></label
-                >
-                <label
-                  ><input type="checkbox" name="sns" /><span
-                    >体験ダイビングについて</span
-                  ></label
-                >
+                <label><input type="checkbox" name="sns" checked /><span>ダイビング講習について</span></label>
+                <label><input type="checkbox" name="sns" /><span>ファンデイビングについて</span></label>
+                <label><input type="checkbox" name="sns" /><span>体験ダイビングについて</span></label>
               </dd>
             </dl>
-            <dl class="form__wrap">
+            <dl class="form__wrap form__wrap-checkbox">
               <dt class="form__label">キャンペーン</dt>
               <dd class="form__select form-select">
                 <select>
@@ -289,9 +257,7 @@
                   <option value="ライセンス取得">ライセンス取得</option>
                   <option value="貸切体験ダイビング">貸切体験ダイビング</option>
                   <option value="ナイトダイビング">ナイトダイビング</option>
-                  <option value="貸切ファンダイビング">
-                    貸切ファンダイビング
-                  </option>
+                  <option value="貸切ファンダイビング">貸切ファンダイビング</option>
                 </select>
               </dd>
             </dl>
@@ -302,20 +268,15 @@
               </dd>
             </dl>
             <div class="form__consent-box">
-              <dl class="form__wrap">
-                <dt class="form__label"></dt>
+              <dl class="form__wrap form__wrap-checkbox">
+                <dt class="form__label form__label-checkbox"></dt>
                 <dd class="form__consent form-checkbox">
-                  <label
-                    ><input type="checkbox" name="sns" checked /><span
-                      class="consent"
-                      >個人情報の取り扱いについて同意のうえ 送信します。</span
-                    ></label
-                  >
+                  <label><input type="checkbox" name="sns" /><span class="consent">個人情報の取り扱いについて同意のうえ 送信します。</span></label>
                 </dd>
               </dl>
             </div>
-        
-            <div class="common-contact__button">
+
+            <div class="contact__button">
               <a href="" class="button"
                 >Send
                 <span class="button__arrow"></span>
@@ -324,11 +285,9 @@
           </form>
         </div>
       </section>
-
-      
     </main>
     <!-- Footer -->
-    <footer class="footer layout-footer">
+    <footer class="footer layout-footer layout-footer--contact">
       <div class="footer__inner inner">
         <div class="footer__logos">
           <div class="footer__logo">
@@ -338,12 +297,12 @@
           </div>
           <div class="footer__icons">
             <div class="footer__facebook">
-              <a href="/campaign.html"  target="_blank" rel="noopener noreferrer">
+              <a href="/campaign.html" target="_blank" rel="noopener noreferrer">
                 <img src="./assets/images/common/facebook.svg" alt="facebookのアイコン" />
               </a>
             </div>
             <div class="footer__instagram">
-              <a href="#"  target="_blank" rel="noopener noreferrer">
+              <a href="#" target="_blank" rel="noopener noreferrer">
                 <img src="./assets/images/common/instagram.svg" alt="instagramのアイコン" />
               </a>
             </div>
@@ -464,9 +423,7 @@
           </div>
         </nav>
 
-        <small class="footer__copyright"
-          >Copyright&nbsp;&copy;&nbsp;2021&nbsp;-&nbsp;2023&nbsp;CodeUps&nbsp;LLC.&nbsp;All&nbsp;Rights&nbsp;Reserved.</small
-        >
+        <small class="footer__copyright">Copyright&nbsp;&copy;&nbsp;2021&nbsp;-&nbsp;2023&nbsp;CodeUps&nbsp;LLC.&nbsp;All&nbsp;Rights&nbsp;Reserved.</small>
       </div>
     </footer>
     <div class="layout-page-top page-top js-page-top">

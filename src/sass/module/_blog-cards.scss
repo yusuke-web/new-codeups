@@ -12,7 +12,14 @@
     row-gap: rem(80);
   }
 }
+.blog-cards.blog-cards--top{
 
+@include mq('md') {
+  grid-template-columns: repeat(3, 1fr);
+
+}
+
+}
 .blog-cards__item {
   box-shadow: rem(2) rem(2) rem(10) 0 rgba(0, 0, 0, 0.25);
   background-color: $white;
@@ -27,7 +34,7 @@
 
 .blog-cards__item a {
   display: block;
-  padding: rem(16) rem(16) rem(23) rem(16);
+  padding: rem(16) rem(16) rem(24) rem(16);
   height: 100%;
   transition: opacity  0.3s;
   @include mq('md') {

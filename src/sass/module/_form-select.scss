@@ -5,7 +5,9 @@
 }
 .form-select select {
   font-family: $third-font-family;
-  padding: rem(12) rem(50) rem(12) rem(8);
+  padding: rem(13) rem(50) rem(13) rem(8);
+  width: 100%;
+  line-height: 1;
   width: 100%;
   font-size: rem(12);
   color: $black;
@@ -13,6 +15,10 @@
  
   appearance: none;
   cursor: pointer;
+  @include mq('md') {
+    padding: rem(8) rem(50) rem(8) rem(8);
+  
+  }
 }
 .form-select::after {
   position: absolute;
@@ -21,11 +27,11 @@
   width: 0;
   height: 0;
   border-style: solid;
-  border-right: rem(7) solid transparent;
-  border-left: rem(7) solid transparent;
-  border-top: rem(12) solid #408f95;
+  border-right: rem(5) solid transparent;
+  border-left: rem(5) solid transparent;
+  border-top: rem(8) solid #408f95;
   border-bottom: 0;
-  top: rem(12);
+  top: rem(11);
   right: rem(9);
   transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
   transform: rotate(120deg);

@@ -6,10 +6,34 @@
 
   }
 }
-.faq__accordion{
-  margin-top: rem(52);
+
+.faq__inner {
+  position: relative;
+}
+
+.faq__inner::after {
+  background-image: url(../images/common/fish-right.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: '';
+  height: rem(55);
+  left: calc(50% - min(46vw, 38.75rem));
+  position: absolute;
+  top: -2.7%;
+  width: rem(120);
+  z-index: 1;
   @include mq('md') {
-  margin-top: rem(150);
+    width: rem(301);
+    height: rem(138);
+    top: -6.7%;
+  }
+}
+
+.faq__accordion{
+  // margin-top: rem(52);
+  @include mq('md') {
+  // margin-top: rem(150);
   }
 }
 

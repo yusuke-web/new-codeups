@@ -11,3 +11,17 @@
     margin-top: rem(163);
   }
 }
+
+.layout-footer.layout-footer--contact {
+  margin-top: rem(148);
+  @include mq('md') {
+    margin-top: rem(166);
+  }
+}
+
+.layout-footer.layout-footer--thanks {
+  margin-top: rem(145);
+  @include mq('md') {
+    margin-top: rem(122);
+  }
+}

@@ -1,15 +1,106 @@
 @use 'global' as *;
 
+// 404ページ
+.error-bgc {
+  background-color: $lightGreen;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.error__breadcrumbs.breadcrumbs {
+  color: $white;
+}
 .error {
   background-color: $lightGreen;
   padding-bottom: rem(5);
   @include mq('md') {
   }
 }
+.error__breadcrumbs.breadcrumbs span a::after {
+  border-color: $white;
+}
 
-.layout-footer.layout-footer--error {
-  margin-top: 0;
-  padding-top: rem(50);
+.layout-breadcrumbs.error__breadcrumbs {
+  margin-top: rem(88);
+
   @include mq('md') {
+    margin-top: rem(97);
   }
+}
+
+.error__container {
+  margin-top: rem(61);
+  text-align: center;
+  position: relative;
+  @include mq('md') {
+    margin-top: rem(135);
+  }
+}
+.error__container::before {
+  background: url(../images/404/404whale.svg) center center/contain no-repeat;
+  content: '';
+  height: rem(345);
+  left: 50%;
+  position: absolute;
+  top: rem(-88);
+  transform: translateX(-50%);
+  width: rem(345);
+
+  @include mq('md') {
+    width: rem(698);
+    height: rem(698);
+    left: 33.3%;
+    top: rem(-171);
+  }
+}
+
+.error__title {
+  font-family: $second-font-family;
+  font-size: rem(80);
+  font-weight: $regular;
+  color: $white;
+  letter-spacing: 0.5em;
+  line-height: 1;
+  text-indent: rem(38);
+
+  @include mq('md') {
+    font-size: rem(160);
+    text-indent: rem(80);
+  }
+}
+
+.error__message {
+  font-family: $second-font-family;
+  font-size: rem(16);
+  font-weight: $regular;
+  line-height: 1.5;
+  color: $white;
+
+  @include mq('md') {
+    margin-top: rem(40);
+  }
+}
+
+.error__button {
+  text-align: center;
+  margin-top: rem(40);
+  @include mq('md') {
+    margin-top: rem(80);
+  }
+}
+.layout-footer.layout-footer--error {
+  margin-top: rem(50);
+  padding-top: rem(38);
+  @include mq('md') {
+    margin-top: rem(185);
+  }
+}
+
+// html {
+//   background-color: $lightGreen;
+// }
+
+main {
+  flex: 1;
 }

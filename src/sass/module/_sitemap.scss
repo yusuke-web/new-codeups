@@ -3,14 +3,38 @@
 
 .sitemap {
   background-color: $white;
-  padding-bottom: rem(56);
-  padding-top: rem(48);
+  // padding-bottom: rem(56);
+  // padding-top: rem(48);
 
   @include mq('md') {
-    padding-bottom: rem(80);
-    padding-top: rem(76);
+    // padding-bottom: rem(80);
+    // padding-top: rem(76);
   }
 }
+
+.sitemap__inner {
+  position: relative;
+}
+
+.sitemap__inner::after {
+  background-image: url(../images/common/fish-right.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: '';
+  height: rem(55);
+  left: calc(50% - min(46vw, 38.75rem));
+  position: absolute;
+  top: 0.8%;
+  width: rem(120);
+  z-index: 1;
+  @include mq('md') {
+    width: rem(301);
+    height: rem(138);
+    top: -38.3%;
+  }
+}
+
 .sitemap__logos {
   @include mq('md') {
     display: flex;
@@ -57,7 +81,7 @@
   padding-right: rem(15);
   padding-left: rem(23);
   gap: rem(39);
-  margin-top: rem(12);
+  // margin-top: rem(12);
 
   @include mq('md') {
     column-gap: rem(143);

@@ -6,11 +6,15 @@
   margin-top: rem(80);
 }
 .blog__wp-pagenavi {
-  margin-top: rem(84);
+  margin-top: rem(79);
 }
 
 .voice__wp-pagenavi {
   margin-top: rem(80);
+
+  @include mq('md') {
+    margin-top: rem(71);
+  }
 }
 // 共通部分
 

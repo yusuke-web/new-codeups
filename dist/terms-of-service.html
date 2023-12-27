@@ -65,7 +65,7 @@
               <a href="/blog.html">blog<span>ブログ</span></a>
             </li>
             <li class="header__nav-item">
-              <a href="#top-voice">voice<span>お客様の声</span></a>
+              <a href="/voice.html">voice<span>お客様の声</span></a>
             </li>
             <li class="header__nav-item">
               <a href="/price.html">price<span>料金一覧</span></a>
@@ -200,34 +200,24 @@
 
     <main>
       <!-- common FV -->
-      <div class="common-fv common-fv layout-common-fv">
-        <div class="common-fv__inner">
-          <picture class="common-fv__img common-fv">
-            <source
-              srcset="./assets/images/under-common/under-common-fvPC.jpg"
-              media="(min-width: 768px)" />
-            <img
-              src="./assets/images/under-common/under-common-fvSP.jpg"
-              alt="海岸" />
-          </picture>
-        </div>
+      <div class="common-fv common-fv--sitemap">
         <h1 class="common-fv__title">Terms of Service</h1>
       </div>
+      <!-- パンくずリスト -->
 
-      <section class="privacy-policy layout-privacy-policy">
-        <div class="contact__inner inner">
-          <!-- パンくずリスト -->
-          <div class="blog__breadcrumbs breadcrumbs layout-breadcrumbs">
-            <span>
-              <a href="index.html">
-                <span>Top</span>
-              </a>
-            </span>
+      <div class="terms-of-service__breadcrumbs breadcrumbs layout-breadcrumbs">
+        <span>
+          <a href="index.html">
+            <span>Top</span>
+          </a>
+        </span>
 
-            <span>
-              <span>利用規約</span>
-            </span>
-          </div>
+        <span>
+          <span>利用規約</span>
+        </span>
+      </div>
+      <section class="terms-of-service layout-terms-of-service">
+        <div class="terms-of-service__inner inner">
 
           <!-- プライバシーポリシー -->
 
@@ -235,7 +225,7 @@
             <h2 class="terms-of-service__title">利用規約</h2>
             <div class="terms-of-service__body">
               <p class="terms-of-service__text">
-                以下は、Webサイトで使用するための一般的なプライバシーポリシーの例です。
+                以下は、Webサイトで使用する一般的な利用規約の例です。
               </p>
               <br />
               <ol class="terms-of-service__number-list">
@@ -253,7 +243,7 @@
               </ol>
               <ul class="terms-of-service__non-number-list">
                 <li class="terms-of-service__non-number-list-item">
-                  当社のサービスに対して不正なアクセスをすること
+                  ・当社のサービスに対して不正なアクセスをすること
                   ・当社のサービスにおいて、他のユーザーに対して迷惑をかける行為をすること
                   ・当社のサービスを商業目的で利用すること
                   ・当社のサービスに関する知的財産権を侵害する行為をすること
@@ -286,19 +276,17 @@
                 <br />
               </ol>
 
-              <br />
-              <p class="terms-of-service__text">
+              <p class="terms-of-service__text ">
                 以上が、当社の利用規約の概要です。お客様のサービス利用にあたっては、本規約をお読みいただき、同意いただける場合のみサービスをご利用ください。
               </p>
             </div>
           </div>
 
-          <!-- コンタクトフォーム -->
         </div>
       </section>
 
       <!-- common-contact -->
-      <section id="common-contact" class="common-contact layout-common-contact">
+      <section  class="common-contact layout-common-contact layout-common-contact--terms">
         <div class="common-contact__inner inner">
           <div class="common-contact__container">
             <div class="common-contact__info">

@@ -1,0 +1,61 @@
+@use "global" as *;
+
+// サンクスページ
+
+.contact-thanks__inner {
+  position: relative;
+}
+
+.contact-thanks__inner::after {
+  background-image: url(../images/common/fish-right.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: '';
+  height: rem(55);
+  left: calc(50% - min(46vw, 38.75rem));
+  position: absolute;
+  top: -12.2%;
+  width: rem(120);
+  z-index: 1;
+  @include mq('md') {
+    width: rem(301);
+    height: rem(138);
+    top: -55.3%;
+  }
+}
+
+
+.contact-thanks__container {
+  text-align: center;
+  margin-top: rem(52);
+
+  font-family: $third-font-family;
+  line-height: 1.125;
+  color: $darkGreen;
+  font-size: rem(16);
+  font-weight: $regular;
+
+  @include mq('md') {
+    margin-top: rem(150);
+  }
+}
+
+.contact-thanks__complete{
+  font-size: rem(16);
+  line-height: 1.125;
+  font-weight: $regular;
+  font-family: $third-font-family;
+  color: $darkGreen;
+  
+}
+
+.contact-thanks__message {
+  margin-top: rem(40);
+
+  font-family: $third-font-family;
+  font-size: rem(16);
+  font-weight: $regular;
+  color: $darkGreen;
+  line-height: 1.42;
+}

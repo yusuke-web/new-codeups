@@ -1,7 +1,7 @@
-@use "global" as *;
+@use 'global' as *;
 
-.layout-footer.layout-sub-campaign-footer{
+.layout-footer.layout-sub-campaign-footer {
   @include mq('md') {
-  margin-top: rem(160);
+    margin-top: rem(160);
   }
 }

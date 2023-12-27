@@ -7,6 +7,8 @@
 
   @include mq('md') {
     grid-template-columns: repeat(2, 1fr);
+    column-gap: rem(40);
+    row-gap: rem(80);
   }
 }
 .voice-cards__item {
@@ -16,7 +18,6 @@
   box-shadow: rem(2) rem(2) rem(10) 0px rgba(0, 0, 0, 0.25);
   @include mq('md') {
     padding: rem(24);
-    padding-top: rem(22);
   }
 }
 
@@ -26,13 +27,16 @@
   align-items: flex-end;
   @include mq('md') {
     gap: rem(16);
+    justify-content: space-between;
   }
 }
 .voice-cards__info {
   width: 100%;
   max-width: rem(149);
   @include mq('md') {
-    width: 58.47457627%;
+    // width: 58.47457627%;
+    max-width: rem(276);
+    width: 100%;
   }
 }
 
@@ -93,7 +97,8 @@
   width: 100%;
   max-width: rem(151);
   @include mq('md') {
-    width: 38.13559322%;
+    // width: 38.13559322%;
+    max-width: rem(180);
   }
 }
 

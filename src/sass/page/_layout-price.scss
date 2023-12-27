@@ -1,8 +1,8 @@
-@use "global" as *;
+@use 'global' as *;
 
 .layout-price {
- margin-top: rem(8); 
- @include mq('md') {
- 
- }
+  margin-top: rem(52);
+  @include mq('md') {
+    margin-top: rem(150);
+  }
 }

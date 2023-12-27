@@ -1,16 +1,39 @@
-@use "global" as *;
+@use 'global' as *;
 
-.price__list:not(:first-child){
-  margin-top: rem(40);
+.price__inner {
+  position: relative;
+}
+
+.price__inner::after {
+  background-image: url(../images/common/fish-right.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: '';
+  height: rem(55);
+  left: calc(50% - min(46vw, 38.75rem));
+  position: absolute;
+  top: -2.2%;
+  width: rem(120);
+  z-index: 1;
   @include mq('md') {
-  margin-top: rem(80);
+    width: rem(301);
+    height: rem(138);
+    top: -6.7%;
+  }
+}
+
+.price__list:not(:first-child) {
+  margin-top: rem(38);
+  @include mq('md') {
+    margin-top: rem(81);
   }
 }
 
 .price__list-container {
-  margin-top: rem(52);
+  // margin-top: rem(52);
 
   @include mq('md') {
-    margin-top: rem(150);
+    // margin-top: rem(150);
   }
 }

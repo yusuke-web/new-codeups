@@ -51,11 +51,54 @@
   }
 }
 
+// Price
+.common-fv.common-fv--price {
+  background-image: url(../images/price/price-fvSP.jpg);
+
+  @include mq('md') {
+    background-image: url(../images/price/price-fvPC.jpg);
+  }
+}
+// faq
+.common-fv.common-fv--faq {
+  background-image: url(../images/FAQ/FAQ-fvSP.jpg);
+
+  @include mq('md') {
+    background-image: url(../images/FAQ/FAQ-fvPC.jpg);
+  }
+}
+// contact
+.common-fv.common-fv--contact {
+  background-image: url(../images/contact/contact-fvSP.jpg);
+
+  @include mq('md') {
+    background-image: url(../images/contact/contact-fvPC.jpg);
+  }
+}
+
+// site map
+.common-fv.common-fv--sitemap {
+  background-image: url(../images/sitemap/sitemapFV-SP.jpg);
+
+  @include mq('md') {
+    background-image: url(../images/sitemap/sitemapFV-PC.jpg);
+  }
+}
+// privacy
+.common-fv.common-fv--privacy {
+  background-image: url(../images/sitemap/sitemapFV-SP.jpg);
+
+  @include mq('md') {
+    background-image: url(../images/sitemap/sitemapFV-PC.jpg);
+  }
+}
+
+
 .common-fv__title {
   position: absolute;
   top: 50%;
   left: 50%;
-
+white-space: nowrap;
   transform: translate(-50%, -50%);
 
   font-family: $second-font-family;

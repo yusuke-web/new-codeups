@@ -1,9 +1,9 @@
-@use "global" as *;
+@use 'global' as *;
 
-.layout-gallery{
+.layout-gallery {
   margin-top: rem(36);
 
   @include mq('md') {
-  margin-top: rem(116);
+    margin-top: rem(116);
   }
 }

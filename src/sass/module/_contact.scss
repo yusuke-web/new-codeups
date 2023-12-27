@@ -1,5 +1,28 @@
 @use 'global' as *;
 
+.contact__inner {
+  position: relative;
+}
+
+.contact__inner::after {
+  background-image: url(../images/common/fish-right.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: '';
+  height: rem(55);
+  left: calc(50% - min(46vw, 38.75rem));
+  position: absolute;
+  top: -2.2%;
+  width: rem(120);
+  z-index: 1;
+  @include mq('md') {
+    width: rem(301);
+    height: rem(138);
+    top: -6.3%;
+  }
+}
+
 .contact__error-message {
   margin-top: rem(52);
   font-family: $third-font-family;
@@ -12,8 +35,12 @@
   margin-left: auto;
   max-width: rem(224);
   @include mq('md') {
-    max-width: rem(400);
     margin-top: rem(150);
+
+    max-width: rem(700);
+    text-align: center;
+    text-indent: 1em;
+    line-height: 1.43;
   }
 }
 
@@ -28,30 +55,17 @@
 }
 
 .contact__form {
-  margin-top: rem(52);
+  margin-top: rem(37);
   @include mq('md') {
-    margin-top: rem(40);
+    // margin-top: rem(40);
   }
 }
 
-// サンクスページ
-
-.contact__thanks-container {
+.contact__button {
   text-align: center;
-  margin-top: rem(52);
-
-  font-family: $third-font-family;
-  line-height: 1.125;
-  color: $darkGreen;
-  font-size: rem(16);
-  font-weight: $regular;
-
+  margin-top: rem(24);
   @include mq('md') {
-    margin-top: rem(150);
+    margin-top: rem(38);
+    // margin-left: rem(20);
   }
-}
-
-.contact__thanks-message {
-  margin-top: rem(40);
-  line-height: 1.5;
 }

@@ -13,24 +13,29 @@
   @include mq(md) {
     display: flex;
     align-items: self-start;
-    
   }
 }
 .form__wrap:not(:last-child) {
   border-bottom: rem(1) dashed $lightGreen;
   padding-bottom: rem(24);
   @include mq('md') {
+    padding-bottom: rem(39);
   }
 }
 
 .form__wrap.form__wrap--textarea {
+  padding-bottom: rem(15);
   @include mq(md) {
     align-items: flex-start;
   }
 }
 
 .form__wrap + .form__wrap {
-  margin-top: rem(30);
+  margin-top: rem(24);
+  @include mq('md') {
+    margin-top: rem(39);
+    // align-items: center;
+  }
 }
 
 .form__label {
@@ -38,28 +43,44 @@
   font-size: rem(16);
   font-weight: 700;
   color: $darkGreen;
+  line-height: 1;
   @include mq(md) {
-    max-width: rem(200);
+    max-width: rem(220);
     width: 100%;
   }
 }
 
 .form__wrap.form__wrap--textarea .form__label {
   @include mq(md) {
-    margin-top: rem(10);
+    margin-top: rem(0);
   }
 }
 
 .form__label span {
   margin-left: rem(12);
-  padding: rem(2) rem(16);
+  padding: rem(4.5) rem(14);
   display: inline-block;
   font-family: $third-font-family;
   font-size: rem(12);
-  font-weight: $regular;
-  letter-spacing: 0.04em;
+  font-weight: $thin;
+  letter-spacing: 0.4em;
   color: #fff;
   background-color: $red;
+  margin-left: rem(9);
+  min-width: rem(61);
+}
+
+.form__label-checkbox{
+  @include mq('md') {
+  width: 0;
+  }
+}
+
+.form__wrap-checkbox{
+
+  @include mq('md') {
+  justify-content: center;
+  }
 }
 
 .form__input,
@@ -67,9 +88,15 @@
 .form__radio,
 .form__checkbox,
 .form__textarea {
-  margin-top: rem(10);
+  margin-top: rem(17.9);
   @include mq(md) {
     margin-top: 0;
+  }
+}
+
+.form__select {
+  @include mq('md') {
+    flex: 1;
   }
 }
 
@@ -91,16 +118,15 @@
   @include mq('md') {
   }
 }
-input.form-input__error::placeholder{
+.form-input--error input::placeholder {
   color: $white;
 }
-
 
 .form__consent-box {
   margin-top: rem(40);
 
   @include mq('md') {
-    margin-top: rem(80);
+    margin-top: rem(75);
   }
 }
 
@@ -111,7 +137,38 @@ input.form-input__error::placeholder{
   font-size: rem(14);
   line-height: 1.5714285714;
   color: $darkGreen;
-
+  padding-left: rem(30);
+  margin-right: auto;
+  margin-left: auto;
+  width: 82%;
+  display: block;
   @include mq('md') {
+    width: 100%;
   }
 }
+.form__consent input span {
+  position: relative;
+}
+// .form__consent input + span {
+
+//   content: '';
+//   position: absolute;
+//   top: 59%;
+//   left: rem(-0);
+//   transform: translateY(-50%);
+//   background: #fff;
+//   border: rem(1) solid $lightGreen;
+//   display: block;
+//   width: rem(22);
+//   height: rem(22);
+// }
+// .checkbox span{
+// }
+// .checkbox span::before {
+// }
+// .form__wrap-checkbox {
+//   @include mq('md') {
+//     justify-content: space-between;
+//     // margin-top: rem(36);
+//   }
+// }

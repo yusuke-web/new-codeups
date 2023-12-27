@@ -15,24 +15,72 @@
   }
 }
 
-.layout-common-contact.layout-common-contact--information{
+.layout-common-contact.layout-common-contact--information {
   margin-top: rem(104);
   @include mq('md') {
-  margin-top: rem(132)
+    margin-top: rem(132);
   }
 }
 
 .layout-common-contact.layout-common-contact--blog {
-
   @include mq('md') {
-  margin-top: rem(137);
+    margin-top: rem(137);
   }
-
 }
-.layout-common-contact.layout-common-contact--blog-detail{
+.layout-common-contact.layout-common-contact--blog {
   margin-top: rem(105);
 
   @include mq('md') {
+    margin-top: rem(136);
+  }
+}
+.layout-common-contact.layout-common-contact--blog-detail {
+  margin-top: rem(105);
+
+  @include mq('md') {
+    margin-top: rem(136);
+  }
+}
+.layout-common-contact.layout-common-contact--voice {
+  margin-top: rem(105);
+
+  @include mq('md') {
+    margin-top: rem(136);
+  }
+}
+.layout-common-contact.layout-common-contact--price {
+  margin-top: rem(103);
+
+  @include mq('md') {
+    margin-top: rem(136);
+  }
+}
+.layout-common-contact.layout-common-contact--faq {
+  margin-top: rem(103);
+
+  @include mq('md') {
+    margin-top: rem(136);
+  }
+}
+
+.layout-common-contact.layout-sitemap-contact {
+  margin-top: rem(92);
+
+  @include mq('md') {
+    margin-top: rem(125);
+  }
+}
+
+.layout-common-contact.layout-privacy-policy-contact {
   margin-top: rem(136);
+
+  @include mq('md') {
+  }
+}
+
+.layout-common-contact.layout-common-contact--terms {
+  margin-top: rem(104);
+  @include mq('md') {
+    margin-top: rem(139);
   }
 }

@@ -71,7 +71,7 @@
               <a href="/price.html">price<span>料金一覧</span></a>
             </li>
             <li class="header__nav-item">
-              <a href="#">FAQ<span>よくある質問</span></a>
+              <a href="/faq.html">FAQ<span>よくある質問</span></a>
             </li>
             <li class="header__nav-item">
               <a href="/contact.html">Contact<span>お問合せ</span></a>
@@ -144,7 +144,7 @@
               <div class="header__drawer-container">
                 <ul class="header__drawer-items">
                   <li class="header__drawer-item header__drawer-title">
-                    <a href="#top-voice">お客様の声</a>
+                    <a href="/voice.html">お客様の声</a>
                   </li>
                 </ul>
               </div>
@@ -200,33 +200,23 @@
 
     <main>
       <!-- common FV -->
-      <div class="common-fv common-fv layout-common-fv">
-        <div class="common-fv__inner">
-          <picture class="common-fv__img common-fv">
-            <source
-              srcset="./assets/images/price/price-fvPC.jpg"
-              media="(min-width: 768px)" />
-            <img
-              src="./assets/images/price/price-fvSP.jpg"
-              alt="黄色い海水魚" />
-          </picture>
-        </div>
+      <div class="common-fv common-fv--faq">
         <h1 class="common-fv__title">FAQ</h1>
       </div>
-
+      
+      <!-- パンくずリスト -->
+      <div class="faq__breadcrumbs breadcrumbs layout-breadcrumbs">
+        <span>
+          <a href="index.html">
+            <span class="breadcrumbs__capital">Top</span>
+          </a>
+        </span>
+        <span>
+          <span>よくある質問</span>
+        </span>
+      </div>
       <section class="faq layout-faq">
         <div class="faq__inner inner">
-          <!-- パンくずリスト -->
-          <div class="faq__breadcrumbs breadcrumbs layout-breadcrumbs">
-            <span>
-              <a href="index.html">
-                <span class="breadcrumbs__capital">Top</span>
-              </a>
-            </span>
-            <span>
-              <span>よくある質問</span>
-            </span>
-          </div>
 
           <!-- FAQ一覧 -->
 
@@ -301,7 +291,7 @@
       </section>
 
       <!-- common-contact -->
-      <section id="common-contact" class="common-contact layout-common-contact">
+      <section  class="common-contact layout-common-contact layout-common-contact--faq">
         <div class="common-contact__inner inner">
           <div class="common-contact__container">
             <div class="common-contact__info">
@@ -331,9 +321,9 @@
               </div>
             </div>
             <div class="common-contact__here">
-              <h3 class="common-contact__title">
+              <h2 class="common-contact__title">
                 <span class="common-contact__title-color">C</span>ontact
-              </h3>
+              </h2>
               <p class="common-contact__sub-title">お問合せ</p>
               <p class="common-contact__booking">
                 ご予約・お問い合わせはコチラ

@@ -144,7 +144,7 @@
               <div class="header__drawer-container">
                 <ul class="header__drawer-items">
                   <li class="header__drawer-item header__drawer-title">
-                    <a href="#top-voice">お客様の声</a>
+                    <a href="/voice.html">お客様の声</a>
                   </li>
                 </ul>
               </div>
@@ -200,47 +200,37 @@
 
     <main>
       <!-- common FV -->
-      <div class="common-fv common-fv layout-common-fv">
-        <div class="common-fv__inner">
-          <picture class="common-fv__img common-fv">
-            <source
-              srcset="./assets/images/contact/contact-fvPC.jpg"
-              media="(min-width: 768px)" />
-            <img
-              src="./assets/images/contact/contact-fvSP.jpg"
-              alt="海岸" />
-          </picture>
-        </div>
+      <div class="common-fv common-fv--contact">
         <h1 class="common-fv__title">Contact</h1>
       </div>
 
-      <div class="contact layout-contact">
-        <div class="contact__inner inner">
-          <!-- パンくずリスト -->
-          <div class="blog__breadcrumbs breadcrumbs layout-breadcrumbs">
-            <span>
-              <a href="index.html">
-                <span class="breadcrumbs__capital">Top</span>
-              </a>
-            </span>
-            <span>
-              <a href="/blog.html">
-                <span>お問い合わせ</span>
-              </a>
-            </span>
-            <span>
-              <span>送信完了</span>
-            </span>
-          </div>
+      <!-- パンくずリスト -->
+      <div class="contact-thanks__breadcrumbs breadcrumbs layout-breadcrumbs">
+        <span>
+          <a href="index.html">
+            <span class="breadcrumbs__capital">Top</span>
+          </a>
+        </span>
+        <span>
+          <a href="/blog.html">
+            <span>お問い合わせ</span>
+          </a>
+        </span>
+        <span>
+          <span>送信完了</span>
+        </span>
+      </div>
+      <div class="contact-thanks layout-contact-thanks ">
+        <div class="contact-thanks__inner inner">
 
           <!-- Thanks Message -->
-          <div class="contact__thanks-container">
-            <p class="contact__thanks-complete">
+          <div class="contact-thanks__container">
+            <p class="contact-thanks__complete">
               お問い合わせ内容を送信完了しました。
             </p>
-            <p class="contact__thanks-message">
+            <p class="contact-thanks__message">
               このたびは、お問い合わせ頂き<br class="u-mobile">
-              誠にありがとうございます。お送り頂きました内容を確認の上、<br class="u-mobile">3営業日以内に折り返しご連絡させて頂きます。また、ご記入頂いたメールアドレスへ、<br class="u-mobile">自動返信の確認メールをお送りしております。
+              誠にありがとうございます。<br>お送り頂きました内容を確認の上、<br class="u-mobile">3営業日以内に折り返しご連絡させて頂きます。<br>また、ご記入頂いたメールアドレスへ、<br class="u-mobile">自動返信の確認メールをお送りしております。
             </p>
           </div>
 
@@ -251,7 +241,7 @@
      
     </main>
     <!-- Footer -->
-    <footer class="footer layout-footer">
+    <footer class="footer layout-footer layout-footer--thanks">
       <div class="footer__inner inner">
         <div class="footer__logos">
           <div class="footer__logo">

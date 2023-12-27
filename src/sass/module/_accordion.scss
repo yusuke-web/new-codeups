@@ -13,16 +13,16 @@
 }
 
 .accordion__item:not(:first-child) {
-  margin-top: rem(40);
+  margin-top: rem(38.714);
   @include mq('md') {
-  
+    margin-top: rem(39);
   }
 }
 
 .accordion__title {
   position: relative;
   background-color: $lightGreen;
-
+  cursor: pointer;
   font-size: rem(16);
   font-family: $third-font-family;
   font-weight: $regular;
@@ -30,7 +30,7 @@
   padding: rem(16);
   @include mq('md') {
     font-size: rem(20);
-    padding: rem(26) rem(40);
+    padding: rem(25) rem(40);
   }
 }
 
@@ -38,8 +38,8 @@
 .accordion__title::before {
   position: absolute;
   content: '';
-  top: rem(30);
-  right: rem(20);
+  top: rem(28);
+  right: rem(16);
   width: rem(28);
   height: rem(1);
   background-color: $white;
@@ -47,8 +47,8 @@
 
   @include mq('md') {
     width: rem(32);
-    right: rem(12);
-    width: rem(12);
+    right: rem(40);
+    top: rem(38);
   }
 }
 
@@ -75,18 +75,20 @@
   display: none;
 
   @include mq('md') {
+    margin-top: rem(16);
   }
 }
 
 .accordion__text {
   border: rem(1) solid $lightGreen;
 
-  padding: rem(16);
+  padding: rem(22.5) rem(16) rem(22.5) rem(16);
   font-size: rem(16);
+  line-height: 1.45;
   font-family: $third-font-family;
   font-weight: $regular;
   color: $darkGreen;
   @include mq('md') {
-    padding: rem(40);
+    padding: rem(39) rem(40) rem(39) rem(40);
   }
 }
