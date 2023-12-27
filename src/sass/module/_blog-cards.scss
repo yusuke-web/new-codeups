@@ -12,6 +12,8 @@
     row-gap: rem(80);
   }
 }
+
+
 .blog-cards.blog-cards--top {
   @include mq('md') {
     grid-template-columns: repeat(3, 1fr);
