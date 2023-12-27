@@ -1,5 +1,4 @@
-@use "global" as *;
-
+@use 'global' as *;
 
 .voice__inner {
   position: relative;
@@ -24,18 +23,13 @@
   }
 }
 
-
-.voice__cards-container{
+.voice__cards-container {
   margin-top: rem(40);
   @include mq('md') {
-  
   }
 }
 
-
 // Category
-
-
 
 .voice__categories::after {
   position: absolute;
@@ -58,7 +52,7 @@
 
 .voice__category-item {
   font-size: rem(14);
-  
+
   font-family: $third-font-family;
   font-weight: $regular;
   line-height: 1.5714285714;
@@ -67,11 +61,11 @@
   color: $lightGreen;
   text-align: center;
   border: rem(1) solid $lightGreen;
-  
+
   @include mq('md') {
   }
 }
-.voice__category-item a{
+.voice__category-item a {
   display: block;
   height: 100%;
   padding: rem(6);
@@ -88,4 +82,3 @@
   @include mq('md') {
   }
 }
-

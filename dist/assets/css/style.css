@@ -213,6 +213,10 @@ a {
 	margin-top: 3.25rem;
 }
 
+.layout-error {
+	margin-top: 3.8125rem;
+}
+
 .layout-faq {
 	margin-top: 3.125rem;
 }
@@ -1538,7 +1542,6 @@ a {
 }
 
 .error__container {
-	margin-top: 3.8125rem;
 	position: relative;
 	text-align: center;
 }
@@ -2303,7 +2306,7 @@ body.active {
 }
 
 .information-tab__content {
-	border: 1px solid #408f95;
+	border: 0.0625rem solid #408f95;
 	height: 0;
 	opacity: 0;
 	padding: 0rem;
@@ -3562,6 +3565,10 @@ html {
 	margin-top: 9.375rem;
 }
 
+.layout-error {
+	margin-top: 8.4375rem;
+}
+
 .layout-faq {
 	margin-top: 9.375rem;
 }
@@ -4117,10 +4124,6 @@ html {
 
 .layout-breadcrumbs.error__breadcrumbs {
 	margin-top: 6.0625rem;
-}
-
-.error__container {
-	margin-top: 8.4375rem;
 }
 
 .error__container::before {

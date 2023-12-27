@@ -1,27 +1,6 @@
 @use 'global' as *;
 // キャンペーン
 
-
-// .sub-campaign__breadcrumbs {
-//   margin-top: rem(8);
-//   @include mq('md') {
-//   }
-// }
-
-// // About-us
-// .about-us__breadcrumbs{
-//   margin-top: rem(8);
-//   @include mq('md') {
-//   }
-// }
-// // information
-// .information__breadcrumbs{
-//   margin-top: rem(8);
-//   @include mq('md') {
-  
-//   }
-// }
-
 .breadcrumbs {
   font-family: $third-font-family;
   font-size: rem(14);

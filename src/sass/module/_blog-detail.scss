@@ -57,12 +57,10 @@
   }
 }
 .blog-detail__container {
-  // margin-top: rem(52);
   @include mq('md') {
     display: flex;
     gap: rem(86);
     justify-content: space-between;
-    // margin-top: rem(150);
     margin-top: rem(0);
   }
 }

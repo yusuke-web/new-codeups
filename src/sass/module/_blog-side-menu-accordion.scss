@@ -1,4 +1,4 @@
-@use "global" as *;
+@use 'global' as *;
 
 .blog-side-menu-accordion {
   margin-top: rem(24);
@@ -42,8 +42,7 @@
   cursor: pointer;
 }
 
-.blog-side-menu-accordion__title{
-
+.blog-side-menu-accordion__title {
 }
 .blog-side-menu-accordion__text {
   text-indent: 1em;

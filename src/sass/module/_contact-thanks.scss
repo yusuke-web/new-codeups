@@ -1,4 +1,4 @@
-@use "global" as *;
+@use 'global' as *;
 
 // サンクスページ
 
@@ -25,7 +25,6 @@
   }
 }
 
-
 .contact-thanks__container {
   text-align: center;
   margin-top: rem(52);
@@ -41,13 +40,12 @@
   }
 }
 
-.contact-thanks__complete{
+.contact-thanks__complete {
   font-size: rem(16);
   line-height: 1.125;
   font-weight: $regular;
   font-family: $third-font-family;
   color: $darkGreen;
-  
 }
 
 .contact-thanks__message {

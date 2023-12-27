@@ -1,15 +1,15 @@
-@use "global" as *;
+@use 'global' as *;
 
-.sub-campaign-list{
+.sub-campaign-list {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   row-gap: rem(40);
   width: 81.16%;
-margin: auto;
+  margin: auto;
   @include mq('md') {
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: rem(40);
-  row-gap: rem(80);
-  width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: rem(40);
+    row-gap: rem(80);
+    width: 100%;
   }
 }

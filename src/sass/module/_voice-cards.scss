@@ -34,7 +34,6 @@
   width: 100%;
   max-width: rem(149);
   @include mq('md') {
-    // width: 58.47457627%;
     max-width: rem(276);
     width: 100%;
   }
@@ -97,7 +96,6 @@
   width: 100%;
   max-width: rem(151);
   @include mq('md') {
-    // width: 38.13559322%;
     max-width: rem(180);
   }
 }

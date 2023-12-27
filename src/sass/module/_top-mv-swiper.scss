@@ -1,6 +1,5 @@
 @use 'global' as *;
 
-
 .mv__slider .swiper-slide picture,
 .mv__slider .swiper-slide img {
   aspect-ratio: 375 / 667;
@@ -14,5 +13,3 @@
     min-height: rem(400);
   }
 }
-
-

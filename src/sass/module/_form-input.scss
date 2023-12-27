@@ -1,23 +1,22 @@
-@use "global" as *;
-
+@use 'global' as *;
 
 .form-input input {
-	padding: rem(6.75) rem(15);
-	width: 100%;
-	font-size: rem(15);
-	line-height: 1;
-	border-radius: 0;
-	border: rem(1) solid $lightGreen;
-	appearance: none;
-	background-color: transparent;
-	background-image: none;
+  padding: rem(6.75) rem(15);
+  width: 100%;
+  font-size: rem(15);
+  line-height: 1;
+  border-radius: 0;
+  border: rem(1) solid $lightGreen;
+  appearance: none;
+  background-color: transparent;
+  background-image: none;
 }
-.form-input.form-input--error input{
-  background-color: rgba(201, 72, 0, 0.20);
+.form-input.form-input--error input {
+  background-color: rgba(201, 72, 0, 0.2);
   border-color: $red;
 }
 .form-input input:focus {
-	border: rem(1) solid $lightGreen;
-	box-shadow: none ;
-	outline: none;
+  border: rem(1) solid $lightGreen;
+  box-shadow: none;
+  outline: none;
 }

@@ -1,9 +1,7 @@
 @use 'global' as *;
 
 .faq {
-
   @include mq('md') {
-
   }
 }
 
@@ -30,11 +28,9 @@
   }
 }
 
-.faq__accordion{
+.faq__accordion {
   // margin-top: rem(52);
   @include mq('md') {
-  // margin-top: rem(150);
+    // margin-top: rem(150);
   }
 }
-
-

@@ -29,8 +29,7 @@
   grid-template-rows: 1fr;
   column-gap: rem(20);
   @include mq('md') {
-  column-gap: rem(90);
-
+    column-gap: rem(90);
   }
 }
 
@@ -48,7 +47,7 @@
   text-align: center;
   cursor: pointer;
   @include mq('md') {
-  padding: rem(13) rem(15);
+    padding: rem(13) rem(15);
 
     font-size: rem(24);
     display: flex;
@@ -79,9 +78,6 @@
   }
 }
 
-.information-tab__item-name {
-}
-
 .information-tab__contents {
   margin-top: rem(14);
 
@@ -91,7 +87,7 @@
 }
 
 .information-tab__content {
-  border: 1px solid $lightGreen;
+  border: rem(1) solid $lightGreen;
   padding: rem(0);
   height: 0;
   opacity: 0;

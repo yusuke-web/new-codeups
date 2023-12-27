@@ -61,12 +61,6 @@
   }
 }
 
-.privacy-policy__non-number-list {
-  // list-style-position: outside;
-  // padding-left: rem(13);
-  // list-style: disc;
-}
-
 .privacy-policy__non-number-list-item::marker {
   font-size: 50%;
   @include mq('md') {

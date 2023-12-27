@@ -34,7 +34,6 @@
   margin-top: rem(24);
   @include mq('md') {
     margin-top: rem(39);
-    // align-items: center;
   }
 }
 
@@ -70,16 +69,15 @@
   min-width: rem(61);
 }
 
-.form__label-checkbox{
+.form__label-checkbox {
   @include mq('md') {
-  width: 0;
+    width: 0;
   }
 }
 
-.form__wrap-checkbox{
-
+.form__wrap-checkbox {
   @include mq('md') {
-  justify-content: center;
+    justify-content: center;
   }
 }
 
@@ -149,26 +147,3 @@
 .form__consent input span {
   position: relative;
 }
-// .form__consent input + span {
-
-//   content: '';
-//   position: absolute;
-//   top: 59%;
-//   left: rem(-0);
-//   transform: translateY(-50%);
-//   background: #fff;
-//   border: rem(1) solid $lightGreen;
-//   display: block;
-//   width: rem(22);
-//   height: rem(22);
-// }
-// .checkbox span{
-// }
-// .checkbox span::before {
-// }
-// .form__wrap-checkbox {
-//   @include mq('md') {
-//     justify-content: space-between;
-//     // margin-top: rem(36);
-//   }
-// }

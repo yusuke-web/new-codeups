@@ -1,15 +1,7 @@
-@use "global" as *;
-
+@use 'global' as *;
 
 .sitemap {
   background-color: $white;
-  // padding-bottom: rem(56);
-  // padding-top: rem(48);
-
-  @include mq('md') {
-    // padding-bottom: rem(80);
-    // padding-top: rem(76);
-  }
 }
 
 .sitemap__inner {
@@ -81,7 +73,6 @@
   padding-right: rem(15);
   padding-left: rem(23);
   gap: rem(39);
-  // margin-top: rem(12);
 
   @include mq('md') {
     column-gap: rem(143);
@@ -112,9 +103,6 @@
   opacity: 0.7;
 }
 
-
-
-
 .sitemap__item.sitemap__item--title a {
   font-weight: $bold;
   position: relative;
@@ -134,7 +122,6 @@
   width: rem(18);
   height: rem(18);
   z-index: 10;
-
 }
 
 .sitemap__left {

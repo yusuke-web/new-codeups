@@ -12,12 +12,11 @@
   font-size: rem(12);
   color: $black;
   border: rem(1) solid $lightGreen;
- 
+
   appearance: none;
   cursor: pointer;
   @include mq('md') {
     padding: rem(8) rem(50) rem(8) rem(8);
-  
   }
 }
 .form-select::after {

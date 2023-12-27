@@ -1,6 +1,5 @@
 @use 'global' as *;
 
-
 .gallery__list {
   margin-top: rem(40);
   @include mq('md') {

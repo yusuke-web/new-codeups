@@ -57,7 +57,6 @@
 .contact__form {
   margin-top: rem(37);
   @include mq('md') {
-    // margin-top: rem(40);
   }
 }
 
@@ -66,6 +65,5 @@
   margin-top: rem(24);
   @include mq('md') {
     margin-top: rem(38);
-    // margin-left: rem(20);
   }
 }

@@ -30,11 +30,9 @@
 }
 
 .error__container {
-  margin-top: rem(61);
   text-align: center;
   position: relative;
   @include mq('md') {
-    margin-top: rem(135);
   }
 }
 .error__container::before {
@@ -96,10 +94,6 @@
     margin-top: rem(185);
   }
 }
-
-// html {
-//   background-color: $lightGreen;
-// }
 
 main {
   flex: 1;

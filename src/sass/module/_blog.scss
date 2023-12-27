@@ -24,13 +24,10 @@
 }
 
 .blog__container {
-  // margin-top: rem(52);
-  // margin-top: rem(52);
   @include mq('md') {
     display: flex;
     gap: rem(80);
     justify-content: space-between;
-    // margin-top: rem(150);
     margin-top: rem(0);
   }
 }
