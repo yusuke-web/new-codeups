@@ -76,7 +76,7 @@
     align-items: center;
 
     padding: 0 rem(15);
-    top: 40%;
+    top: 43%;
     left: 17%;
   }
 }
@@ -112,7 +112,7 @@
   text-align: center;
   margin-top: rem(17);
   @include mq('md') {
-    margin-top: rem(40);
+    margin-top: 0;
   }
 }
 .top-about-us__button {
